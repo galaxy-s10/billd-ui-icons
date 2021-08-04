@@ -46,8 +46,9 @@ gulp.task('svg', () =>
         // const optimizedSvgString = result.data;
         const domStr = parseXML(data);
         const iconcontent = JSON.stringify(domStr);
-        const iconname = `${file.path.match(/([^\\]+)\.svg/)[1]}Icon`;
-
+        const iconname = `${file.path.match(/([^\\/]+)\.svg/)[1]}Icon`;
+        console.log(file.path, 111);
+        console.log(iconname);
         const compiled = template(iconTemplate);
         const compileTemplateRes = compiled({ iconname, iconcontent });
         file.contents = Buffer.from(compileTemplateRes);
