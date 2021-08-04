@@ -1,0 +1,22 @@
+{
+  "files": ["src/index.js"],
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "lib": ["dom"],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "rootDir": "../",
+    "outDir": "./"
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx"
+  ]
+}

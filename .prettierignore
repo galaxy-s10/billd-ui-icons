@@ -1,0 +1,16 @@
+/lib/
+/es/
+/dist/
+/public/
+/node_modules/
+.gitignore
+.prettierignore
+.eslintignore
+.browserlistrc
+.editorconfig
+**/*.jpg
+**/*.png
+**/*.svg
+**/*.md
+**/*.json
+**/*.ejs

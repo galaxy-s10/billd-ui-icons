@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'webfont';
+  src: url('./assets/font/Medium.ttf');
+}
+
+.myfont {
+  transform: translate(10, 10);
+  color: red;
+  font-family: 'webfont';
+  transition: all 2s ease;
+  user-select: none;
+}
+
+:fullscreen {}
