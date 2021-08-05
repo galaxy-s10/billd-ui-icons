@@ -32,32 +32,56 @@ const entryTemplate = readFileSync(
   resolve(__dirname, './svgo/template/entry.ejs'),
   'utf8'
 );
+const iconVueTemplate = readFileSync(
+  resolve(__dirname, './svgo/template/icon-vue.ejs'),
+  'utf8'
+);
+
+function compileSvg(dir, suffix) {
+  return function () {
+    return gulp
+      .src(dir)
+      .pipe(
+        through2.obj(function (file, encoding, next) {
+          const svgString = file.contents.toString(encoding);
+          // const result = optimize(svgString);
+          console.log(svgString, 8876);
+          const { data } = optimize(svgString, {
+            plugins: svgOptions.plugins,
+          });
+          // const optimizedSvgString = result.data;
+          console.log(data, 99999087);
+          const domStr = parseXML(data);
+          const iconcontent = JSON.stringify(domStr);
+          const iconname = toCameCase(
+            `${file.path.match(/([^\\/]+)\.svg$/)[1]}${suffix}`
+          );
+
+          const compiled = template(iconTemplate);
+          const compileTemplateRes = compiled({ iconname, iconcontent });
+          file.contents = Buffer.from(compileTemplateRes);
+          console.log(file.path, 987);
+          console.log(file.stem);
+          file.path = file.path.replace(
+            /([^\\/]+)\.svg$$/,
+            toCameCase(`${file.stem}${suffix}.js`)
+          );
+          console.log(file.path, 32333333);
+          next(null, file);
+        })
+      )
+      .pipe(gulp.dest('../components/icon-svg/asn'));
+  };
+}
 
 // 将svg文件转换为dom对象。
-gulp.task('svg', () =>
-  gulp
-    .src('../components/icon-svg/svg/**/*.svg')
-    .pipe(
-      through2.obj(function (file, encoding, next) {
-        const svgString = file.contents.toString(encoding);
-        // const result = optimize(svgString);
-        const { data } = optimize(svgString, {
-          plugins: svgOptions.plugins,
-        });
-        // const optimizedSvgString = result.data;
-        const domStr = parseXML(data);
-        const iconcontent = JSON.stringify(domStr);
-        const iconname = `${file.path.match(/([^\\/]+)\.svg/)[1]}Icon`;
-        console.log(file.path, 111);
-        console.log(iconname);
-        const compiled = template(iconTemplate);
-        const compileTemplateRes = compiled({ iconname, iconcontent });
-        file.contents = Buffer.from(compileTemplateRes);
-        file.path = file.path.replace(/\.svg$/, '.js');
-        next(null, file);
-      })
-    )
-    .pipe(gulp.dest('../components/icon-svg/asn'))
+gulp.task(
+  'svg',
+  gulp.parallel(
+    compileSvg('../components/icon-svg/svg/filled/*.svg', 'Filled'),
+    compileSvg('../components/icon-svg/svg/outlined/*.svg', 'Outlined'),
+    compileSvg('../components/icon-svg/svg/twotone/*.svg', 'TwoTone')
+  )
 );
 
 function useTemplate(entryTemplate) {
@@ -94,25 +118,73 @@ gulp.task('svg-vue-icon', () =>
     .src('../components/icon-svg/asn/*.js')
     .pipe(
       through2.obj(function (file, encoding, next) {
-        const svgString = file.contents.toString(encoding);
-        // const result = optimize(svgString);
-        const { data } = optimize(svgString, {
-          plugins: svgOptions.plugins,
-        });
-        // const optimizedSvgString = result.data;
-        const domStr = parseXML(data);
-        const iconcontent = JSON.stringify(domStr);
-        const iconname = `${file.path.match(/([^\\]+)\.svg/)[1]}Icon`;
+        console.log(file.path, 1919);
+        console.log(file.stem);
+        // const iconname = `${file.path.match(/([^\\/]+)\.js$/)[1]}Icon`;
+        const iconname = file.stem;
 
-        const compiled = template(iconTemplate);
-        const compileTemplateRes = compiled({ iconname, iconcontent });
+        const compiled = template(iconVueTemplate);
+        const compileTemplateRes = compiled({ iconname });
         file.contents = Buffer.from(compileTemplateRes);
-        file.path = file.path.replace(/\.svg$/, '.js');
+        file.path = file.path.replace(/\.js$/, '.jsx');
         next(null, file);
       })
     )
-    .pipe(gulp.dest('../components/icon-svg/'))
+    .pipe(gulp.dest('../components/icon-vue/icons'))
 );
+
+const iconVueFlies = [`../components/icon-vue/icons/*.jsx`];
+
+function compileSvgVue(modules) {
+  let error;
+  const tsResult = gulp.src(iconVueFlies).pipe(
+    ts(tsProject.compilerOptions, {
+      error(e) {
+        tsDefaultReporter.error(e);
+        error = 1;
+      },
+      finish: tsDefaultReporter.finish,
+    })
+  );
+  function check() {
+    if (error && !argv['ignore-error']) {
+      console.log('退出');
+      process.exit(1);
+    }
+  }
+
+  const stream = tsResult.js.pipe(
+    babel(babelConfig(modules))
+    // babel({
+    //   presets: ["@babel/env"],
+    //   plugins: ["transform-vue-jsx"],
+    // })
+  );
+  tsResult.dts.pipe(
+    gulp.dest(
+      modules === false
+        ? '../components/icon-vue/es'
+        : '../components/icon-vue/lib'
+    )
+  );
+  tsResult.on('finish', check);
+  tsResult.on('end', check);
+  return stream.pipe(
+    gulp.dest(
+      modules === false
+        ? '../components/icon-vue/es'
+        : '../components/icon-vue/lib'
+    )
+  );
+}
+
+gulp.task('compileSvg', (done) => {
+  compileSvgVue().on('finish', function () {
+    compileSvgVue(false).on('finish', function () {
+      done();
+    });
+  });
+});
 
 gulp.task(
   'cleanall',
