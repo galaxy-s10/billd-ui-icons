@@ -33,49 +33,31 @@ const entryTemplate = readFileSync(
   'utf8'
 );
 
-function compileSvg(dir, suffix) {
-  return function () {
-    return gulp
-      .src(dir)
-      .pipe(
-        through2.obj(function (file, encoding, next) {
-          const svgString = file.contents.toString(encoding);
-          // const result = optimize(svgString);
-          const { data } = optimize(svgString, {
-            plugins: svgOptions.plugins,
-          });
-          // const optimizedSvgString = result.data;
-          const domStr = parseXML(data);
-          const iconcontent = JSON.stringify(domStr);
-          const iconname = toCameCase(
-            `${file.path.match(/([^\\]+)\.svg/)[1]}${suffix}`
-          );
-
-          const compiled = template(iconTemplate);
-          const compileTemplateRes = compiled({ iconname, iconcontent });
-          file.contents = Buffer.from(compileTemplateRes);
-          console.log(file.path, 987);
-          console.log(file.stem);
-          file.path = file.path.replace(
-            /([^\\]+)\.svg$/,
-            toCameCase(`${file.stem}${suffix}.js`)
-          );
-          console.log(file.path);
-          next(null, file);
-        })
-      )
-      .pipe(gulp.dest('../components/icon-svg/asn'));
-  };
-}
-
 // 将svg文件转换为dom对象。
-gulp.task(
-  'svg',
-  gulp.parallel(
-    compileSvg('../components/icon-svg/svg/filled/*.svg', 'Filled'),
-    compileSvg('../components/icon-svg/svg/outlined/*.svg', 'Outlined'),
-    compileSvg('../components/icon-svg/svg/twotone/*.svg', 'TwoTone')
-  )
+gulp.task('svg', () =>
+  gulp
+    .src('../components/icon-svg/svg/**/*.svg')
+    .pipe(
+      through2.obj(function (file, encoding, next) {
+        const svgString = file.contents.toString(encoding);
+        // const result = optimize(svgString);
+        const { data } = optimize(svgString, {
+          plugins: svgOptions.plugins,
+        });
+        // const optimizedSvgString = result.data;
+        const domStr = parseXML(data);
+        const iconcontent = JSON.stringify(domStr);
+        const iconname = `${file.path.match(/([^\\/]+)\.svg/)[1]}Icon`;
+        console.log(file.path, 111);
+        console.log(iconname);
+        const compiled = template(iconTemplate);
+        const compileTemplateRes = compiled({ iconname, iconcontent });
+        file.contents = Buffer.from(compileTemplateRes);
+        file.path = file.path.replace(/\.svg$/, '.js');
+        next(null, file);
+      })
+    )
+    .pipe(gulp.dest('../components/icon-svg/asn'))
 );
 
 function useTemplate(entryTemplate) {
