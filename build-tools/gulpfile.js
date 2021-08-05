@@ -12,13 +12,14 @@ const { template } = require('lodash');
 const { resolve } = require('path');
 // import SVGO from 'svgo';//报错：Cannot use import statement outside a module
 // import { readFileSync } from 'fs';//报错：Cannot use import statement outside a module
-
+// const File = require('vinyl');
 const babelConfig = require('./getBabelCommonConfig');
 const tsProject = require('../tsconfig.json');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
 const { _SUCCESS, emoji } = require('./utils/chalkTip');
 const transformLess = require('./utils/transformLess.js');
+const toCameCase = require('./utils/toCameCase');
 const svgOptions = require('./svgo/svgOptions');
 
 const componentsDir = '../components';
@@ -32,47 +33,83 @@ const entryTemplate = readFileSync(
   'utf8'
 );
 
-// 将svg文件转换为dom对象。
-gulp.task('svg', () =>
-  gulp
-    .src('../components/icon-svg/svg/**/*.svg')
-    .pipe(
-      through2.obj(function (file, encoding, next) {
-        const svgString = file.contents.toString(encoding);
-        // const result = optimize(svgString);
-        const { data } = optimize(svgString, {
-          plugins: svgOptions.plugins,
-        });
-        // const optimizedSvgString = result.data;
-        const domStr = parseXML(data);
-        const iconcontent = JSON.stringify(domStr);
-        const iconname = `${file.path.match(/([^\\]+)\.svg/)[1]}Icon`;
+function compileSvg(dir, suffix) {
+  return function () {
+    return gulp
+      .src(dir)
+      .pipe(
+        through2.obj(function (file, encoding, next) {
+          const svgString = file.contents.toString(encoding);
+          // const result = optimize(svgString);
+          const { data } = optimize(svgString, {
+            plugins: svgOptions.plugins,
+          });
+          // const optimizedSvgString = result.data;
+          const domStr = parseXML(data);
+          const iconcontent = JSON.stringify(domStr);
+          const iconname = toCameCase(
+            `${file.path.match(/([^\\]+)\.svg/)[1]}${suffix}`
+          );
 
-        const compiled = template(iconTemplate);
-        const compileTemplateRes = compiled({ iconname, iconcontent });
-        file.contents = Buffer.from(compileTemplateRes);
-        file.path = file.path.replace(/\.svg$/, '.js');
-        next(null, file);
-      })
-    )
-    .pipe(gulp.dest('../components/icon-svg/asn'))
+          const compiled = template(iconTemplate);
+          const compileTemplateRes = compiled({ iconname, iconcontent });
+          file.contents = Buffer.from(compileTemplateRes);
+          console.log(file.path, 987);
+          console.log(file.stem);
+          file.path = file.path.replace(
+            /([^\\]+)\.svg$/,
+            toCameCase(`${file.stem}${suffix}.js`)
+          );
+          console.log(file.path);
+          next(null, file);
+        })
+      )
+      .pipe(gulp.dest('../components/icon-svg/asn'));
+  };
+}
+
+// 将svg文件转换为dom对象。
+gulp.task(
+  'svg',
+  gulp.parallel(
+    compileSvg('../components/icon-svg/svg/filled/*.svg', 'Filled'),
+    compileSvg('../components/icon-svg/svg/outlined/*.svg', 'Outlined'),
+    compileSvg('../components/icon-svg/svg/twotone/*.svg', 'TwoTone')
+  )
 );
 
-gulp.task('entry', () => {
-  gulp.src('../components/icon-svg/asn/*.js').pipe(
-    through2.obj(function (file, encoding, next) {
-      const iconcontent = JSON.stringify(domStr);
-      const iconname = `${file.path.match(/([^\\]+)\.svg/)[1]}Icon`;
+function useTemplate(entryTemplate) {
+  console.log(entryTemplate, 333);
+  return through2.obj(function (file, encoding, next) {
+    // console.log(file, encoding, next, 44);
+    console.log(file.stem);
+    const compiled = template(entryTemplate);
+    console.log(compiled);
+    const compileTemplateRes = compiled({
+      iconname: file.stem,
+      path: `./asn/${file.stem}`,
+    });
+    console.log(compileTemplateRes, 555);
+    file.contents = Buffer.from(compileTemplateRes);
+    next(null, file);
+  });
+}
 
-      const compiled = template(iconTemplate);
-    })
-  );
-});
-// `export { default as <%= identifier %> } from '<%= path %>';`
+gulp.task(
+  'entry',
+  // gulp.parallel(
+  () =>
+    gulp
+      .src('../components/icon-svg/asn/**/*.js')
+      .pipe(useTemplate(entryTemplate))
+      .pipe(concat('index.js'))
+      .pipe(gulp.dest('../components/icon-svg'))
+  // )
+);
 
-gulp.task('svg-vue', () =>
+gulp.task('svg-vue-icon', () =>
   gulp
-    .src('../components/icon-svg/svg/**/*.svg')
+    .src('../components/icon-svg/asn/*.js')
     .pipe(
       through2.obj(function (file, encoding, next) {
         const svgString = file.contents.toString(encoding);

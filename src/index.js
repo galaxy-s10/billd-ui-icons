@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 // import App from "./Appx";
-import auth from './plugins';
+// import auth from './plugins';
 
 // const { optimize } = require('svgo');
 
@@ -12,7 +12,7 @@ import auth from './plugins';
 // const optimizedSvgString = result.data;
 // console.log(optimizedSvgString);
 
-Vue.use(auth);
+// Vue.use(auth);
 
 new Vue({
   render: (h) => h(App),

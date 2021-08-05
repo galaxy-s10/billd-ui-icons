@@ -1,14 +1,15 @@
-import svgData from './svgdata';
-import successSvg from '../components/assets/svgdata/close';
+// import svgData from './svgdata';
+// import successSvg from '../components/assets/svgdata/close';
 
 export default {
+  props: {},
   components: {},
   data() {
-    return { svgData };
+    return {};
   },
   render() {
-    console.log(this.svgData.children[0]);
-    console.log(successSvg, 5555);
+    // console.log(this.svgData.children[0]);
+    // console.log(successSvg, 5555);
     const viewBox = '0 0 1024 1024';
     const svgClassString = 'icon';
     const svgStyle = '';
@@ -29,9 +30,9 @@ export default {
       delete innerSvgProps.viewBox;
     }
     console.log(innerSvgProps);
-    const svg = this.svgData.children[0];
+    // const svg = this.svgData.children[0];
     return (
-      <div>
+      <i>
         svg组件
         <svg {...innerSvgProps} viewBox={viewBox}>
           {svg.children &&
@@ -40,7 +41,7 @@ export default {
               return <path {...{ attrs: item.attributes }}></path>;
             })}
         </svg>
-      </div>
+      </i>
     );
   },
   computed: {},

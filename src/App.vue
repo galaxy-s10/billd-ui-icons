@@ -1,12 +1,17 @@
 <template>
-  <div></div>
+  <div>
+    11
+    <icon-vue></icon-vue>
+  </div>
 </template>
 
 <script>
-import iconVue from '../components/icon-vue/index';
+// import * as iconVue from '../components/icon-svg/index';
+import iconVue from '../components/icon-vue';
 
+console.log(iconVue);
 export default {
-  components: {},
+  components: { iconVue },
   data() {
     return {};
   },
