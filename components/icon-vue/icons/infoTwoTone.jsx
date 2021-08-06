@@ -1,14 +1,36 @@
 // 这个文件是自动生成的，请勿手动修改！
-import SvgIcon from '../svg';
-import infoTwoToneSvg from '../../icon-svg/asn/infoTwoTone';
+
+import BilldIcon from '../billdIcon';
+import InfoTwoToneSvg from '../../icon-svg/asn/InfoTwoTone';
 
 export default {
-  name: 'IconAimOutlined',
-  displayName: 'AimOutlined',
+  name: 'InfoTwoToneSvg',
+  displayName: 'InfoTwoToneSvg',
   functional: true,
-  // props: [ ...Icon.props ],
+  props: {
+    spin: {
+      type: Boolean,
+      default: false,
+    },
+    rotate: {
+      type: Number,
+      default: 360,
+    },
+    customStyle: {
+      type: Object,
+      default() {
+        return {};
+      },
+    },
+  },
   render(h, ctx) {
-    console.log(ctx);
-    return <SvgIcon></SvgIcon>;
+    return (
+      <BilldIcon
+        customStyle={ctx.props.customStyle}
+        spin={ctx.props.spin}
+        rotate={ctx.props.rotate}
+        innerSvgProps={InfoTwoToneSvg.children[0].attributes}
+        children={InfoTwoToneSvg.children[0].children}></BilldIcon>
+    );
   },
 };

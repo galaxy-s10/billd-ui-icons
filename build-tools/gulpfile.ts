@@ -1,3 +1,21 @@
+/**
+ * gulpfile.ts需要安装ts-node进行解析,https://www.gulpjs.com.cn/docs/getting-started/javascript-and-gulpfiles/
+ * gulpfile.ts文件有啥好处：1，支持ts类型检测；2，会读取tsconfig.json文件，可以添加一些有用的设置，如esModuleInterop:true，它可以esm和cjs混用。
+ */
+import { argv } from 'process';
+
+import through2, { obj } from 'through2';
+
+import {
+  generateIconSvgEntry,
+  generateSvgToAsn,
+  generateIconVue,
+} from './svgo/generate';
+
+console.log('097');
+console.log(through2);
+// const through2 = require('through2');
+
 const { readFileSync } = require('fs');
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
@@ -5,137 +23,56 @@ const clean = require('gulp-clean');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
-const through2 = require('through2');
-const parseXML = require('@rgrove/parse-xml');
-const { optimize } = require('svgo');
-const { template } = require('lodash');
+
 const { resolve } = require('path');
-// import SVGO from 'svgo';//报错：Cannot use import statement outside a module
+const header = require('gulp-header'); // 报错：Cannot use import statement outside a module
 // import { readFileSync } from 'fs';//报错：Cannot use import statement outside a module
-// const File = require('vinyl');
 const babelConfig = require('./getBabelCommonConfig');
 const tsProject = require('../tsconfig.json');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
 const { _SUCCESS, emoji } = require('./utils/chalkTip');
 const transformLess = require('./utils/transformLess.js');
-const toCameCase = require('./utils/toCameCase');
-const svgOptions = require('./svgo/svgOptions');
 
 const componentsDir = '../components';
 
-const iconTemplate = readFileSync(
-  resolve(__dirname, './svgo/template/icon.ejs'),
-  'utf8'
-);
-const entryTemplate = readFileSync(
-  resolve(__dirname, './svgo/template/entry.ejs'),
-  'utf8'
-);
-const iconVueTemplate = readFileSync(
-  resolve(__dirname, './svgo/template/icon-vue.ejs'),
-  'utf8'
-);
-
-function compileSvg(dir, suffix) {
-  return function () {
-    return gulp
-      .src(dir)
-      .pipe(
-        through2.obj(function (file, encoding, next) {
-          const svgString = file.contents.toString(encoding);
-          // const result = optimize(svgString);
-          console.log(svgString, 8876);
-          const { data } = optimize(svgString, {
-            plugins: svgOptions.plugins,
-          });
-          // const optimizedSvgString = result.data;
-          console.log(data, 99999087);
-          const domStr = parseXML(data);
-          const iconcontent = JSON.stringify(domStr);
-          const iconname = toCameCase(
-            `${file.path.match(/([^\\/]+)\.svg$/)[1]}${suffix}`
-          );
-
-          const compiled = template(iconTemplate);
-          const compileTemplateRes = compiled({ iconname, iconcontent });
-          file.contents = Buffer.from(compileTemplateRes);
-          console.log(file.path, 987);
-          console.log(file.stem);
-          file.path = file.path.replace(
-            /([^\\/]+)\.svg$$/,
-            toCameCase(`${file.stem}${suffix}.js`)
-          );
-          console.log(file.path, 32333333);
-          next(null, file);
-        })
-      )
-      .pipe(gulp.dest('../components/icon-svg/asn'));
-  };
-}
-
-// 将svg文件转换为dom对象。
+// 将icon-svg里的svg文件解析为Abstract Node，生成icon-svg的asn
 gulp.task(
-  'svg',
+  'icon-svg-asn',
   gulp.parallel(
-    compileSvg('../components/icon-svg/svg/filled/*.svg', 'Filled'),
-    compileSvg('../components/icon-svg/svg/outlined/*.svg', 'Outlined'),
-    compileSvg('../components/icon-svg/svg/twotone/*.svg', 'TwoTone')
+    generateSvgToAsn('../components/icon-svg/svg/filled/*.svg', {
+      theme: 'Filled', // 实底
+    }),
+    generateSvgToAsn('../components/icon-svg/svg/outlined/*.svg', {
+      theme: 'Outlined', // 线框
+    }),
+    generateSvgToAsn('../components/icon-svg/svg/twotone/*.svg', {
+      theme: 'TwoTone', // two-tone双色
+    })
   )
 );
 
-function useTemplate(entryTemplate) {
-  console.log(entryTemplate, 333);
-  return through2.obj(function (file, encoding, next) {
-    // console.log(file, encoding, next, 44);
-    console.log(file.stem);
-    const compiled = template(entryTemplate);
-    console.log(compiled);
-    const compileTemplateRes = compiled({
-      iconname: file.stem,
-      path: `./asn/${file.stem}`,
-    });
-    console.log(compileTemplateRes, 555);
-    file.contents = Buffer.from(compileTemplateRes);
-    next(null, file);
-  });
-}
-
-gulp.task(
-  'entry',
-  // gulp.parallel(
-  () =>
-    gulp
-      .src('../components/icon-svg/asn/**/*.js')
-      .pipe(useTemplate(entryTemplate))
-      .pipe(concat('index.js'))
-      .pipe(gulp.dest('../components/icon-svg'))
-  // )
+// 根据icon-svg里的asn，生成icon-svg的入口文件
+gulp.task('icon-svg-entry', () =>
+  gulp
+    .src('../components/icon-svg/asn/**/*.js')
+    .pipe(generateIconSvgEntry())
+    .pipe(concat('index.js'))
+    .pipe(header('// 这个文件是自动生成的，请勿手动修改！\n'))
+    .pipe(gulp.dest('../components/icon-svg'))
 );
 
-gulp.task('svg-vue-icon', () =>
+// 根据icon-svg里的asn，生成icon-vue的icons
+gulp.task('icon-vue-icons', () =>
   gulp
     .src('../components/icon-svg/asn/*.js')
-    .pipe(
-      through2.obj(function (file, encoding, next) {
-        console.log(file.path, 1919);
-        console.log(file.stem);
-        // const iconname = `${file.path.match(/([^\\/]+)\.js$/)[1]}Icon`;
-        const iconname = file.stem;
-
-        const compiled = template(iconVueTemplate);
-        const compileTemplateRes = compiled({ iconname });
-        file.contents = Buffer.from(compileTemplateRes);
-        file.path = file.path.replace(/\.js$/, '.jsx');
-        next(null, file);
-      })
-    )
+    .pipe(generateIconVue())
     .pipe(gulp.dest('../components/icon-vue/icons'))
 );
 
 const iconVueFlies = [`../components/icon-vue/icons/*.jsx`];
 
-function compileSvgVue(modules) {
+function compileVueIcon(modules) {
   let error;
   const tsResult = gulp.src(iconVueFlies).pipe(
     ts(tsProject.compilerOptions, {
@@ -153,20 +90,14 @@ function compileSvgVue(modules) {
     }
   }
 
-  const stream = tsResult.js.pipe(
-    babel(babelConfig(modules))
-    // babel({
-    //   presets: ["@babel/env"],
-    //   plugins: ["transform-vue-jsx"],
-    // })
-  );
-  tsResult.dts.pipe(
-    gulp.dest(
-      modules === false
-        ? '../components/icon-vue/es'
-        : '../components/icon-vue/lib'
-    )
-  );
+  const stream = tsResult.js.pipe(babel(babelConfig(modules)));
+  // tsResult.dts.pipe(
+  //   gulp.dest(
+  //     modules === false
+  //       ? '../components/icon-vue/es'
+  //       : '../components/icon-vue/lib'
+  //   )
+  // );
   tsResult.on('finish', check);
   tsResult.on('end', check);
   return stream.pipe(
@@ -178,9 +109,9 @@ function compileSvgVue(modules) {
   );
 }
 
-gulp.task('compileSvg', (done) => {
-  compileSvgVue().on('finish', function () {
-    compileSvgVue(false).on('finish', function () {
+gulp.task('compile-vue-icon', (done) => {
+  compileVueIcon(undefined).on('finish', function () {
+    compileVueIcon(false).on('finish', function () {
       done();
     });
   });
@@ -361,7 +292,7 @@ gulp.task('compile-es', (done) => {
 // commonjs
 gulp.task('compile-lib', (done) => {
   // console.log("compile es commonjs");
-  compile().on('finish', () => {
+  compile(undefined).on('finish', () => {
     console.log(_SUCCESS('构建lib完成！'), emoji.get('heavy_check_mark'));
     done();
   });

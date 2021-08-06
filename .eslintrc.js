@@ -90,6 +90,9 @@ module.exports = {
       },
       plugins: ['@typescript-eslint'],
       extends: ['plugin:@typescript-eslint/recommended'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 0, // 关闭这条规则，否则，ts中不能使用类似 var foo = require("foo")的语句，但可以使用类似require("foo")的语句
+      },
     },
   ],
   /**
@@ -138,6 +141,7 @@ module.exports = {
     //   ],
     // indent: ['error', 6], // https://github.com/airbnb/javascript#whitespace--spaces，airbnb默认1个缩进2个空格，即换行后前面要有两空个格
     // indent: ['error', 2], // https://eslint.org/docs/rules/indent.html，官方的eslint默认1个缩进4个空格，即换行后前面要有四个空格
+    // '@typescript-eslint/no-var-requires': 0, // 关闭这条规则，否则，ts中不能使用类似 var foo = require("foo")的语句，但可以使用类似require("foo")的语句。但这里关闭没用，要在overrides关闭
     'class-methods-use-this': 0, // 类方法如果不使用this的话会报错
     'no-restricted-syntax': [
       // airbnb默认禁用了一些语法

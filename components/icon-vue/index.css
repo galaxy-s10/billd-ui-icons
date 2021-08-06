@@ -1,9 +1,0 @@
-@keyframes spin {
-  100% {
-    transform: rotate(360deg)
-  }
-}
-
-.ani {
-  animation: spin 1s linear infinite;
-}

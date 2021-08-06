@@ -3,15 +3,14 @@
   "compilerOptions": {
     "target": "es6",
     "jsx": "preserve",
+    "esModuleInterop":true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
-    "lib": ["dom"],
     "skipLibCheck": true,
     "allowJs": true,
     "moduleResolution": "node",
     "declaration": true,
-    "rootDir": "../",
-    "outDir": "./"
+    "rootDir": "../"
   },
   "include": [
     "./src/**/*.ts",

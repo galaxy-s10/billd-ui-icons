@@ -1,11 +1,10 @@
-// 这个文件是自动生成的，请勿手动修改！
-
-import BilldIcon from '../billdIcon';
-import ReloadOutlinedSvg from '../../icon-svg/asn/ReloadOutlined';
+// 这个文件只是为了方便写模板，并无实际作用。
+import BilldIcon from './billdIcon';
+import closeTwoToneSvg from '../icon-svg/asn/reloadOutlined';
 
 export default {
-  name: 'ReloadOutlinedSvg',
-  displayName: 'ReloadOutlinedSvg',
+  name: 'IconAimOutlined',
+  displayName: 'AimOutlined',
   functional: true,
   props: {
     spin: {
@@ -24,13 +23,15 @@ export default {
     },
   },
   render(h, ctx) {
+    console.log(h);
+    console.log(ctx);
     return (
       <BilldIcon
         customStyle={ctx.props.customStyle}
         spin={ctx.props.spin}
         rotate={ctx.props.rotate}
-        innerSvgProps={ReloadOutlinedSvg.children[0].attributes}
-        children={ReloadOutlinedSvg.children[0].children}></BilldIcon>
+        innerSvgProps={closeTwoToneSvg.children[0].attributes}
+        children={closeTwoToneSvg.children[0].children}></BilldIcon>
     );
   },
 };

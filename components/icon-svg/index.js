@@ -1,11 +1,12 @@
-export { default as close } from './asn/close';
+// 这个文件是自动生成的，请勿手动修改！
+export { default as closeTwoTone } from './asn/closeTwoTone';
 
-export { default as error } from './asn/error';
+export { default as errorTwoTone } from './asn/errorTwoTone';
 
-export { default as info } from './asn/info';
+export { default as infoTwoTone } from './asn/infoTwoTone';
 
-export { default as reload } from './asn/reload';
+export { default as reloadOutlined } from './asn/reloadOutlined';
 
-export { default as success } from './asn/success';
+export { default as successTwoTone } from './asn/successTwoTone';
 
-export { default as warning } from './asn/warning';
+export { default as warningTwoTone } from './asn/warningTwoTone';
