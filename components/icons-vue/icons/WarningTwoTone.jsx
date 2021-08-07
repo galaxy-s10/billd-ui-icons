@@ -1,11 +1,11 @@
 // 这个文件是自动生成的，请勿手动修改！1
 
-import <%= iconname %>Svg from '@huangshuisheng/icons-svg/lib/asn/<%= iconname %>';
+import WarningTwoToneSvg from '@huangshuisheng/icons-svg/lib/asn/WarningTwoTone';
 import BilldIcon from '../billdIcon';
 
 export default {
-  name: '<%= iconname %>Svg',
-  displayName: '<%= iconname %>Svg',
+  name: 'WarningTwoToneSvg',
+  displayName: 'WarningTwoToneSvg',
   functional: true,
   props: {
     spin: {
@@ -29,8 +29,8 @@ export default {
         customStyle={ctx.props.customStyle}
         spin={ctx.props.spin}
         rotate={ctx.props.rotate}
-        innerSvgProps={<%= iconname %>Svg.children[0].attributes}
-        children={<%= iconname %>Svg.children[0].children}></BilldIcon>
+        innerSvgProps={WarningTwoToneSvg.children[0].attributes}
+        children={WarningTwoToneSvg.children[0].children}></BilldIcon>
     );
   },
 };

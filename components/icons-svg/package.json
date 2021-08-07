@@ -1,0 +1,16 @@
+{
+  "name": "@billd-ui/icons-svg",
+  "version": "0.0.1",
+  "description": "Abstract node of the Billd-ui icons.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "galaxy-s10",
+  "license": "ISC"
+}

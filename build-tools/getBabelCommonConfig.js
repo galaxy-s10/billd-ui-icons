@@ -8,7 +8,7 @@ module.exports = function (modules) {
       [
         '@babel/preset-env',
         {
-          // https://www.babeljs.cn/docs/babel-preset-env#modules
+          // https://www.babeljs.cn/docs/babel-preset-env#modules，将此设置为false将保留 ES 模块。
           modules,
         },
       ],

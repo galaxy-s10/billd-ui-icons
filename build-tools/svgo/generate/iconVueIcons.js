@@ -10,7 +10,7 @@ const iconVueTemplate = readFileSync(
   'utf8'
 );
 
-export default function generateIconVue() {
+export default function generateIconVueIcons() {
   const res = through2.obj(function (file, encoding, next) {
     // const iconname = `${file.path.match(/([^\\/]+)\.js$/)[1]}Icon`;
     const iconname = file.stem;

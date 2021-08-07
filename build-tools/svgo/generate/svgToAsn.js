@@ -45,7 +45,7 @@ export default function svgToAsn(dir, { theme }) {
           next(null, file);
         })
       )
-      .pipe(gulp.dest('../components/icon-svg/asn'));
+      .pipe(gulp.dest('../components/icons-svg/asn'));
     res.on('finish', function () {
       console.log(_SUCCESS(`${theme}图标编译成功！`), emoji.get('clap'));
       done();

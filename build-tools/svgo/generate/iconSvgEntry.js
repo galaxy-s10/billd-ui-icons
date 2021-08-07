@@ -1,6 +1,7 @@
 import through from 'through2';
 import useTemplate from './useTemplate';
 import { _SUCCESS, emoji } from '../../utils/chalkTip';
+import toCameCase from '../../utils/toCameCase';
 
 const { readFileSync } = require('fs');
 const { resolve } = require('path');
@@ -11,9 +12,10 @@ const entryTemplate = readFileSync(
 );
 function generateIconSvgEntry() {
   const res = through.obj(function (file, encoding, next) {
+    const path = toCameCase(file.stem);
     const compileTemplateRes = useTemplate(entryTemplate, {
-      iconname: file.stem,
-      path: `./asn/${file.stem}`,
+      iconname: path,
+      path: `./asn/${path}`,
     });
     file.contents = Buffer.from(compileTemplateRes);
     next(null, file);
