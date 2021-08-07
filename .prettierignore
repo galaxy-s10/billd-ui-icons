@@ -3,6 +3,7 @@
 /dist/
 /public/
 /node_modules/
+/@billd-ui/
 .gitignore
 .prettierignore
 .eslintignore

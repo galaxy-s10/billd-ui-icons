@@ -28,16 +28,16 @@ npm i @huangshuisheng/icons-vue --save
 ```vue
 <template>
   <div>
-    <billd-icon-error></billd-icon-error>
-    <BilldIconError></BilldIconError>
+    <account-book-filled></account-book-filled>
+    <AccountBookFilled></AccountBookFilled>
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
-import { ErrorTwoTone } from '@huangshuisheng/icons-vue';
+import { AccountBookFilled } from '@huangshuisheng/icons-vue';
 
-Vue.component('BilldIconError', ErrorTwoTone);
+Vue.component('AccountBookFilled', AccountBookFilled);
 
 export default {};
 </script>

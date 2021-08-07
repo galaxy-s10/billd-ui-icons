@@ -14,3 +14,6 @@
 <div align="center">
 The abstract node of the Billd-ui SVG icons.
 </div>
+> https://github.com/galaxy-s10/billd-ui-icons/blob/master/components/icons-svg/README.md
+
+> https://github.com/galaxy-s10/billd-ui-icons/blob/master/components/icons-vue/README.md
