@@ -7,20 +7,18 @@
   </a>
 </p>
 
-
 <h1 align="center">
   Billd-ui-icons
 </h1>
 
 <div align="center">
 The abstract node of the Billd-ui SVG icons.
-
 </div>
 
 # Install
 
 ```bash
-npm i @huangshuisheng/icons-svg --save
+npm i @huangshuisheng/icons-svg
 ```
 
 

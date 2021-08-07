@@ -14,7 +14,6 @@ const asnTemplate = readFileSync(
   resolve(__dirname, '../template/icon-svg/asn.ejs'),
   'utf8'
 );
-
 export default function svgToAsn(dir, { theme }) {
   return function (done) {
     const res = gulp

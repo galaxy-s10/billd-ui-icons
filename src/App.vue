@@ -7,7 +7,8 @@
 
 <script>
 import Vue from 'vue';
-import { ErrorTwoTone } from '@huangshuisheng/icons-vue';
+// import { ErrorTwoTone } from '@huangshuisheng/icons-vue';
+import { ErrorTwoTone } from '../@billd-ui/icons-vue/es';
 
 Vue.component('BilldIconError', ErrorTwoTone);
 

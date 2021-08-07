@@ -1,6 +1,6 @@
 {
   "name": "@huangshuisheng/icons-vue",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Abstract node of the Billd-ui icons.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,6 +14,6 @@
   "author": "galaxy-s10",
   "license": "ISC",
   "dependencies": {
-    "@huangshuisheng/icons-svg": "0.0.2"
+    "@huangshuisheng/icons-svg": "^1.0.0"
   }
 }

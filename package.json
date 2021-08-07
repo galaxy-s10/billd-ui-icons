@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --config ./build-tools/webpack.common.js --env development",
-    "dev1": "webpack-dashboard  -- webpack  serve --config ./build-tools/webpack.common.js --env development",
     "dist": "webpack --config ./build-tools/webpack.common.js --env production",
     "compile": "gulp -f ./build-tools/gulpfile.ts",
     "lint": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
