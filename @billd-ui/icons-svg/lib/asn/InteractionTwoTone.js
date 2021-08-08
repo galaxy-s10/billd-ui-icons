@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var InteractionTwoTone = {
+var InteractiontwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -41,7 +41,9 @@ var InteractionTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "interaction",
+  "theme": "twoTone"
 };
-var _default = InteractionTwoTone;
+var _default = InteractiontwoTone;
 exports.default = _default;

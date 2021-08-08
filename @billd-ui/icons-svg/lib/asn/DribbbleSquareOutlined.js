@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DribbbleSquareOutlined = {
+var DribbbleSquareoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var DribbbleSquareOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "dribbble-square",
+  "theme": "outlined"
 };
-var _default = DribbbleSquareOutlined;
+var _default = DribbbleSquareoutlined;
 exports.default = _default;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var GooglePlusCircleFilled = {
+var GooglePlusCirclefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var GooglePlusCircleFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "google-plus-circle",
+  "theme": "filled"
 };
-var _default = GooglePlusCircleFilled;
+var _default = GooglePlusCirclefilled;
 exports.default = _default;

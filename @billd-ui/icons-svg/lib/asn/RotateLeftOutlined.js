@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var RotateLeftOutlined = {
+var RotateLeftoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,7 +43,9 @@ var RotateLeftOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "rotate-left",
+  "theme": "outlined"
 };
-var _default = RotateLeftOutlined;
+var _default = RotateLeftoutlined;
 exports.default = _default;

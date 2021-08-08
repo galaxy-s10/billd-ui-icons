@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var SlackSquareFilled = {
+var SlackSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -26,7 +26,9 @@ var SlackSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "slack-square",
+  "theme": "filled"
 };
-var _default = SlackSquareFilled;
+var _default = SlackSquarefilled;
 exports.default = _default;

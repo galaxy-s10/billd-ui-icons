@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DownCircleTwoTone = {
+var DownCircletwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -34,6 +34,8 @@ var DownCircleTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "down-circle",
+  "theme": "twoTone"
 };
-export default DownCircleTwoTone;
+export default DownCircletwoTone;

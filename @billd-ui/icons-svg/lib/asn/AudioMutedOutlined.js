@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var AudioMutedOutlined = {
+var AudioMutedoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,7 +43,9 @@ var AudioMutedOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "audio-muted",
+  "theme": "outlined"
 };
-var _default = AudioMutedOutlined;
+var _default = AudioMutedoutlined;
 exports.default = _default;

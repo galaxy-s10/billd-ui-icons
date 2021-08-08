@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CommentOutlined = {
+var Commentoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -44,6 +44,8 @@ var CommentOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "comment",
+  "theme": "outlined"
 };
-export default CommentOutlined;
+export default Commentoutlined;

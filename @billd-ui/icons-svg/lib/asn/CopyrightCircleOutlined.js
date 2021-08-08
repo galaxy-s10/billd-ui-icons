@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CopyrightCircleOutlined = {
+var CopyrightCircleoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var CopyrightCircleOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "copyright-circle",
+  "theme": "outlined"
 };
-var _default = CopyrightCircleOutlined;
+var _default = CopyrightCircleoutlined;
 exports.default = _default;

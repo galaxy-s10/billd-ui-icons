@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var SkinTwoTone = {
+var SkintwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,6 +25,8 @@ var SkinTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "skin",
+  "theme": "twoTone"
 };
-export default SkinTwoTone;
+export default SkintwoTone;

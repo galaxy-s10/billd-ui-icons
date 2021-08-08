@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FileExcelTwoTone = {
+var FileExceltwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -39,7 +39,9 @@ var FileExcelTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "file-excel",
+  "theme": "twoTone"
 };
-var _default = FileExcelTwoTone;
+var _default = FileExceltwoTone;
 exports.default = _default;

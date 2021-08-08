@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CopyTwoTone = {
+var CopytwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -39,7 +39,9 @@ var CopyTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "copy",
+  "theme": "twoTone"
 };
-var _default = CopyTwoTone;
+var _default = CopytwoTone;
 exports.default = _default;

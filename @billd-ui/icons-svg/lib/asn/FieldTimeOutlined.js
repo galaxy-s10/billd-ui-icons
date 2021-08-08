@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FieldTimeOutlined = {
+var FieldTimeoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,7 +43,9 @@ var FieldTimeOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "field-time",
+  "theme": "outlined"
 };
-var _default = FieldTimeOutlined;
+var _default = FieldTimeoutlined;
 exports.default = _default;

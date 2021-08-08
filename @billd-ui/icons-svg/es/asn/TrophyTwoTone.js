@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var TrophyTwoTone = {
+var TrophytwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,6 +25,8 @@ var TrophyTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "trophy",
+  "theme": "twoTone"
 };
-export default TrophyTwoTone;
+export default TrophytwoTone;

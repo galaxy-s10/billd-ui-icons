@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CaretRightOutlined = {
+var CaretRightoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -17,6 +17,8 @@ var CaretRightOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "caret-right",
+  "theme": "outlined"
 };
-export default CaretRightOutlined;
+export default CaretRightoutlined;

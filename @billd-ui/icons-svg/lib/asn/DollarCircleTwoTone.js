@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DollarCircleTwoTone = {
+var DollarCircletwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -49,7 +49,9 @@ var DollarCircleTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "dollar-circle",
+  "theme": "twoTone"
 };
-var _default = DollarCircleTwoTone;
+var _default = DollarCircletwoTone;
 exports.default = _default;

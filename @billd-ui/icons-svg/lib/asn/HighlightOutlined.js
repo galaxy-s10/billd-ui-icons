@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var HighlightOutlined = {
+var Highlightoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var HighlightOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "highlight",
+  "theme": "outlined"
 };
-var _default = HighlightOutlined;
+var _default = Highlightoutlined;
 exports.default = _default;

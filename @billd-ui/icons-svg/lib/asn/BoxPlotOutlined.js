@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var BoxPlotOutlined = {
+var BoxPlotoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var BoxPlotOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "box-plot",
+  "theme": "outlined"
 };
-var _default = BoxPlotOutlined;
+var _default = BoxPlotoutlined;
 exports.default = _default;

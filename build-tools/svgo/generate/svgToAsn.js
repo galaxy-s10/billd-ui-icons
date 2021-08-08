@@ -25,11 +25,13 @@ export default function svgToAsn(dir, { theme }) {
           const { data } = optimize(svgString, {
             plugins: svgOptions.plugins,
           });
-          const iconcontent = JSON.stringify(parseXML(data));
           const iconname = toCameCase(
             `${file.path.match(/([^\\/]+)\.svg$/)[1]}${theme}`
           );
-          console.log(iconname, 2323);
+          const parseXmlRes = parseXML(data).toJSON(); // https://github.com/rgrove/parse-xml/blob/main/API.md
+          parseXmlRes.name = file.stem;
+          parseXmlRes.theme = theme;
+          const iconcontent = JSON.stringify(parseXmlRes);
           file.contents = Buffer.from(
             useTemplate(asnTemplate, {
               iconname,
@@ -40,7 +42,6 @@ export default function svgToAsn(dir, { theme }) {
             /([^\\/]+)\.svg$$/,
             toCameCase(`${file.stem}${theme}.js`)
           );
-          console.log(file.path);
           next(null, file);
         })
       )

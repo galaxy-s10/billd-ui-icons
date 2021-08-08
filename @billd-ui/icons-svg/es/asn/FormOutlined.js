@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FormOutlined = {
+var Formoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,6 +25,8 @@ var FormOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "form",
+  "theme": "outlined"
 };
-export default FormOutlined;
+export default Formoutlined;

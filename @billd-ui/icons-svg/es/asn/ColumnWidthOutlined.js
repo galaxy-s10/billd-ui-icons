@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ColumnWidthOutlined = {
+var ColumnWidthoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -18,6 +18,8 @@ var ColumnWidthOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "column-width",
+  "theme": "outlined"
 };
-export default ColumnWidthOutlined;
+export default ColumnWidthoutlined;

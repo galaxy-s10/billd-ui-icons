@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CodeSandboxSquareFilled = {
+var CodeSandboxSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var CodeSandboxSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "code-sandbox-square",
+  "theme": "filled"
 };
-var _default = CodeSandboxSquareFilled;
+var _default = CodeSandboxSquarefilled;
 exports.default = _default;

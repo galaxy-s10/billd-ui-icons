@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ClockCircleOutlined = {
+var ClockCircleoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,6 +25,8 @@ var ClockCircleOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "clock-circle",
+  "theme": "outlined"
 };
-export default ClockCircleOutlined;
+export default ClockCircleoutlined;

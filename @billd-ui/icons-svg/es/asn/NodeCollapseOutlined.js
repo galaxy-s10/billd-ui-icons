@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var NodeCollapseOutlined = {
+var NodeCollapseoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,6 +28,8 @@ var NodeCollapseOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "node-collapse",
+  "theme": "outlined"
 };
-export default NodeCollapseOutlined;
+export default NodeCollapseoutlined;

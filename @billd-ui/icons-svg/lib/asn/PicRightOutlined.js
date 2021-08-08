@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var PicRightOutlined = {
+var PicRightoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var PicRightOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "pic-right",
+  "theme": "outlined"
 };
-var _default = PicRightOutlined;
+var _default = PicRightoutlined;
 exports.default = _default;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var QqSquareFilled = {
+var QqSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var QqSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "qq-square",
+  "theme": "filled"
 };
-var _default = QqSquareFilled;
+var _default = QqSquarefilled;
 exports.default = _default;

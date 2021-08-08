@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FolderAddFilled = {
+var FolderAddfilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var FolderAddFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "folder-add",
+  "theme": "filled"
 };
-var _default = FolderAddFilled;
+var _default = FolderAddfilled;
 exports.default = _default;

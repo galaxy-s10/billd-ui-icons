@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var UserSwitchOutlined = {
+var UserSwitchoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -35,7 +35,9 @@ var UserSwitchOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "user-switch",
+  "theme": "outlined"
 };
-var _default = UserSwitchOutlined;
+var _default = UserSwitchoutlined;
 exports.default = _default;

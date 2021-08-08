@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ZoomOutTwoTone = {
+var ZoomOuttwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var ZoomOutTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "zoom-out",
+  "theme": "twoTone"
 };
-var _default = ZoomOutTwoTone;
+var _default = ZoomOuttwoTone;
 exports.default = _default;

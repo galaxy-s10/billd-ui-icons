@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FormatPainterOutlined = {
+var FormatPainteroutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -35,7 +35,9 @@ var FormatPainterOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "format-painter",
+  "theme": "outlined"
 };
-var _default = FormatPainterOutlined;
+var _default = FormatPainteroutlined;
 exports.default = _default;

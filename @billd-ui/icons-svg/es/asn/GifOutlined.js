@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var GifOutlined = {
+var Gifoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,6 +28,8 @@ var GifOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "gif",
+  "theme": "outlined"
 };
-export default GifOutlined;
+export default Gifoutlined;

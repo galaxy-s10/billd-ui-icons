@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var LoadingOutlined = {
+var Loadingoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -24,7 +24,9 @@ var LoadingOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "loading",
+  "theme": "outlined"
 };
-var _default = LoadingOutlined;
+var _default = Loadingoutlined;
 exports.default = _default;

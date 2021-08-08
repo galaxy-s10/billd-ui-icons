@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var InboxOutlined = {
+var Inboxoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -24,7 +24,9 @@ var InboxOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "inbox",
+  "theme": "outlined"
 };
-var _default = InboxOutlined;
+var _default = Inboxoutlined;
 exports.default = _default;

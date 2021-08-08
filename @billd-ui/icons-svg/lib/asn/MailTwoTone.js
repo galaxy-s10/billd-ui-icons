@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var MailTwoTone = {
+var MailtwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -40,7 +40,9 @@ var MailTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "mail",
+  "theme": "twoTone"
 };
-var _default = MailTwoTone;
+var _default = MailtwoTone;
 exports.default = _default;

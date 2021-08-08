@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CompassOutlined = {
+var Compassoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var CompassOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "compass",
+  "theme": "outlined"
 };
-var _default = CompassOutlined;
+var _default = Compassoutlined;
 exports.default = _default;

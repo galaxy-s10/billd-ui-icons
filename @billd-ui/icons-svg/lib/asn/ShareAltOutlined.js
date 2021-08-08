@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ShareAltOutlined = {
+var ShareAltoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var ShareAltOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "share-alt",
+  "theme": "outlined"
 };
-var _default = ShareAltOutlined;
+var _default = ShareAltoutlined;
 exports.default = _default;

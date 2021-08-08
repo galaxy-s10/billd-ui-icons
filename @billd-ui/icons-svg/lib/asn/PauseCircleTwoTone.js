@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var PauseCircleTwoTone = {
+var PauseCircletwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -41,7 +41,9 @@ var PauseCircleTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "pause-circle",
+  "theme": "twoTone"
 };
-var _default = PauseCircleTwoTone;
+var _default = PauseCircletwoTone;
 exports.default = _default;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var MediumSquareFilled = {
+var MediumSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var MediumSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "medium-square",
+  "theme": "filled"
 };
-var _default = MediumSquareFilled;
+var _default = MediumSquarefilled;
 exports.default = _default;

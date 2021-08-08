@@ -29,10 +29,7 @@ function cleanDir(dir) {
       .src(dir, { allowEmpty: true })
       .pipe(clean({ force: true }));
     res.on('finish', function () {
-      console.log(
-        _SUCCESS(`删除${dir}目录成功！`),
-        emoji.get('heavy_check_mark')
-      );
+      console.log(_SUCCESS(`删除${dir}目录成功！`), emoji.get('clap'));
       done();
     });
   };
@@ -61,14 +58,11 @@ function compileIcon(entryDir, outputDir, modules) {
   if (modules === false) {
     babelConfig1.plugins.push(replaceLib);
   }
+  // https://github.com/ivogabe/gulp-typescript
   const stream = tsResult.js.pipe(babel(babelConfig1));
-  // tsResult.dts.pipe(
-  //   gulp.dest(
-  //     modules === false
-  //       ? '../components/icons-vue/es'
-  //       : '../components/icons-vue/lib'
-  //   )
-  // );
+  tsResult.dts.pipe(
+    gulp.dest(modules === false ? `${outputDir}/es` : `${outputDir}/lib`)
+  );
   tsResult.on('finish', check);
   tsResult.on('end', check);
   return stream.pipe(
@@ -95,13 +89,13 @@ gulp.task(
   'icons-svg-asn',
   gulp.parallel(
     generateSvgToAsn('../components/icons-svg/svg/filled/*.svg', {
-      theme: 'Filled', // 实底
+      theme: 'filled', // 实底
     }),
     generateSvgToAsn('../components/icons-svg/svg/outlined/*.svg', {
-      theme: 'Outlined', // 线框
+      theme: 'outlined', // 线框
     }),
     generateSvgToAsn('../components/icons-svg/svg/twotone/*.svg', {
-      theme: 'TwoTone', // two-tone双色
+      theme: 'twoTone', // two-tone双色
     })
   )
 );
@@ -155,7 +149,7 @@ gulp.task(
         assetsStream.on('finish', () => {
           console.log(
             _SUCCESS('复制package.json和README.md成功！'),
-            emoji.get('heavy_check_mark')
+            emoji.get('clap')
           );
           done();
         });
@@ -166,7 +160,7 @@ gulp.task(
           function () {
             console.log(
               _SUCCESS('编译icons-svg-es组件成功！'),
-              emoji.get('heavy_check_mark')
+              emoji.get('tada')
             );
             done();
           }
@@ -178,7 +172,7 @@ gulp.task(
           function () {
             console.log(
               _SUCCESS('编译icons-svg-lib组件成功！'),
-              emoji.get('heavy_check_mark')
+              emoji.get('tada')
             );
             done();
           }
@@ -207,7 +201,7 @@ gulp.task(
         assetsStream.on('finish', () => {
           console.log(
             _SUCCESS('复制package.json和README.md成功！'),
-            emoji.get('heavy_check_mark')
+            emoji.get('clap')
           );
           done();
         });
@@ -218,7 +212,7 @@ gulp.task(
           function () {
             console.log(
               _SUCCESS('编译icons-vue-es组件成功！'),
-              emoji.get('heavy_check_mark')
+              emoji.get('tada')
             );
             done();
           }
@@ -230,7 +224,7 @@ gulp.task(
           function () {
             console.log(
               _SUCCESS('编译icons-vue-lib组件成功！'),
-              emoji.get('heavy_check_mark')
+              emoji.get('tada')
             );
             done();
           }

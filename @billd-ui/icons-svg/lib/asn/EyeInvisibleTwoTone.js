@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var EyeInvisibleTwoTone = {
+var EyeInvisibletwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -54,7 +54,9 @@ var EyeInvisibleTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "eye-invisible",
+  "theme": "twoTone"
 };
-var _default = EyeInvisibleTwoTone;
+var _default = EyeInvisibletwoTone;
 exports.default = _default;

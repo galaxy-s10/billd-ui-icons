@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DownSquareFilled = {
+var DownSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var DownSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "down-square",
+  "theme": "filled"
 };
-var _default = DownSquareFilled;
+var _default = DownSquarefilled;
 exports.default = _default;

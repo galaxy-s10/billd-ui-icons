@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CheckCircleOutlined = {
+var CheckCircleoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -32,7 +32,9 @@ var CheckCircleOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "check-circle",
+  "theme": "outlined"
 };
-var _default = CheckCircleOutlined;
+var _default = CheckCircleoutlined;
 exports.default = _default;

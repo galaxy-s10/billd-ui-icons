@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ScissorOutlined = {
+var Scissoroutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var ScissorOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "scissor",
+  "theme": "outlined"
 };
-var _default = ScissorOutlined;
+var _default = Scissoroutlined;
 exports.default = _default;

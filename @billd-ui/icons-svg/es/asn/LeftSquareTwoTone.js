@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var LeftSquareTwoTone = {
+var LeftSquaretwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -34,6 +34,8 @@ var LeftSquareTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "left-square",
+  "theme": "twoTone"
 };
-export default LeftSquareTwoTone;
+export default LeftSquaretwoTone;

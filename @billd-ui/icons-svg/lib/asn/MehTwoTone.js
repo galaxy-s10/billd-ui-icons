@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var MehTwoTone = {
+var MehtwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -41,7 +41,9 @@ var MehTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "meh",
+  "theme": "twoTone"
 };
-var _default = MehTwoTone;
+var _default = MehtwoTone;
 exports.default = _default;

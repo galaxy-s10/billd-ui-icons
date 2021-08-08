@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var SmallDashOutlined = {
+var SmallDashoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -18,6 +18,8 @@ var SmallDashOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "small-dash",
+  "theme": "outlined"
 };
-export default SmallDashOutlined;
+export default SmallDashoutlined;

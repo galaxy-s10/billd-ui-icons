@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var GooglePlusSquareFilled = {
+var GooglePlusSquarefilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var GooglePlusSquareFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "google-plus-square",
+  "theme": "filled"
 };
-var _default = GooglePlusSquareFilled;
+var _default = GooglePlusSquarefilled;
 exports.default = _default;

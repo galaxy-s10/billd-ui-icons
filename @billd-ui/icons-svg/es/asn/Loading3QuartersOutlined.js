@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Loading3QuartersOutlined = {
+var Loading3Quartersoutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -17,6 +17,8 @@ var Loading3QuartersOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "loading-3-quarters",
+  "theme": "outlined"
 };
-export default Loading3QuartersOutlined;
+export default Loading3Quartersoutlined;

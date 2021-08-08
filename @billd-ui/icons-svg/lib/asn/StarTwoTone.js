@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var StarTwoTone = {
+var StartwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -32,7 +32,9 @@ var StarTwoTone = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "star",
+  "theme": "twoTone"
 };
-var _default = StarTwoTone;
+var _default = StartwoTone;
 exports.default = _default;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ContainerFilled = {
+var Containerfilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var ContainerFilled = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "container",
+  "theme": "filled"
 };
-var _default = ContainerFilled;
+var _default = Containerfilled;
 exports.default = _default;

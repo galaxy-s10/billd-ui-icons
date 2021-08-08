@@ -21,7 +21,7 @@ function generateIconSvgEntry() {
     next(null, file);
   });
   res.on('finish', function () {
-    console.log(_SUCCESS('生成icon-svg入口文件成功！'), emoji.get('tada'));
+    console.log(_SUCCESS('生成icon-svg入口文件成功！'), emoji.get('clap'));
   });
   return res;
 }

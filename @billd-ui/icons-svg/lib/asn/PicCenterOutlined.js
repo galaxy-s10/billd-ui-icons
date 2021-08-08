@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var PicCenterOutlined = {
+var PicCenteroutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -25,7 +25,9 @@ var PicCenterOutlined = {
       },
       "children": []
     }]
-  }]
+  }],
+  "name": "pic-center",
+  "theme": "outlined"
 };
-var _default = PicCenterOutlined;
+var _default = PicCenteroutlined;
 exports.default = _default;

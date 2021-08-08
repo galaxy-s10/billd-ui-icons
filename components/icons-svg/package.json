@@ -1,6 +1,6 @@
 {
   "name": "@huangshuisheng/icons-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Abstract node of the Billd-ui icons.",
   "main": "lib/index.js",
   "module": "es/index.js",
