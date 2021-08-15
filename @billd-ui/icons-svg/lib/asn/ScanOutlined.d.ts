@@ -1,5 +1,5 @@
-export default Scanoutlined;
-declare namespace Scanoutlined {
+export default ScanOutlined;
+declare namespace ScanOutlined {
     const type: string;
     const children: {
         type: string;

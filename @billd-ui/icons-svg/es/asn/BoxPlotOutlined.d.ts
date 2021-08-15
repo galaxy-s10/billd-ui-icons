@@ -1,5 +1,5 @@
-export default BoxPlotoutlined;
-declare namespace BoxPlotoutlined {
+export default BoxPlotOutlined;
+declare namespace BoxPlotOutlined {
     const type: string;
     const children: {
         type: string;

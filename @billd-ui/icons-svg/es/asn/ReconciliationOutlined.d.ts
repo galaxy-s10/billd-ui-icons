@@ -1,5 +1,5 @@
-export default Reconciliationoutlined;
-declare namespace Reconciliationoutlined {
+export default ReconciliationOutlined;
+declare namespace ReconciliationOutlined {
     const type: string;
     const children: {
         type: string;

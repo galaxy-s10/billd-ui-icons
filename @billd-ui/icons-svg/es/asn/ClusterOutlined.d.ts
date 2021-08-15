@@ -1,5 +1,5 @@
-export default Clusteroutlined;
-declare namespace Clusteroutlined {
+export default ClusterOutlined;
+declare namespace ClusterOutlined {
     const type: string;
     const children: {
         type: string;

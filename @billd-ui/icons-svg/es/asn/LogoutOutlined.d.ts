@@ -1,5 +1,5 @@
-export default Logoutoutlined;
-declare namespace Logoutoutlined {
+export default LogoutOutlined;
+declare namespace LogoutOutlined {
     const type: string;
     const children: {
         type: string;

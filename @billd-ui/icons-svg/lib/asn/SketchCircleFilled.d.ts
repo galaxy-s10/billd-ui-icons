@@ -1,5 +1,5 @@
-export default SketchCirclefilled;
-declare namespace SketchCirclefilled {
+export default SketchCircleFilled;
+declare namespace SketchCircleFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Forkoutlined;
-declare namespace Forkoutlined {
+export default ForkOutlined;
+declare namespace ForkOutlined {
     const type: string;
     const children: {
         type: string;

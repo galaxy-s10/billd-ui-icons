@@ -1,5 +1,5 @@
-export default FileMarkdownfilled;
-declare namespace FileMarkdownfilled {
+export default FileMarkdownFilled;
+declare namespace FileMarkdownFilled {
     const type: string;
     const children: {
         type: string;

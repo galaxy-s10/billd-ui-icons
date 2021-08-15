@@ -1,5 +1,5 @@
-export default Dragoutlined;
-declare namespace Dragoutlined {
+export default DragOutlined;
+declare namespace DragOutlined {
     const type: string;
     const children: {
         type: string;

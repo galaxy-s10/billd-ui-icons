@@ -1,5 +1,5 @@
-export default DollarCircletwoTone;
-declare namespace DollarCircletwoTone {
+export default DollarCircleTwoTone;
+declare namespace DollarCircleTwoTone {
     const type: string;
     const children: {
         type: string;

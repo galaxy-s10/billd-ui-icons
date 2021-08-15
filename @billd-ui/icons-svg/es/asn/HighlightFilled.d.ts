@@ -1,5 +1,5 @@
-export default Highlightfilled;
-declare namespace Highlightfilled {
+export default HighlightFilled;
+declare namespace HighlightFilled {
     const type: string;
     const children: {
         type: string;

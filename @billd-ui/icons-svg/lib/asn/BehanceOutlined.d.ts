@@ -1,5 +1,5 @@
-export default Behanceoutlined;
-declare namespace Behanceoutlined {
+export default BehanceOutlined;
+declare namespace BehanceOutlined {
     const type: string;
     const children: {
         type: string;

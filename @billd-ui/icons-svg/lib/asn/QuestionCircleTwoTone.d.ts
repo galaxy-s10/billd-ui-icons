@@ -1,5 +1,5 @@
-export default QuestionCircletwoTone;
-declare namespace QuestionCircletwoTone {
+export default QuestionCircleTwoTone;
+declare namespace QuestionCircleTwoTone {
     const type: string;
     const children: {
         type: string;

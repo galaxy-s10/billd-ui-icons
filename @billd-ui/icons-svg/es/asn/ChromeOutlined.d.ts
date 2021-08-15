@@ -1,5 +1,5 @@
-export default Chromeoutlined;
-declare namespace Chromeoutlined {
+export default ChromeOutlined;
+declare namespace ChromeOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default UsbtwoTone;
-declare namespace UsbtwoTone {
+export default UsbTwoTone;
+declare namespace UsbTwoTone {
     const type: string;
     const children: {
         type: string;

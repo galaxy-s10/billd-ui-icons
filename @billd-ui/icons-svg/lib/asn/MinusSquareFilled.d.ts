@@ -1,5 +1,5 @@
-export default MinusSquarefilled;
-declare namespace MinusSquarefilled {
+export default MinusSquareFilled;
+declare namespace MinusSquareFilled {
     const type: string;
     const children: {
         type: string;

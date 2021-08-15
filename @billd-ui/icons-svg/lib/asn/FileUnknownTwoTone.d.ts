@@ -1,5 +1,5 @@
-export default FileUnknowntwoTone;
-declare namespace FileUnknowntwoTone {
+export default FileUnknownTwoTone;
+declare namespace FileUnknownTwoTone {
     const type: string;
     const children: {
         type: string;

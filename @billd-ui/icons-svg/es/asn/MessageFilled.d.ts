@@ -1,5 +1,5 @@
-export default Messagefilled;
-declare namespace Messagefilled {
+export default MessageFilled;
+declare namespace MessageFilled {
     const type: string;
     const children: {
         type: string;

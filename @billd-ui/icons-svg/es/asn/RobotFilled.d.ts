@@ -1,5 +1,5 @@
-export default Robotfilled;
-declare namespace Robotfilled {
+export default RobotFilled;
+declare namespace RobotFilled {
     const type: string;
     const children: {
         type: string;

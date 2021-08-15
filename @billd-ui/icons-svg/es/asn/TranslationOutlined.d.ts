@@ -1,5 +1,5 @@
-export default Translationoutlined;
-declare namespace Translationoutlined {
+export default TranslationOutlined;
+declare namespace TranslationOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Branchesoutlined;
-declare namespace Branchesoutlined {
+export default BranchesOutlined;
+declare namespace BranchesOutlined {
     const type: string;
     const children: {
         type: string;

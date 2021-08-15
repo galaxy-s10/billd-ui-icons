@@ -1,5 +1,5 @@
-export default FilePpttwoTone;
-declare namespace FilePpttwoTone {
+export default FilePptTwoTone;
+declare namespace FilePptTwoTone {
     const type: string;
     const children: {
         type: string;

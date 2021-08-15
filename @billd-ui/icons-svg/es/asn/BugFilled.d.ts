@@ -1,5 +1,5 @@
-export default Bugfilled;
-declare namespace Bugfilled {
+export default BugFilled;
+declare namespace BugFilled {
     const type: string;
     const children: {
         type: string;

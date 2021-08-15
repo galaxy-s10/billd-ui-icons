@@ -1,5 +1,5 @@
-export default Crownoutlined;
-declare namespace Crownoutlined {
+export default CrownOutlined;
+declare namespace CrownOutlined {
     const type: string;
     const children: {
         type: string;

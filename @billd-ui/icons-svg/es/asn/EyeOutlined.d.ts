@@ -1,5 +1,5 @@
-export default Eyeoutlined;
-declare namespace Eyeoutlined {
+export default EyeOutlined;
+declare namespace EyeOutlined {
     const type: string;
     const children: {
         type: string;

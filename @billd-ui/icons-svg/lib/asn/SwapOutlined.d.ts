@@ -1,5 +1,5 @@
-export default Swapoutlined;
-declare namespace Swapoutlined {
+export default SwapOutlined;
+declare namespace SwapOutlined {
     const type: string;
     const children: {
         type: string;

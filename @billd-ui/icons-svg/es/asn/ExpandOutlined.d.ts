@@ -1,5 +1,5 @@
-export default Expandoutlined;
-declare namespace Expandoutlined {
+export default ExpandOutlined;
+declare namespace ExpandOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Folderfilled;
-declare namespace Folderfilled {
+export default FolderFilled;
+declare namespace FolderFilled {
     const type: string;
     const children: {
         type: string;

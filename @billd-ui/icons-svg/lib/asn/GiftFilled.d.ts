@@ -1,5 +1,5 @@
-export default Giftfilled;
-declare namespace Giftfilled {
+export default GiftFilled;
+declare namespace GiftFilled {
     const type: string;
     const children: {
         type: string;

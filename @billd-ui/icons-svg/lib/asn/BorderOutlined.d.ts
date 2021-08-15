@@ -1,5 +1,5 @@
-export default Borderoutlined;
-declare namespace Borderoutlined {
+export default BorderOutlined;
+declare namespace BorderOutlined {
     const type: string;
     const children: {
         type: string;

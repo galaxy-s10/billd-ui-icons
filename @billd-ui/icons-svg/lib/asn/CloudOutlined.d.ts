@@ -1,5 +1,5 @@
-export default Cloudoutlined;
-declare namespace Cloudoutlined {
+export default CloudOutlined;
+declare namespace CloudOutlined {
     const type: string;
     const children: {
         type: string;

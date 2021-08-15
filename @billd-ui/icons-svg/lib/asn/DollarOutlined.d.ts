@@ -1,5 +1,5 @@
-export default Dollaroutlined;
-declare namespace Dollaroutlined {
+export default DollarOutlined;
+declare namespace DollarOutlined {
     const type: string;
     const children: {
         type: string;

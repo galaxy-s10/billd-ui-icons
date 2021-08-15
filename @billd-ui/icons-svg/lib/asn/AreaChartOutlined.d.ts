@@ -1,5 +1,5 @@
-export default AreaChartoutlined;
-declare namespace AreaChartoutlined {
+export default AreaChartOutlined;
+declare namespace AreaChartOutlined {
     const type: string;
     const children: {
         type: string;

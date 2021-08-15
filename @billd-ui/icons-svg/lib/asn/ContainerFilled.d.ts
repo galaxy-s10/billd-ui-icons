@@ -1,5 +1,5 @@
-export default Containerfilled;
-declare namespace Containerfilled {
+export default ContainerFilled;
+declare namespace ContainerFilled {
     const type: string;
     const children: {
         type: string;

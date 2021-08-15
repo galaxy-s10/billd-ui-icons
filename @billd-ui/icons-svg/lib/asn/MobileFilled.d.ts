@@ -1,5 +1,5 @@
-export default Mobilefilled;
-declare namespace Mobilefilled {
+export default MobileFilled;
+declare namespace MobileFilled {
     const type: string;
     const children: {
         type: string;

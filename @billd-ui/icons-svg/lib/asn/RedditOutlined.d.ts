@@ -1,5 +1,5 @@
-export default Redditoutlined;
-declare namespace Redditoutlined {
+export default RedditOutlined;
+declare namespace RedditOutlined {
     const type: string;
     const children: {
         type: string;

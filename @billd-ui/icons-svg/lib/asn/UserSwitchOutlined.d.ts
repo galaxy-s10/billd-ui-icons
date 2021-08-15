@@ -1,5 +1,5 @@
-export default UserSwitchoutlined;
-declare namespace UserSwitchoutlined {
+export default UserSwitchOutlined;
+declare namespace UserSwitchOutlined {
     const type: string;
     const children: {
         type: string;

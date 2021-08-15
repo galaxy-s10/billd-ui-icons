@@ -1,5 +1,5 @@
-export default FileZipoutlined;
-declare namespace FileZipoutlined {
+export default FileZipOutlined;
+declare namespace FileZipOutlined {
     const type: string;
     const children: {
         type: string;

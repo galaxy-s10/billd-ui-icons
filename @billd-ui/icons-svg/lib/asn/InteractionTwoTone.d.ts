@@ -1,5 +1,5 @@
-export default InteractiontwoTone;
-declare namespace InteractiontwoTone {
+export default InteractionTwoTone;
+declare namespace InteractionTwoTone {
     const type: string;
     const children: {
         type: string;

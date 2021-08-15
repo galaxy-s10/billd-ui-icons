@@ -1,5 +1,5 @@
-export default Aimoutlined;
-declare namespace Aimoutlined {
+export default AimOutlined;
+declare namespace AimOutlined {
     const type: string;
     const children: {
         type: string;

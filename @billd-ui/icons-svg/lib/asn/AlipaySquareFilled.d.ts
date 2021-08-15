@@ -1,5 +1,5 @@
-export default AlipaySquarefilled;
-declare namespace AlipaySquarefilled {
+export default AlipaySquareFilled;
+declare namespace AlipaySquareFilled {
     const type: string;
     const children: {
         type: string;

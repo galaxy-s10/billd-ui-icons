@@ -1,5 +1,5 @@
-export default Likeoutlined;
-declare namespace Likeoutlined {
+export default LikeOutlined;
+declare namespace LikeOutlined {
     const type: string;
     const children: {
         type: string;

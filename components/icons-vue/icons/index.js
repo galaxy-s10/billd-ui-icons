@@ -788,4 +788,3 @@ export { default as ZoomInOutlined } from './ZoomInOutlined';
 export { default as ZoomOutFilled } from './ZoomOutFilled';
 export { default as ZoomOutOutlined } from './ZoomOutOutlined';
 export { default as ZoomOutTwoTone } from './ZoomOutTwoTone';
-export { default as index } from './index';

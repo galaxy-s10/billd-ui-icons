@@ -1,5 +1,5 @@
-export default PlusCirclefilled;
-declare namespace PlusCirclefilled {
+export default PlusCircleFilled;
+declare namespace PlusCircleFilled {
     const type: string;
     const children: {
         type: string;

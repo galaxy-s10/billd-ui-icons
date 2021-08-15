@@ -1,5 +1,5 @@
-export default Restoutlined;
-declare namespace Restoutlined {
+export default RestOutlined;
+declare namespace RestOutlined {
     const type: string;
     const children: {
         type: string;

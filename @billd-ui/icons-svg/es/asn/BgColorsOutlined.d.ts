@@ -1,5 +1,5 @@
-export default BgColorsoutlined;
-declare namespace BgColorsoutlined {
+export default BgColorsOutlined;
+declare namespace BgColorsOutlined {
     const type: string;
     const children: {
         type: string;

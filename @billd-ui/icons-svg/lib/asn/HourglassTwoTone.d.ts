@@ -1,5 +1,5 @@
-export default HourglasstwoTone;
-declare namespace HourglasstwoTone {
+export default HourglassTwoTone;
+declare namespace HourglassTwoTone {
     const type: string;
     const children: {
         type: string;

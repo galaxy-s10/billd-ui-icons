@@ -1,5 +1,5 @@
-export default HighlighttwoTone;
-declare namespace HighlighttwoTone {
+export default HighlightTwoTone;
+declare namespace HighlightTwoTone {
     const type: string;
     const children: {
         type: string;

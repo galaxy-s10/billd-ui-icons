@@ -1,5 +1,5 @@
-export default Trophyoutlined;
-declare namespace Trophyoutlined {
+export default TrophyOutlined;
+declare namespace TrophyOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Frownfilled;
-declare namespace Frownfilled {
+export default FrownFilled;
+declare namespace FrownFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Safetyoutlined;
-declare namespace Safetyoutlined {
+export default SafetyOutlined;
+declare namespace SafetyOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FilePdffilled;
-declare namespace FilePdffilled {
+export default FilePdfFilled;
+declare namespace FilePdfFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default GoogleCirclefilled;
-declare namespace GoogleCirclefilled {
+export default GoogleCircleFilled;
+declare namespace GoogleCircleFilled {
     const type: string;
     const children: {
         type: string;

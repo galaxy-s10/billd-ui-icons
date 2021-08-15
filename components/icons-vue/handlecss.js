@@ -7,6 +7,11 @@ const iconStyles = `
   }
 }
 
+.billd-icon{
+  display: inline-block;
+  line-height: 0;
+}
+
 .billd-icon-ani {
   animation: billdIconSpin 1s linear infinite;
 }

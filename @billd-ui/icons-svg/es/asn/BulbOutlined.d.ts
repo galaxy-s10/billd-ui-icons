@@ -1,5 +1,5 @@
-export default Bulboutlined;
-declare namespace Bulboutlined {
+export default BulbOutlined;
+declare namespace BulbOutlined {
     const type: string;
     const children: {
         type: string;

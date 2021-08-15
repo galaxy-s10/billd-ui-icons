@@ -1,5 +1,5 @@
-export default Compressoutlined;
-declare namespace Compressoutlined {
+export default CompressOutlined;
+declare namespace CompressOutlined {
     const type: string;
     const children: {
         type: string;

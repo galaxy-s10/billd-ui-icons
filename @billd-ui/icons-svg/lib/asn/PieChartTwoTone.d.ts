@@ -1,5 +1,5 @@
-export default PieCharttwoTone;
-declare namespace PieCharttwoTone {
+export default PieChartTwoTone;
+declare namespace PieChartTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Frownoutlined;
-declare namespace Frownoutlined {
+export default FrownOutlined;
+declare namespace FrownOutlined {
     const type: string;
     const children: {
         type: string;

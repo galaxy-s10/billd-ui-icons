@@ -1,5 +1,5 @@
-export default Fireoutlined;
-declare namespace Fireoutlined {
+export default FireOutlined;
+declare namespace FireOutlined {
     const type: string;
     const children: {
         type: string;

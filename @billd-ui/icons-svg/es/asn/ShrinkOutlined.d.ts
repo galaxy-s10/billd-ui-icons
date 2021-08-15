@@ -1,5 +1,5 @@
-export default Shrinkoutlined;
-declare namespace Shrinkoutlined {
+export default ShrinkOutlined;
+declare namespace ShrinkOutlined {
     const type: string;
     const children: {
         type: string;

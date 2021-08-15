@@ -1,5 +1,5 @@
-export default Functionoutlined;
-declare namespace Functionoutlined {
+export default FunctionOutlined;
+declare namespace FunctionOutlined {
     const type: string;
     const children: {
         type: string;

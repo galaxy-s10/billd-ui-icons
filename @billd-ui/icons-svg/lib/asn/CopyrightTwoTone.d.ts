@@ -1,5 +1,5 @@
-export default CopyrighttwoTone;
-declare namespace CopyrighttwoTone {
+export default CopyrightTwoTone;
+declare namespace CopyrightTwoTone {
     const type: string;
     const children: {
         type: string;

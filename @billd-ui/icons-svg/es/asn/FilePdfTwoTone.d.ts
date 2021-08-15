@@ -1,5 +1,5 @@
-export default FilePdftwoTone;
-declare namespace FilePdftwoTone {
+export default FilePdfTwoTone;
+declare namespace FilePdfTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default SketchSquarefilled;
-declare namespace SketchSquarefilled {
+export default SketchSquareFilled;
+declare namespace SketchSquareFilled {
     const type: string;
     const children: {
         type: string;

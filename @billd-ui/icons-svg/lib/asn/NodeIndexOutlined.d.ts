@@ -1,5 +1,5 @@
-export default NodeIndexoutlined;
-declare namespace NodeIndexoutlined {
+export default NodeIndexOutlined;
+declare namespace NodeIndexOutlined {
     const type: string;
     const children: {
         type: string;

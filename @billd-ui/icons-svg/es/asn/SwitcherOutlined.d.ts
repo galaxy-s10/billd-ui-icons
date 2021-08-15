@@ -1,5 +1,5 @@
-export default Switcheroutlined;
-declare namespace Switcheroutlined {
+export default SwitcherOutlined;
+declare namespace SwitcherOutlined {
     const type: string;
     const children: {
         type: string;

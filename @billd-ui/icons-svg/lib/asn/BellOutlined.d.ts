@@ -1,5 +1,5 @@
-export default Belloutlined;
-declare namespace Belloutlined {
+export default BellOutlined;
+declare namespace BellOutlined {
     const type: string;
     const children: {
         type: string;

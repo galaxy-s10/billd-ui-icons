@@ -1,4 +1,4 @@
-// 这个文件是自动生成的，请勿手动修改！1
+// 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
 import PoweroffOutlinedSvg from "@huangshuisheng/icons-svg/es/asn/PoweroffOutlined";
 import BilldIcon from '../billdIcon';
 export default {

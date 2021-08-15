@@ -1,5 +1,5 @@
-export default MacCommandoutlined;
-declare namespace MacCommandoutlined {
+export default MacCommandOutlined;
+declare namespace MacCommandOutlined {
     const type: string;
     const children: {
         type: string;

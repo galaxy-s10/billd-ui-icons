@@ -1,5 +1,5 @@
-export default Italicoutlined;
-declare namespace Italicoutlined {
+export default ItalicOutlined;
+declare namespace ItalicOutlined {
     const type: string;
     const children: {
         type: string;

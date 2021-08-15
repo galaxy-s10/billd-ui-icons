@@ -1,5 +1,5 @@
-export default Youtubefilled;
-declare namespace Youtubefilled {
+export default YoutubeFilled;
+declare namespace YoutubeFilled {
     const type: string;
     const children: {
         type: string;

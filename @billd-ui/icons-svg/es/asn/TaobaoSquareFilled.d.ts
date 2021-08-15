@@ -1,5 +1,5 @@
-export default TaobaoSquarefilled;
-declare namespace TaobaoSquarefilled {
+export default TaobaoSquareFilled;
+declare namespace TaobaoSquareFilled {
     const type: string;
     const children: {
         type: string;

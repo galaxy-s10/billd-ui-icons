@@ -1,5 +1,5 @@
-export default CreditCardoutlined;
-declare namespace CreditCardoutlined {
+export default CreditCardOutlined;
+declare namespace CreditCardOutlined {
     const type: string;
     const children: {
         type: string;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var InfoCircleoutlined = {
+var InfoCircleOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,5 +36,5 @@ var InfoCircleoutlined = {
   "name": "info-circle",
   "theme": "outlined"
 };
-var _default = InfoCircleoutlined;
+var _default = InfoCircleOutlined;
 exports.default = _default;

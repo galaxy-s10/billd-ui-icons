@@ -1,5 +1,5 @@
-export default LeftCirclefilled;
-declare namespace LeftCirclefilled {
+export default LeftCircleFilled;
+declare namespace LeftCircleFilled {
     const type: string;
     const children: {
         type: string;

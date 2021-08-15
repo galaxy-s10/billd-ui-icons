@@ -1,5 +1,5 @@
-export default Githuboutlined;
-declare namespace Githuboutlined {
+export default GithubOutlined;
+declare namespace GithubOutlined {
     const type: string;
     const children: {
         type: string;

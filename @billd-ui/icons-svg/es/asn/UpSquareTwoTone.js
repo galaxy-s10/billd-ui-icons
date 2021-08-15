@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var UpSquaretwoTone = {
+var UpSquareTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -38,4 +38,4 @@ var UpSquaretwoTone = {
   "name": "up-square",
   "theme": "twoTone"
 };
-export default UpSquaretwoTone;
+export default UpSquareTwoTone;

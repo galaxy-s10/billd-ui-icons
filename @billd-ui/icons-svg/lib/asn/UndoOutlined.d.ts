@@ -1,5 +1,5 @@
-export default Undooutlined;
-declare namespace Undooutlined {
+export default UndoOutlined;
+declare namespace UndoOutlined {
     const type: string;
     const children: {
         type: string;

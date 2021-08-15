@@ -1,5 +1,5 @@
-export default Mailfilled;
-declare namespace Mailfilled {
+export default MailFilled;
+declare namespace MailFilled {
     const type: string;
     const children: {
         type: string;

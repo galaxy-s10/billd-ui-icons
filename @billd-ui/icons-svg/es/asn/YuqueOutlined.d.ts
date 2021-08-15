@@ -1,5 +1,5 @@
-export default Yuqueoutlined;
-declare namespace Yuqueoutlined {
+export default YuqueOutlined;
+declare namespace YuqueOutlined {
     const type: string;
     const children: {
         type: string;

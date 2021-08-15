@@ -1,5 +1,5 @@
-export default BorderVerticleoutlined;
-declare namespace BorderVerticleoutlined {
+export default BorderVerticleOutlined;
+declare namespace BorderVerticleOutlined {
     const type: string;
     const children: {
         type: string;

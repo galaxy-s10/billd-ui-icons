@@ -1,5 +1,5 @@
-export default SmallDashoutlined;
-declare namespace SmallDashoutlined {
+export default SmallDashOutlined;
+declare namespace SmallDashOutlined {
     const type: string;
     const children: {
         type: string;

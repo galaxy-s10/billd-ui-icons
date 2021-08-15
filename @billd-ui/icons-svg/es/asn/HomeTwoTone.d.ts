@@ -1,5 +1,5 @@
-export default HometwoTone;
-declare namespace HometwoTone {
+export default HomeTwoTone;
+declare namespace HomeTwoTone {
     const type: string;
     const children: {
         type: string;

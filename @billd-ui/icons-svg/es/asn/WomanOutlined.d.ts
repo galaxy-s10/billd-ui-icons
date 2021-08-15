@@ -1,5 +1,5 @@
-export default Womanoutlined;
-declare namespace Womanoutlined {
+export default WomanOutlined;
+declare namespace WomanOutlined {
     const type: string;
     const children: {
         type: string;

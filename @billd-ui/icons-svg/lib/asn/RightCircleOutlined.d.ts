@@ -1,5 +1,5 @@
-export default RightCircleoutlined;
-declare namespace RightCircleoutlined {
+export default RightCircleOutlined;
+declare namespace RightCircleOutlined {
     const type: string;
     const children: {
         type: string;

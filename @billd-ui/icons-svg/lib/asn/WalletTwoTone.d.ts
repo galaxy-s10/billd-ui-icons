@@ -1,5 +1,5 @@
-export default WallettwoTone;
-declare namespace WallettwoTone {
+export default WalletTwoTone;
+declare namespace WalletTwoTone {
     const type: string;
     const children: {
         type: string;

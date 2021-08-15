@@ -1,5 +1,5 @@
-export default SecurityScanfilled;
-declare namespace SecurityScanfilled {
+export default SecurityScanFilled;
+declare namespace SecurityScanFilled {
     const type: string;
     const children: {
         type: string;

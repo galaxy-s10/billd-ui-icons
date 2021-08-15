@@ -1,5 +1,5 @@
-export default Partitionoutlined;
-declare namespace Partitionoutlined {
+export default PartitionOutlined;
+declare namespace PartitionOutlined {
     const type: string;
     const children: {
         type: string;

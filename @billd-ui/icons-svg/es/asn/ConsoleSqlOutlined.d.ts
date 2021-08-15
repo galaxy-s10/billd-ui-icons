@@ -1,5 +1,5 @@
-export default ConsoleSqloutlined;
-declare namespace ConsoleSqloutlined {
+export default ConsoleSqlOutlined;
+declare namespace ConsoleSqlOutlined {
     const type: string;
     const children: {
         type: string;

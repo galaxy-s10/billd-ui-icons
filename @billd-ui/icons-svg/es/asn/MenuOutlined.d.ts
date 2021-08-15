@@ -1,5 +1,5 @@
-export default Menuoutlined;
-declare namespace Menuoutlined {
+export default MenuOutlined;
+declare namespace MenuOutlined {
     const type: string;
     const children: {
         type: string;

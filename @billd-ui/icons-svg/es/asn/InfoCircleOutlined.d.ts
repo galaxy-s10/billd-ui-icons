@@ -1,5 +1,5 @@
-export default InfoCircleoutlined;
-declare namespace InfoCircleoutlined {
+export default InfoCircleOutlined;
+declare namespace InfoCircleOutlined {
     const type: string;
     const children: {
         type: string;

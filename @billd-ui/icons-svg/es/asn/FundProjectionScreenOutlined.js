@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FundProjectionScreenoutlined = {
+var FundProjectionScreenOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -40,4 +40,4 @@ var FundProjectionScreenoutlined = {
   "name": "fund-projection-screen",
   "theme": "outlined"
 };
-export default FundProjectionScreenoutlined;
+export default FundProjectionScreenOutlined;

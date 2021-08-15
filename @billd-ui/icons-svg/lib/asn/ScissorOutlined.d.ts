@@ -1,5 +1,5 @@
-export default Scissoroutlined;
-declare namespace Scissoroutlined {
+export default ScissorOutlined;
+declare namespace ScissorOutlined {
     const type: string;
     const children: {
         type: string;

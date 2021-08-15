@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FileWordtwoTone = {
+var FileWordTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,4 +36,4 @@ var FileWordtwoTone = {
   "name": "file-word",
   "theme": "twoTone"
 };
-export default FileWordtwoTone;
+export default FileWordTwoTone;

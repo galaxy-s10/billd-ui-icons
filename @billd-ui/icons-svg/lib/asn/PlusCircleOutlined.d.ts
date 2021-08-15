@@ -1,5 +1,5 @@
-export default PlusCircleoutlined;
-declare namespace PlusCircleoutlined {
+export default PlusCircleOutlined;
+declare namespace PlusCircleOutlined {
     const type: string;
     const children: {
         type: string;

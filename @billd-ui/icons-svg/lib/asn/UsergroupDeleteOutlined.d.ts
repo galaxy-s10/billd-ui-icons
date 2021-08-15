@@ -1,5 +1,5 @@
-export default UsergroupDeleteoutlined;
-declare namespace UsergroupDeleteoutlined {
+export default UsergroupDeleteOutlined;
+declare namespace UsergroupDeleteOutlined {
     const type: string;
     const children: {
         type: string;

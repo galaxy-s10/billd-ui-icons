@@ -26,7 +26,7 @@ export default function svgToAsn(dir, { theme }) {
             plugins: svgOptions.plugins,
           });
           const iconname = toCameCase(
-            `${file.path.match(/([^\\/]+)\.svg$/)[1]}${theme}`
+            `${file.path.match(/([^\\/]+)\.svg$/)[1]}-${theme}`
           );
           const parseXmlRes = parseXML(data).toJSON(); // https://github.com/rgrove/parse-xml/blob/main/API.md
           parseXmlRes.name = file.stem;
@@ -40,7 +40,7 @@ export default function svgToAsn(dir, { theme }) {
           );
           file.path = file.path.replace(
             /([^\\/]+)\.svg$$/,
-            toCameCase(`${file.stem}${theme}.js`)
+            toCameCase(`${file.stem}-${theme}.js`)
           );
           next(null, file);
         })

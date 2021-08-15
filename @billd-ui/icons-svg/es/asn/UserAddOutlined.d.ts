@@ -1,5 +1,5 @@
-export default UserAddoutlined;
-declare namespace UserAddoutlined {
+export default UserAddOutlined;
+declare namespace UserAddOutlined {
     const type: string;
     const children: {
         type: string;

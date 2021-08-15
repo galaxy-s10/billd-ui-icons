@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var MedicineBoxtwoTone = {
+var MedicineBoxTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,5 +43,5 @@ var MedicineBoxtwoTone = {
   "name": "medicine-box",
   "theme": "twoTone"
 };
-var _default = MedicineBoxtwoTone;
+var _default = MedicineBoxTwoTone;
 exports.default = _default;

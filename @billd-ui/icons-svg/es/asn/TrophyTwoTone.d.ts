@@ -1,5 +1,5 @@
-export default TrophytwoTone;
-declare namespace TrophytwoTone {
+export default TrophyTwoTone;
+declare namespace TrophyTwoTone {
     const type: string;
     const children: {
         type: string;

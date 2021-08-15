@@ -1,5 +1,5 @@
-export default Skypeoutlined;
-declare namespace Skypeoutlined {
+export default SkypeOutlined;
+declare namespace SkypeOutlined {
     const type: string;
     const children: {
         type: string;

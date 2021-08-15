@@ -1,5 +1,5 @@
-export default TablettwoTone;
-declare namespace TablettwoTone {
+export default TabletTwoTone;
+declare namespace TabletTwoTone {
     const type: string;
     const children: {
         type: string;

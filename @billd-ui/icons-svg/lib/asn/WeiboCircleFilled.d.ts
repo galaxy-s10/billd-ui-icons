@@ -1,5 +1,5 @@
-export default WeiboCirclefilled;
-declare namespace WeiboCirclefilled {
+export default WeiboCircleFilled;
+declare namespace WeiboCircleFilled {
     const type: string;
     const children: {
         type: string;

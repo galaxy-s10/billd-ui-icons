@@ -1,5 +1,5 @@
-export default FileAddtwoTone;
-declare namespace FileAddtwoTone {
+export default FileAddTwoTone;
+declare namespace FileAddTwoTone {
     const type: string;
     const children: {
         type: string;

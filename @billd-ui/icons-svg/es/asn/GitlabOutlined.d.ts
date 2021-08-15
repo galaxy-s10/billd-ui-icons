@@ -1,5 +1,5 @@
-export default Gitlaboutlined;
-declare namespace Gitlaboutlined {
+export default GitlabOutlined;
+declare namespace GitlabOutlined {
     const type: string;
     const children: {
         type: string;

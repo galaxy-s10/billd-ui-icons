@@ -1,5 +1,5 @@
-export default Rocketfilled;
-declare namespace Rocketfilled {
+export default RocketFilled;
+declare namespace RocketFilled {
     const type: string;
     const children: {
         type: string;

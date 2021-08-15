@@ -1,5 +1,5 @@
-export default PlusSquarefilled;
-declare namespace PlusSquarefilled {
+export default PlusSquareFilled;
+declare namespace PlusSquareFilled {
     const type: string;
     const children: {
         type: string;

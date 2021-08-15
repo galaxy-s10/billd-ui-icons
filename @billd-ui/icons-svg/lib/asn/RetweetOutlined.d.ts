@@ -1,5 +1,5 @@
-export default Retweetoutlined;
-declare namespace Retweetoutlined {
+export default RetweetOutlined;
+declare namespace RetweetOutlined {
     const type: string;
     const children: {
         type: string;

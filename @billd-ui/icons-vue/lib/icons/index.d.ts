@@ -33,6 +33,7 @@ export { default as AppstoreAddOutlined } from "./AppstoreAddOutlined";
 export { default as AppstoreFilled } from "./AppstoreFilled";
 export { default as AppstoreOutlined } from "./AppstoreOutlined";
 export { default as AppstoreTwoTone } from "./AppstoreTwoTone";
+export { default as AreaChartOutlined } from "./AreaChartOutlined";
 export { default as ArrowDownOutlined } from "./ArrowDownOutlined";
 export { default as ArrowLeftOutlined } from "./ArrowLeftOutlined";
 export { default as ArrowRightOutlined } from "./ArrowRightOutlined";

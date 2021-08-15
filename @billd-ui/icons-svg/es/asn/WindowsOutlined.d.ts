@@ -1,5 +1,5 @@
-export default Windowsoutlined;
-declare namespace Windowsoutlined {
+export default WindowsOutlined;
+declare namespace WindowsOutlined {
     const type: string;
     const children: {
         type: string;

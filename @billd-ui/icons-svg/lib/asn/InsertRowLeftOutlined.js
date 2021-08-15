@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var InsertRowLeftoutlined = {
+var InsertRowLeftOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -39,5 +39,5 @@ var InsertRowLeftoutlined = {
   "name": "insert-row-left",
   "theme": "outlined"
 };
-var _default = InsertRowLeftoutlined;
+var _default = InsertRowLeftOutlined;
 exports.default = _default;

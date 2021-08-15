@@ -1,5 +1,5 @@
-export default DownCircletwoTone;
-declare namespace DownCircletwoTone {
+export default DownCircleTwoTone;
+declare namespace DownCircleTwoTone {
     const type: string;
     const children: {
         type: string;

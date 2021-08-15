@@ -1,5 +1,5 @@
-export default CopyrightCircleoutlined;
-declare namespace CopyrightCircleoutlined {
+export default CopyrightCircleOutlined;
+declare namespace CopyrightCircleOutlined {
     const type: string;
     const children: {
         type: string;

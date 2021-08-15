@@ -1,5 +1,5 @@
-export default FiretwoTone;
-declare namespace FiretwoTone {
+export default FireTwoTone;
+declare namespace FireTwoTone {
     const type: string;
     const children: {
         type: string;

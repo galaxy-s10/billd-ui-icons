@@ -1,5 +1,5 @@
-export default Yuquefilled;
-declare namespace Yuquefilled {
+export default YuqueFilled;
+declare namespace YuqueFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Phonefilled;
-declare namespace Phonefilled {
+export default PhoneFilled;
+declare namespace PhoneFilled {
     const type: string;
     const children: {
         type: string;

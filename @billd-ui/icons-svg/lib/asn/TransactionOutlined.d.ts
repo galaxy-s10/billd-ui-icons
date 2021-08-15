@@ -1,5 +1,5 @@
-export default Transactionoutlined;
-declare namespace Transactionoutlined {
+export default TransactionOutlined;
+declare namespace TransactionOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Caroutlined;
-declare namespace Caroutlined {
+export default CarOutlined;
+declare namespace CarOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ColumnHeightoutlined;
-declare namespace ColumnHeightoutlined {
+export default ColumnHeightOutlined;
+declare namespace ColumnHeightOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Copyoutlined;
-declare namespace Copyoutlined {
+export default CopyOutlined;
+declare namespace CopyOutlined {
     const type: string;
     const children: {
         type: string;

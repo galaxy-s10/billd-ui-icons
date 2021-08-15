@@ -1,5 +1,5 @@
-export default MessagetwoTone;
-declare namespace MessagetwoTone {
+export default MessageTwoTone;
+declare namespace MessageTwoTone {
     const type: string;
     const children: {
         type: string;

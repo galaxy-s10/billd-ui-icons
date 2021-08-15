@@ -1,5 +1,5 @@
-export default Contactsoutlined;
-declare namespace Contactsoutlined {
+export default ContactsOutlined;
+declare namespace ContactsOutlined {
     const type: string;
     const children: {
         type: string;

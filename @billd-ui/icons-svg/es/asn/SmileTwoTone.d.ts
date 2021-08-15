@@ -1,5 +1,5 @@
-export default SmiletwoTone;
-declare namespace SmiletwoTone {
+export default SmileTwoTone;
+declare namespace SmileTwoTone {
     const type: string;
     const children: {
         type: string;

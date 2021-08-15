@@ -1,5 +1,5 @@
-export default Falloutlined;
-declare namespace Falloutlined {
+export default FallOutlined;
+declare namespace FallOutlined {
     const type: string;
     const children: {
         type: string;

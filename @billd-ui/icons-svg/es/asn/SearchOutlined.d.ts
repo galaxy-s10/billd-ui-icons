@@ -1,5 +1,5 @@
-export default Searchoutlined;
-declare namespace Searchoutlined {
+export default SearchOutlined;
+declare namespace SearchOutlined {
     const type: string;
     const children: {
         type: string;

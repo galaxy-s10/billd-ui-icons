@@ -1,5 +1,5 @@
-export default SafetyCertificatetwoTone;
-declare namespace SafetyCertificatetwoTone {
+export default SafetyCertificateTwoTone;
+declare namespace SafetyCertificateTwoTone {
     const type: string;
     const children: {
         type: string;

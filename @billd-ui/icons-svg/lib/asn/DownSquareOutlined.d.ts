@@ -1,5 +1,5 @@
-export default DownSquareoutlined;
-declare namespace DownSquareoutlined {
+export default DownSquareOutlined;
+declare namespace DownSquareOutlined {
     const type: string;
     const children: {
         type: string;

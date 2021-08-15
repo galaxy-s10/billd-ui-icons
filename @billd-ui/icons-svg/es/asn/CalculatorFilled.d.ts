@@ -1,5 +1,5 @@
-export default Calculatorfilled;
-declare namespace Calculatorfilled {
+export default CalculatorFilled;
+declare namespace CalculatorFilled {
     const type: string;
     const children: {
         type: string;

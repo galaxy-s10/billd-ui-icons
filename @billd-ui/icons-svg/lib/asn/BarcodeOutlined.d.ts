@@ -1,5 +1,5 @@
-export default Barcodeoutlined;
-declare namespace Barcodeoutlined {
+export default BarcodeOutlined;
+declare namespace BarcodeOutlined {
     const type: string;
     const children: {
         type: string;

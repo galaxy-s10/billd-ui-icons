@@ -1,5 +1,5 @@
-export default DifftwoTone;
-declare namespace DifftwoTone {
+export default DiffTwoTone;
+declare namespace DiffTwoTone {
     const type: string;
     const children: {
         type: string;

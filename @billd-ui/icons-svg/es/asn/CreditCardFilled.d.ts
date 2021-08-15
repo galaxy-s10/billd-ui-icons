@@ -1,5 +1,5 @@
-export default CreditCardfilled;
-declare namespace CreditCardfilled {
+export default CreditCardFilled;
+declare namespace CreditCardFilled {
     const type: string;
     const children: {
         type: string;

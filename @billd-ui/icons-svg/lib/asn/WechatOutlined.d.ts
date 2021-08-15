@@ -1,5 +1,5 @@
-export default Wechatoutlined;
-declare namespace Wechatoutlined {
+export default WechatOutlined;
+declare namespace WechatOutlined {
     const type: string;
     const children: {
         type: string;

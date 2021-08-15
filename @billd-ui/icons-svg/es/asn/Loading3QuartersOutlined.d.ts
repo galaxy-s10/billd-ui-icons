@@ -1,5 +1,5 @@
-export default Loading3Quartersoutlined;
-declare namespace Loading3Quartersoutlined {
+export default Loading3QuartersOutlined;
+declare namespace Loading3QuartersOutlined {
     const type: string;
     const children: {
         type: string;

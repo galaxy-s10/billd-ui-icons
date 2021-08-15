@@ -1,5 +1,5 @@
-export default SnippetstwoTone;
-declare namespace SnippetstwoTone {
+export default SnippetsTwoTone;
+declare namespace SnippetsTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FastBackwardfilled;
-declare namespace FastBackwardfilled {
+export default FastBackwardFilled;
+declare namespace FastBackwardFilled {
     const type: string;
     const children: {
         type: string;

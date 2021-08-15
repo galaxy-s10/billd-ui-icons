@@ -1,5 +1,5 @@
-export default Lockfilled;
-declare namespace Lockfilled {
+export default LockFilled;
+declare namespace LockFilled {
     const type: string;
     const children: {
         type: string;

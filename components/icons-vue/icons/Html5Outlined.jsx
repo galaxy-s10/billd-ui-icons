@@ -1,4 +1,4 @@
-// 这个文件是自动生成的，请勿手动修改！1
+// 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
 
 import Html5OutlinedSvg from '@huangshuisheng/icons-svg/lib/asn/Html5Outlined';
 import BilldIcon from '../billdIcon';

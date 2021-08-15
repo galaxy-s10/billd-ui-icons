@@ -1,5 +1,5 @@
-export default PauseCirclefilled;
-declare namespace PauseCirclefilled {
+export default PauseCircleFilled;
+declare namespace PauseCircleFilled {
     const type: string;
     const children: {
         type: string;

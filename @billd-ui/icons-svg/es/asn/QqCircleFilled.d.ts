@@ -1,5 +1,5 @@
-export default QqCirclefilled;
-declare namespace QqCirclefilled {
+export default QqCircleFilled;
+declare namespace QqCircleFilled {
     const type: string;
     const children: {
         type: string;

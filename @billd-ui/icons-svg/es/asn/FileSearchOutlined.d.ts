@@ -1,5 +1,5 @@
-export default FileSearchoutlined;
-declare namespace FileSearchoutlined {
+export default FileSearchOutlined;
+declare namespace FileSearchOutlined {
     const type: string;
     const children: {
         type: string;

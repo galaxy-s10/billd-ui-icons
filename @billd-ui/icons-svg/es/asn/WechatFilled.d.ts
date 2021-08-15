@@ -1,5 +1,5 @@
-export default Wechatfilled;
-declare namespace Wechatfilled {
+export default WechatFilled;
+declare namespace WechatFilled {
     const type: string;
     const children: {
         type: string;

@@ -11,7 +11,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 // const glob = require('glob')
 // const webpack = require('webpack');
 // const path = require("path");
-// const resolveApp = require('./paths');
+const resolveApp = require('./utils/paths');
 
 module.exports = {
   mode: 'development',
@@ -19,11 +19,11 @@ module.exports = {
   // mode: "production",
   devtool: 'source-map', // cheap-module-eval-source-map
   output: {
-    // path: resolveApp("./library"),
+    path: resolveApp('./dist'),
     // publicPath: "/library/",
-    filename: 'billd-ui.js',
+    filename: 'iconssvg.js',
     library: {
-      name: 'aaax',
+      name: 'iconssvg',
       // root: 'MyLibrary',
       // amd: 'my-library',
       // commonjs: 'my-common-library',

@@ -1,5 +1,5 @@
-export default Copyfilled;
-declare namespace Copyfilled {
+export default CopyFilled;
+declare namespace CopyFilled {
     const type: string;
     const children: {
         type: string;

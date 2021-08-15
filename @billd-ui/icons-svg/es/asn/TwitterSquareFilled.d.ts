@@ -1,5 +1,5 @@
-export default TwitterSquarefilled;
-declare namespace TwitterSquarefilled {
+export default TwitterSquareFilled;
+declare namespace TwitterSquareFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default AmazonCirclefilled;
-declare namespace AmazonCirclefilled {
+export default AmazonCircleFilled;
+declare namespace AmazonCircleFilled {
     const type: string;
     const children: {
         type: string;

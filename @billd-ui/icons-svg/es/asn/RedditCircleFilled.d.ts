@@ -1,5 +1,5 @@
-export default RedditCirclefilled;
-declare namespace RedditCirclefilled {
+export default RedditCircleFilled;
+declare namespace RedditCircleFilled {
     const type: string;
     const children: {
         type: string;

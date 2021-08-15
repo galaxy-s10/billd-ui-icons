@@ -1,5 +1,5 @@
-export default Syncoutlined;
-declare namespace Syncoutlined {
+export default SyncOutlined;
+declare namespace SyncOutlined {
     const type: string;
     const children: {
         type: string;

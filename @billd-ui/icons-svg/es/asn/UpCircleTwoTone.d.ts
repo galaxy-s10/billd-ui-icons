@@ -1,5 +1,5 @@
-export default UpCircletwoTone;
-declare namespace UpCircletwoTone {
+export default UpCircleTwoTone;
+declare namespace UpCircleTwoTone {
     const type: string;
     const children: {
         type: string;

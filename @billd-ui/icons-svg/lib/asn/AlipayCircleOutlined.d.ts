@@ -1,5 +1,5 @@
-export default AlipayCircleoutlined;
-declare namespace AlipayCircleoutlined {
+export default AlipayCircleOutlined;
+declare namespace AlipayCircleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default GoogleSquarefilled;
-declare namespace GoogleSquarefilled {
+export default GoogleSquareFilled;
+declare namespace GoogleSquareFilled {
     const type: string;
     const children: {
         type: string;

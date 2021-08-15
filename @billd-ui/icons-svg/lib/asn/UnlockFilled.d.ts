@@ -1,5 +1,5 @@
-export default Unlockfilled;
-declare namespace Unlockfilled {
+export default UnlockFilled;
+declare namespace UnlockFilled {
     const type: string;
     const children: {
         type: string;

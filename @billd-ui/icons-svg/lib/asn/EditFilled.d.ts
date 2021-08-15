@@ -1,5 +1,5 @@
-export default Editfilled;
-declare namespace Editfilled {
+export default EditFilled;
+declare namespace EditFilled {
     const type: string;
     const children: {
         type: string;

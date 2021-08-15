@@ -1,5 +1,5 @@
-export default BugtwoTone;
-declare namespace BugtwoTone {
+export default BugTwoTone;
+declare namespace BugTwoTone {
     const type: string;
     const children: {
         type: string;

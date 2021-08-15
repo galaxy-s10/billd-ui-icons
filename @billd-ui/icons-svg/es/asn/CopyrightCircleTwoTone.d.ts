@@ -1,5 +1,5 @@
-export default CopyrightCircletwoTone;
-declare namespace CopyrightCircletwoTone {
+export default CopyrightCircleTwoTone;
+declare namespace CopyrightCircleTwoTone {
     const type: string;
     const children: {
         type: string;

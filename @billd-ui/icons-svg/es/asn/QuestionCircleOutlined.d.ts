@@ -1,5 +1,5 @@
-export default QuestionCircleoutlined;
-declare namespace QuestionCircleoutlined {
+export default QuestionCircleOutlined;
+declare namespace QuestionCircleOutlined {
     const type: string;
     const children: {
         type: string;

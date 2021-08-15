@@ -1,5 +1,5 @@
-export default DeleteColumnoutlined;
-declare namespace DeleteColumnoutlined {
+export default DeleteColumnOutlined;
+declare namespace DeleteColumnOutlined {
     const type: string;
     const children: {
         type: string;

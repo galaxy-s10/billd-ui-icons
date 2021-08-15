@@ -1,5 +1,5 @@
-export default Shakeoutlined;
-declare namespace Shakeoutlined {
+export default ShakeOutlined;
+declare namespace ShakeOutlined {
     const type: string;
     const children: {
         type: string;

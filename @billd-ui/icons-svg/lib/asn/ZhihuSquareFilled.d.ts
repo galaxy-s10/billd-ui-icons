@@ -1,5 +1,5 @@
-export default ZhihuSquarefilled;
-declare namespace ZhihuSquarefilled {
+export default ZhihuSquareFilled;
+declare namespace ZhihuSquareFilled {
     const type: string;
     const children: {
         type: string;

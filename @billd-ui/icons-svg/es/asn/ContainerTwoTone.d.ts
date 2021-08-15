@@ -1,5 +1,5 @@
-export default ContainertwoTone;
-declare namespace ContainertwoTone {
+export default ContainerTwoTone;
+declare namespace ContainerTwoTone {
     const type: string;
     const children: {
         type: string;

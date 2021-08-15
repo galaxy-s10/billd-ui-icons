@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FilePdftwoTone = {
+var FilePdfTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -52,4 +52,4 @@ var FilePdftwoTone = {
   "name": "file-pdf",
   "theme": "twoTone"
 };
-export default FilePdftwoTone;
+export default FilePdfTwoTone;

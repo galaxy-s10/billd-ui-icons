@@ -1,5 +1,5 @@
-export default Formoutlined;
-declare namespace Formoutlined {
+export default FormOutlined;
+declare namespace FormOutlined {
     const type: string;
     const children: {
         type: string;

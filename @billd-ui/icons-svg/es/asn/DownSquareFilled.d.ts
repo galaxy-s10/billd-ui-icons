@@ -1,5 +1,5 @@
-export default DownSquarefilled;
-declare namespace DownSquarefilled {
+export default DownSquareFilled;
+declare namespace DownSquareFilled {
     const type: string;
     const children: {
         type: string;

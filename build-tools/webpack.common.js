@@ -30,7 +30,9 @@ const commonConfig = function (isProduction) {
     target: isProduction ? 'browserslist' : 'web',
     entry: {
       main: {
-        import: isProduction ? './components/index.js' : './src/index.js',
+        import: isProduction
+          ? './components/icons-svg/index.js'
+          : './src/index.js',
         // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
       },
     },
@@ -50,13 +52,7 @@ const commonConfig = function (isProduction) {
       // echarts: 'echarts',
       // iview: 'iview',
     },
-    output: {
-      filename: 'js/[name]-bundle.js', // 入口文件打包生成后的文件的文件名
-      chunkFilename: 'js/[name]-[hash:6]-bundle-chunk.js',
-      path: resolveApp('./dist'),
-      assetModuleFilename: 'assets/[name]-[hash:6].[ext]', // 静态资源生成目录（不管什么资源默认都统一生成到这里,除非单独设置了generator）
-      publicPath: './', // 打包成dist后，如果想直接打开index.html看效果，就将该路径改成:"./",上线后改回:"/"
-    },
+
     resolve: {
       // 解析路径
       extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.vue'], // 解析扩展名

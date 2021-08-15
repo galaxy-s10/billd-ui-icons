@@ -1,5 +1,5 @@
-export default Taobaooutlined;
-declare namespace Taobaooutlined {
+export default TaobaoOutlined;
+declare namespace TaobaoOutlined {
     const type: string;
     const children: {
         type: string;

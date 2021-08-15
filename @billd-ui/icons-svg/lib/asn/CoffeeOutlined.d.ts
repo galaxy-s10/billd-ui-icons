@@ -1,5 +1,5 @@
-export default Coffeeoutlined;
-declare namespace Coffeeoutlined {
+export default CoffeeOutlined;
+declare namespace CoffeeOutlined {
     const type: string;
     const children: {
         type: string;

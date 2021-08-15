@@ -1,5 +1,5 @@
-export default RadarChartoutlined;
-declare namespace RadarChartoutlined {
+export default RadarChartOutlined;
+declare namespace RadarChartOutlined {
     const type: string;
     const children: {
         type: string;

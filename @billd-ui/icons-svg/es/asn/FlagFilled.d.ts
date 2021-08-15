@@ -1,5 +1,5 @@
-export default Flagfilled;
-declare namespace Flagfilled {
+export default FlagFilled;
+declare namespace FlagFilled {
     const type: string;
     const children: {
         type: string;

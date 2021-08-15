@@ -1,5 +1,5 @@
-export default Walletfilled;
-declare namespace Walletfilled {
+export default WalletFilled;
+declare namespace WalletFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Tooloutlined;
-declare namespace Tooloutlined {
+export default ToolOutlined;
+declare namespace ToolOutlined {
     const type: string;
     const children: {
         type: string;

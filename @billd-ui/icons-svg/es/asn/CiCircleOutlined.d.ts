@@ -1,5 +1,5 @@
-export default CiCircleoutlined;
-declare namespace CiCircleoutlined {
+export default CiCircleOutlined;
+declare namespace CiCircleOutlined {
     const type: string;
     const children: {
         type: string;

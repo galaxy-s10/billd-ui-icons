@@ -1,5 +1,5 @@
-export default MediumSquarefilled;
-declare namespace MediumSquarefilled {
+export default MediumSquareFilled;
+declare namespace MediumSquareFilled {
     const type: string;
     const children: {
         type: string;

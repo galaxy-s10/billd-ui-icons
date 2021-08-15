@@ -1,5 +1,5 @@
-export default TagstwoTone;
-declare namespace TagstwoTone {
+export default TagsTwoTone;
+declare namespace TagsTwoTone {
     const type: string;
     const children: {
         type: string;

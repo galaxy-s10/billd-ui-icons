@@ -1,5 +1,5 @@
-export default EyeInvisibletwoTone;
-declare namespace EyeInvisibletwoTone {
+export default EyeInvisibleTwoTone;
+declare namespace EyeInvisibleTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Skypefilled;
-declare namespace Skypefilled {
+export default SkypeFilled;
+declare namespace SkypeFilled {
     const type: string;
     const children: {
         type: string;

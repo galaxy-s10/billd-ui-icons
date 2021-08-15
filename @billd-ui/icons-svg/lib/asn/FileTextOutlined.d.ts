@@ -1,5 +1,5 @@
-export default FileTextoutlined;
-declare namespace FileTextoutlined {
+export default FileTextOutlined;
+declare namespace FileTextOutlined {
     const type: string;
     const children: {
         type: string;

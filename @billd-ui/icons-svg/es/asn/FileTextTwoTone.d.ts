@@ -1,5 +1,5 @@
-export default FileTexttwoTone;
-declare namespace FileTexttwoTone {
+export default FileTextTwoTone;
+declare namespace FileTextTwoTone {
     const type: string;
     const children: {
         type: string;

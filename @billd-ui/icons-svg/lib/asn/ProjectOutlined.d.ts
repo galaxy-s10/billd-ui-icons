@@ -1,5 +1,5 @@
-export default Projectoutlined;
-declare namespace Projectoutlined {
+export default ProjectOutlined;
+declare namespace ProjectOutlined {
     const type: string;
     const children: {
         type: string;

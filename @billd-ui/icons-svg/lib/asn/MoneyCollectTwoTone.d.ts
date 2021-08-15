@@ -1,5 +1,5 @@
-export default MoneyCollecttwoTone;
-declare namespace MoneyCollecttwoTone {
+export default MoneyCollectTwoTone;
+declare namespace MoneyCollectTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FundProjectionScreenoutlined;
-declare namespace FundProjectionScreenoutlined {
+export default FundProjectionScreenOutlined;
+declare namespace FundProjectionScreenOutlined {
     const type: string;
     const children: {
         type: string;

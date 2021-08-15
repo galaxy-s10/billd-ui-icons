@@ -1,5 +1,5 @@
-export default VideoCameraAddoutlined;
-declare namespace VideoCameraAddoutlined {
+export default VideoCameraAddOutlined;
+declare namespace VideoCameraAddOutlined {
     const type: string;
     const children: {
         type: string;

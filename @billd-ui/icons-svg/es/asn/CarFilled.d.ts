@@ -1,5 +1,5 @@
-export default Carfilled;
-declare namespace Carfilled {
+export default CarFilled;
+declare namespace CarFilled {
     const type: string;
     const children: {
         type: string;

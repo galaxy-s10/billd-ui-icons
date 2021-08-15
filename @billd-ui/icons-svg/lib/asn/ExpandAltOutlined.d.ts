@@ -1,5 +1,5 @@
-export default ExpandAltoutlined;
-declare namespace ExpandAltoutlined {
+export default ExpandAltOutlined;
+declare namespace ExpandAltOutlined {
     const type: string;
     const children: {
         type: string;

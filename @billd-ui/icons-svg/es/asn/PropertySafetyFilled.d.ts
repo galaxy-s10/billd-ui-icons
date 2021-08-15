@@ -1,5 +1,5 @@
-export default PropertySafetyfilled;
-declare namespace PropertySafetyfilled {
+export default PropertySafetyFilled;
+declare namespace PropertySafetyFilled {
     const type: string;
     const children: {
         type: string;

@@ -4743,12 +4743,6 @@ Object.defineProperty(exports, "ZoomOutTwoTone", {
     return _ZoomOutTwoTone.default;
   }
 });
-Object.defineProperty(exports, "index", {
-  enumerable: true,
-  get: function get() {
-    return _index.default;
-  }
-});
 
 var _AccountBookFilled = _interopRequireDefault(require("./AccountBookFilled"));
 
@@ -6329,7 +6323,5 @@ var _ZoomOutFilled = _interopRequireDefault(require("./ZoomOutFilled"));
 var _ZoomOutOutlined = _interopRequireDefault(require("./ZoomOutOutlined"));
 
 var _ZoomOutTwoTone = _interopRequireDefault(require("./ZoomOutTwoTone"));
-
-var _index = _interopRequireDefault(require("./index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

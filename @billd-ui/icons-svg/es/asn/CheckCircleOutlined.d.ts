@@ -1,5 +1,5 @@
-export default CheckCircleoutlined;
-declare namespace CheckCircleoutlined {
+export default CheckCircleOutlined;
+declare namespace CheckCircleOutlined {
     const type: string;
     const children: {
         type: string;

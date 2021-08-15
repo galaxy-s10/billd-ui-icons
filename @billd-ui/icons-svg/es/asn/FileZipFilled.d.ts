@@ -1,5 +1,5 @@
-export default FileZipfilled;
-declare namespace FileZipfilled {
+export default FileZipFilled;
+declare namespace FileZipFilled {
     const type: string;
     const children: {
         type: string;

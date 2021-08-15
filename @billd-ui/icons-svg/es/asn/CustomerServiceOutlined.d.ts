@@ -1,5 +1,5 @@
-export default CustomerServiceoutlined;
-declare namespace CustomerServiceoutlined {
+export default CustomerServiceOutlined;
+declare namespace CustomerServiceOutlined {
     const type: string;
     const children: {
         type: string;

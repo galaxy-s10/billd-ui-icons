@@ -1,5 +1,5 @@
-export default SecurityScanoutlined;
-declare namespace SecurityScanoutlined {
+export default SecurityScanOutlined;
+declare namespace SecurityScanOutlined {
     const type: string;
     const children: {
         type: string;

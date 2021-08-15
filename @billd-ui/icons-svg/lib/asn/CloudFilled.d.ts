@@ -1,5 +1,5 @@
-export default Cloudfilled;
-declare namespace Cloudfilled {
+export default CloudFilled;
+declare namespace CloudFilled {
     const type: string;
     const children: {
         type: string;

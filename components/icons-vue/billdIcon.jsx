@@ -1,7 +1,7 @@
 // billdIcon.jsx这个文件是icons里面所有文件都依赖的组件
 
 // 处理css
-import './handlecss';
+// import './handlecss';
 
 export default {
   props: {
@@ -32,6 +32,9 @@ export default {
       },
     },
   },
+  mounted() {
+    import('./handlecss').then((res) => {});
+  },
   render() {
     const svgBaseProps = {
       width: '1em',
@@ -39,11 +42,14 @@ export default {
       fill: 'currentColor',
     };
     return (
-      <i style={this.customStyle}>
+      <i class="billd-icon" style={this.customStyle}>
         <svg
           {...{ attrs: Object.assign(this.innerSvgProps, svgBaseProps) }}
           class={{ 'billd-icon-ani': this.spin }}
-          style={{ transform: `rotate(${this.rotate}deg)` }}>
+          style={[
+            this.spin &&
+              this.rotate !== 360 && { transform: `rotate(${this.rotate}deg)` },
+          ]}>
           {this.children &&
             this.children
               .filter((item) => item.name === 'path')

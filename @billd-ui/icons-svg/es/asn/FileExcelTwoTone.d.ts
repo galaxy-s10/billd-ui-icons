@@ -1,5 +1,5 @@
-export default FileExceltwoTone;
-declare namespace FileExceltwoTone {
+export default FileExcelTwoTone;
+declare namespace FileExcelTwoTone {
     const type: string;
     const children: {
         type: string;

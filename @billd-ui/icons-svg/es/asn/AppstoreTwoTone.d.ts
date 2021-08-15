@@ -1,5 +1,5 @@
-export default AppstoretwoTone;
-declare namespace AppstoretwoTone {
+export default AppstoreTwoTone;
+declare namespace AppstoreTwoTone {
     const type: string;
     const children: {
         type: string;

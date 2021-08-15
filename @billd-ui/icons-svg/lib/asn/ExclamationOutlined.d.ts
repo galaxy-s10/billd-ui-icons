@@ -1,5 +1,5 @@
-export default Exclamationoutlined;
-declare namespace Exclamationoutlined {
+export default ExclamationOutlined;
+declare namespace ExclamationOutlined {
     const type: string;
     const children: {
         type: string;

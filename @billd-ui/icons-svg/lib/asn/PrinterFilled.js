@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Printerfilled = {
+var PrinterFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -29,5 +29,5 @@ var Printerfilled = {
   "name": "printer",
   "theme": "filled"
 };
-var _default = Printerfilled;
+var _default = PrinterFilled;
 exports.default = _default;

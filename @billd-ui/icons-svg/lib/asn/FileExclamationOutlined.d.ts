@@ -1,5 +1,5 @@
-export default FileExclamationoutlined;
-declare namespace FileExclamationoutlined {
+export default FileExclamationOutlined;
+declare namespace FileExclamationOutlined {
     const type: string;
     const children: {
         type: string;

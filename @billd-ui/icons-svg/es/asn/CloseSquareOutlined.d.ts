@@ -1,5 +1,5 @@
-export default CloseSquareoutlined;
-declare namespace CloseSquareoutlined {
+export default CloseSquareOutlined;
+declare namespace CloseSquareOutlined {
     const type: string;
     const children: {
         type: string;

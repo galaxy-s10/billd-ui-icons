@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var OneToOneoutlined = {
+var OneToOneOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -55,5 +55,5 @@ var OneToOneoutlined = {
   "name": "one-to-one",
   "theme": "outlined"
 };
-var _default = OneToOneoutlined;
+var _default = OneToOneOutlined;
 exports.default = _default;

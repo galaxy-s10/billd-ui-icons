@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var TrademarkCircletwoTone = {
+var TrademarkCircleTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -46,4 +46,4 @@ var TrademarkCircletwoTone = {
   "name": "trademark-circle",
   "theme": "twoTone"
 };
-export default TrademarkCircletwoTone;
+export default TrademarkCircleTwoTone;

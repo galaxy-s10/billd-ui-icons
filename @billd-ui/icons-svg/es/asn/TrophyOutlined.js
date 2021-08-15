@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Trophyoutlined = {
+var TrophyOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Trophyoutlined = {
   "name": "trophy",
   "theme": "outlined"
 };
-export default Trophyoutlined;
+export default TrophyOutlined;

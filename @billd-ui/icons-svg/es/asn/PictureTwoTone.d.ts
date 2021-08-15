@@ -1,5 +1,5 @@
-export default PicturetwoTone;
-declare namespace PicturetwoTone {
+export default PictureTwoTone;
+declare namespace PictureTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Bankoutlined;
-declare namespace Bankoutlined {
+export default BankOutlined;
+declare namespace BankOutlined {
     const type: string;
     const children: {
         type: string;

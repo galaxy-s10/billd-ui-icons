@@ -1,5 +1,5 @@
-export default Profilefilled;
-declare namespace Profilefilled {
+export default ProfileFilled;
+declare namespace ProfileFilled {
     const type: string;
     const children: {
         type: string;

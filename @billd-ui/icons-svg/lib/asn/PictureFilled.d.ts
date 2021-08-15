@@ -1,5 +1,5 @@
-export default Picturefilled;
-declare namespace Picturefilled {
+export default PictureFilled;
+declare namespace PictureFilled {
     const type: string;
     const children: {
         type: string;

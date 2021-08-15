@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FolderViewoutlined = {
+var FolderViewOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -55,5 +55,5 @@ var FolderViewoutlined = {
   "name": "folder-view",
   "theme": "outlined"
 };
-var _default = FolderViewoutlined;
+var _default = FolderViewOutlined;
 exports.default = _default;

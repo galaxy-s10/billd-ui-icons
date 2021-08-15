@@ -1,5 +1,5 @@
-export default CloseSquaretwoTone;
-declare namespace CloseSquaretwoTone {
+export default CloseSquareTwoTone;
+declare namespace CloseSquareTwoTone {
     const type: string;
     const children: {
         type: string;

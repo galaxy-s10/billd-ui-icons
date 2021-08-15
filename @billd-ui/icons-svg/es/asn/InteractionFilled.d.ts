@@ -1,5 +1,5 @@
-export default Interactionfilled;
-declare namespace Interactionfilled {
+export default InteractionFilled;
+declare namespace InteractionFilled {
     const type: string;
     const children: {
         type: string;

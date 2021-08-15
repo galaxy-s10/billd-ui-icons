@@ -1,5 +1,5 @@
-export default Bugoutlined;
-declare namespace Bugoutlined {
+export default BugOutlined;
+declare namespace BugOutlined {
     const type: string;
     const children: {
         type: string;

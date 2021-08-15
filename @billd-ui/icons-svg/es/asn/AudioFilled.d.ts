@@ -1,5 +1,5 @@
-export default Audiofilled;
-declare namespace Audiofilled {
+export default AudioFilled;
+declare namespace AudioFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default CopyrightCirclefilled;
-declare namespace CopyrightCirclefilled {
+export default CopyrightCircleFilled;
+declare namespace CopyrightCircleFilled {
     const type: string;
     const children: {
         type: string;

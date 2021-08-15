@@ -1,5 +1,5 @@
-export default OneToOneoutlined;
-declare namespace OneToOneoutlined {
+export default OneToOneOutlined;
+declare namespace OneToOneOutlined {
     const type: string;
     const children: {
         type: string;

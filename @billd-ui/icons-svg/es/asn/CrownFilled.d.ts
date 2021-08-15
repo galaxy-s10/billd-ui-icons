@@ -1,5 +1,5 @@
-export default Crownfilled;
-declare namespace Crownfilled {
+export default CrownFilled;
+declare namespace CrownFilled {
     const type: string;
     const children: {
         type: string;

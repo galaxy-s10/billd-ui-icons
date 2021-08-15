@@ -1,5 +1,5 @@
-export default Environmentoutlined;
-declare namespace Environmentoutlined {
+export default EnvironmentOutlined;
+declare namespace EnvironmentOutlined {
     const type: string;
     const children: {
         type: string;

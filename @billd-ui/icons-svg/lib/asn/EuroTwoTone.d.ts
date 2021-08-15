@@ -1,5 +1,5 @@
-export default EurotwoTone;
-declare namespace EurotwoTone {
+export default EuroTwoTone;
+declare namespace EuroTwoTone {
     const type: string;
     const children: {
         type: string;

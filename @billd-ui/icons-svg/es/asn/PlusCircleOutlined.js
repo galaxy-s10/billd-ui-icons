@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var PlusCircleoutlined = {
+var PlusCircleOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -29,4 +29,4 @@ var PlusCircleoutlined = {
   "name": "plus-circle",
   "theme": "outlined"
 };
-export default PlusCircleoutlined;
+export default PlusCircleOutlined;

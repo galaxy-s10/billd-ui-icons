@@ -1,5 +1,5 @@
-export default Bellfilled;
-declare namespace Bellfilled {
+export default BellFilled;
+declare namespace BellFilled {
     const type: string;
     const children: {
         type: string;

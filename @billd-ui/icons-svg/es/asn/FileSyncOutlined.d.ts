@@ -1,5 +1,5 @@
-export default FileSyncoutlined;
-declare namespace FileSyncoutlined {
+export default FileSyncOutlined;
+declare namespace FileSyncOutlined {
     const type: string;
     const children: {
         type: string;

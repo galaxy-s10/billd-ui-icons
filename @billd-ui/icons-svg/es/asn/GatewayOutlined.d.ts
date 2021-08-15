@@ -1,5 +1,5 @@
-export default Gatewayoutlined;
-declare namespace Gatewayoutlined {
+export default GatewayOutlined;
+declare namespace GatewayOutlined {
     const type: string;
     const children: {
         type: string;

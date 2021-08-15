@@ -1,5 +1,5 @@
-export default Qrcodeoutlined;
-declare namespace Qrcodeoutlined {
+export default QrcodeOutlined;
+declare namespace QrcodeOutlined {
     const type: string;
     const children: {
         type: string;

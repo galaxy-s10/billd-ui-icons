@@ -1,5 +1,5 @@
-export default TrademarkCircleoutlined;
-declare namespace TrademarkCircleoutlined {
+export default TrademarkCircleOutlined;
+declare namespace TrademarkCircleOutlined {
     const type: string;
     const children: {
         type: string;

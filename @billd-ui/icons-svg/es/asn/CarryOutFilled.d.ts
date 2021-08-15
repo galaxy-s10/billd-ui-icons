@@ -1,5 +1,5 @@
-export default CarryOutfilled;
-declare namespace CarryOutfilled {
+export default CarryOutFilled;
+declare namespace CarryOutFilled {
     const type: string;
     const children: {
         type: string;

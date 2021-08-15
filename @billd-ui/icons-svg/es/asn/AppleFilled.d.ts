@@ -1,5 +1,5 @@
-export default Applefilled;
-declare namespace Applefilled {
+export default AppleFilled;
+declare namespace AppleFilled {
     const type: string;
     const children: {
         type: string;

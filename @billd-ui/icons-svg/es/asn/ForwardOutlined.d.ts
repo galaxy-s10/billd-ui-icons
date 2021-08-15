@@ -1,5 +1,5 @@
-export default Forwardoutlined;
-declare namespace Forwardoutlined {
+export default ForwardOutlined;
+declare namespace ForwardOutlined {
     const type: string;
     const children: {
         type: string;

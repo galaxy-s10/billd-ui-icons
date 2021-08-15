@@ -1,5 +1,5 @@
-export default DeleteRowoutlined;
-declare namespace DeleteRowoutlined {
+export default DeleteRowOutlined;
+declare namespace DeleteRowOutlined {
     const type: string;
     const children: {
         type: string;

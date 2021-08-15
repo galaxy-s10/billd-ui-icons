@@ -1,5 +1,5 @@
-export default Notificationfilled;
-declare namespace Notificationfilled {
+export default NotificationFilled;
+declare namespace NotificationFilled {
     const type: string;
     const children: {
         type: string;

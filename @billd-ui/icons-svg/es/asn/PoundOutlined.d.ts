@@ -1,5 +1,5 @@
-export default Poundoutlined;
-declare namespace Poundoutlined {
+export default PoundOutlined;
+declare namespace PoundOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Idcardfilled;
-declare namespace Idcardfilled {
+export default IdcardFilled;
+declare namespace IdcardFilled {
     const type: string;
     const children: {
         type: string;

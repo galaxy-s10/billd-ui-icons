@@ -1,5 +1,5 @@
-export default MehtwoTone;
-declare namespace MehtwoTone {
+export default MehTwoTone;
+declare namespace MehTwoTone {
     const type: string;
     const children: {
         type: string;

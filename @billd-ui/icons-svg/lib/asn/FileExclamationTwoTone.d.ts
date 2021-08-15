@@ -1,5 +1,5 @@
-export default FileExclamationtwoTone;
-declare namespace FileExclamationtwoTone {
+export default FileExclamationTwoTone;
+declare namespace FileExclamationTwoTone {
     const type: string;
     const children: {
         type: string;

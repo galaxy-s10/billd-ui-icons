@@ -1,5 +1,5 @@
-export default BehanceSquarefilled;
-declare namespace BehanceSquarefilled {
+export default BehanceSquareFilled;
+declare namespace BehanceSquareFilled {
     const type: string;
     const children: {
         type: string;

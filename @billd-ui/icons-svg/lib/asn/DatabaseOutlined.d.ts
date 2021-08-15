@@ -1,5 +1,5 @@
-export default Databaseoutlined;
-declare namespace Databaseoutlined {
+export default DatabaseOutlined;
+declare namespace DatabaseOutlined {
     const type: string;
     const children: {
         type: string;

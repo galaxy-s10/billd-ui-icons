@@ -1,5 +1,5 @@
-export default Deletefilled;
-declare namespace Deletefilled {
+export default DeleteFilled;
+declare namespace DeleteFilled {
     const type: string;
     const children: {
         type: string;

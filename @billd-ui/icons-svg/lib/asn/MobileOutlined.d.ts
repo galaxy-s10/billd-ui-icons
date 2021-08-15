@@ -1,5 +1,5 @@
-export default Mobileoutlined;
-declare namespace Mobileoutlined {
+export default MobileOutlined;
+declare namespace MobileOutlined {
     const type: string;
     const children: {
         type: string;

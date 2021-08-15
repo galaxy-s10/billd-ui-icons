@@ -1,5 +1,5 @@
-export default FundtwoTone;
-declare namespace FundtwoTone {
+export default FundTwoTone;
+declare namespace FundTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Walletoutlined;
-declare namespace Walletoutlined {
+export default WalletOutlined;
+declare namespace WalletOutlined {
     const type: string;
     const children: {
         type: string;

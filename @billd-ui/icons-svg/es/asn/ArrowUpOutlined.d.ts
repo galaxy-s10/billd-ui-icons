@@ -1,5 +1,5 @@
-export default ArrowUpoutlined;
-declare namespace ArrowUpoutlined {
+export default ArrowUpOutlined;
+declare namespace ArrowUpOutlined {
     const type: string;
     const children: {
         type: string;

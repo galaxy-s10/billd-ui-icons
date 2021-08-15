@@ -1,5 +1,5 @@
-export default InfoCirclefilled;
-declare namespace InfoCirclefilled {
+export default InfoCircleFilled;
+declare namespace InfoCircleFilled {
     const type: string;
     const children: {
         type: string;

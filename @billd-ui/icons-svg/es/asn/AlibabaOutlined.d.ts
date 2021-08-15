@@ -1,5 +1,5 @@
-export default Alibabaoutlined;
-declare namespace Alibabaoutlined {
+export default AlibabaOutlined;
+declare namespace AlibabaOutlined {
     const type: string;
     const children: {
         type: string;

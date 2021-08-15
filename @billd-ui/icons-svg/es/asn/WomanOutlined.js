@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Womanoutlined = {
+var WomanOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -21,4 +21,4 @@ var Womanoutlined = {
   "name": "woman",
   "theme": "outlined"
 };
-export default Womanoutlined;
+export default WomanOutlined;

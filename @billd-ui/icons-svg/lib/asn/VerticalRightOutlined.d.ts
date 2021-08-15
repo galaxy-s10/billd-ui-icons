@@ -1,5 +1,5 @@
-export default VerticalRightoutlined;
-declare namespace VerticalRightoutlined {
+export default VerticalRightOutlined;
+declare namespace VerticalRightOutlined {
     const type: string;
     const children: {
         type: string;

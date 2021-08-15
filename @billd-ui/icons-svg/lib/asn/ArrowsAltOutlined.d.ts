@@ -1,5 +1,5 @@
-export default ArrowsAltoutlined;
-declare namespace ArrowsAltoutlined {
+export default ArrowsAltOutlined;
+declare namespace ArrowsAltOutlined {
     const type: string;
     const children: {
         type: string;

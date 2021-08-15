@@ -1,5 +1,5 @@
-export default Codeoutlined;
-declare namespace Codeoutlined {
+export default CodeOutlined;
+declare namespace CodeOutlined {
     const type: string;
     const children: {
         type: string;

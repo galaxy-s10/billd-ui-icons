@@ -1,5 +1,5 @@
-export default Printeroutlined;
-declare namespace Printeroutlined {
+export default PrinterOutlined;
+declare namespace PrinterOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default QqSquarefilled;
-declare namespace QqSquarefilled {
+export default QqSquareFilled;
+declare namespace QqSquareFilled {
     const type: string;
     const children: {
         type: string;

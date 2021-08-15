@@ -1,5 +1,5 @@
-export default FastBackwardoutlined;
-declare namespace FastBackwardoutlined {
+export default FastBackwardOutlined;
+declare namespace FastBackwardOutlined {
     const type: string;
     const children: {
         type: string;

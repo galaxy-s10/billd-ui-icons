@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var EyeInvisibleoutlined = {
+var EyeInvisibleOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,5 +36,5 @@ var EyeInvisibleoutlined = {
   "name": "eye-invisible",
   "theme": "outlined"
 };
-var _default = EyeInvisibleoutlined;
+var _default = EyeInvisibleOutlined;
 exports.default = _default;

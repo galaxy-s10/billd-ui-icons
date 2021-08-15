@@ -1,5 +1,5 @@
-export default Idcardoutlined;
-declare namespace Idcardoutlined {
+export default IdcardOutlined;
+declare namespace IdcardOutlined {
     const type: string;
     const children: {
         type: string;

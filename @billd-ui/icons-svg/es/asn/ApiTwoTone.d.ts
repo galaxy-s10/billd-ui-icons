@@ -1,5 +1,5 @@
-export default ApitwoTone;
-declare namespace ApitwoTone {
+export default ApiTwoTone;
+declare namespace ApiTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FileGifoutlined;
-declare namespace FileGifoutlined {
+export default FileGifOutlined;
+declare namespace FileGifOutlined {
     const type: string;
     const children: {
         type: string;

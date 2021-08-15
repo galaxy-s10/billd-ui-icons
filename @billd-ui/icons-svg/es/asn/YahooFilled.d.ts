@@ -1,5 +1,5 @@
-export default Yahoofilled;
-declare namespace Yahoofilled {
+export default YahooFilled;
+declare namespace YahooFilled {
     const type: string;
     const children: {
         type: string;

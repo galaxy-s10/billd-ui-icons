@@ -1,5 +1,5 @@
-export default Amazonoutlined;
-declare namespace Amazonoutlined {
+export default AmazonOutlined;
+declare namespace AmazonOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FunnelPlottwoTone;
-declare namespace FunnelPlottwoTone {
+export default FunnelPlotTwoTone;
+declare namespace FunnelPlotTwoTone {
     const type: string;
     const children: {
         type: string;

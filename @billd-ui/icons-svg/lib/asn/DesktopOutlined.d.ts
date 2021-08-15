@@ -1,5 +1,5 @@
-export default Desktopoutlined;
-declare namespace Desktopoutlined {
+export default DesktopOutlined;
+declare namespace DesktopOutlined {
     const type: string;
     const children: {
         type: string;

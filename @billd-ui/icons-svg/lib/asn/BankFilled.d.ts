@@ -1,5 +1,5 @@
-export default Bankfilled;
-declare namespace Bankfilled {
+export default BankFilled;
+declare namespace BankFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var TagstwoTone = {
+var TagsTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -44,4 +44,4 @@ var TagstwoTone = {
   "name": "tags",
   "theme": "twoTone"
 };
-export default TagstwoTone;
+export default TagsTwoTone;

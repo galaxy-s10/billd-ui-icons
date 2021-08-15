@@ -1,5 +1,5 @@
-export default Warningfilled;
-declare namespace Warningfilled {
+export default WarningFilled;
+declare namespace WarningFilled {
     const type: string;
     const children: {
         type: string;

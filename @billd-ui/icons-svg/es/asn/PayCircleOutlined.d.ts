@@ -1,5 +1,5 @@
-export default PayCircleoutlined;
-declare namespace PayCircleoutlined {
+export default PayCircleOutlined;
+declare namespace PayCircleOutlined {
     const type: string;
     const children: {
         type: string;

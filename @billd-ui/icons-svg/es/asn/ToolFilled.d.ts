@@ -1,5 +1,5 @@
-export default Toolfilled;
-declare namespace Toolfilled {
+export default ToolFilled;
+declare namespace ToolFilled {
     const type: string;
     const children: {
         type: string;

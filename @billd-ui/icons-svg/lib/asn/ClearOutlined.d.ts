@@ -1,5 +1,5 @@
-export default Clearoutlined;
-declare namespace Clearoutlined {
+export default ClearOutlined;
+declare namespace ClearOutlined {
     const type: string;
     const children: {
         type: string;

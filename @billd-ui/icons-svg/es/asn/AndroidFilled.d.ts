@@ -1,5 +1,5 @@
-export default Androidfilled;
-declare namespace Androidfilled {
+export default AndroidFilled;
+declare namespace AndroidFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default CodepenCircleoutlined;
-declare namespace CodepenCircleoutlined {
+export default CodepenCircleOutlined;
+declare namespace CodepenCircleOutlined {
     const type: string;
     const children: {
         type: string;

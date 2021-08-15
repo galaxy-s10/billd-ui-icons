@@ -1,5 +1,5 @@
-export default Soundoutlined;
-declare namespace Soundoutlined {
+export default SoundOutlined;
+declare namespace SoundOutlined {
     const type: string;
     const children: {
         type: string;

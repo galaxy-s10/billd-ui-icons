@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DatabasetwoTone = {
+var DatabaseTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,5 +43,5 @@ var DatabasetwoTone = {
   "name": "database",
   "theme": "twoTone"
 };
-var _default = DatabasetwoTone;
+var _default = DatabaseTwoTone;
 exports.default = _default;

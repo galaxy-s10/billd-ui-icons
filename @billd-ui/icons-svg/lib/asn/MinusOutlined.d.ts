@@ -1,5 +1,5 @@
-export default Minusoutlined;
-declare namespace Minusoutlined {
+export default MinusOutlined;
+declare namespace MinusOutlined {
     const type: string;
     const children: {
         type: string;

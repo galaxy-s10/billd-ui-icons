@@ -1,5 +1,5 @@
-export default Scheduleoutlined;
-declare namespace Scheduleoutlined {
+export default ScheduleOutlined;
+declare namespace ScheduleOutlined {
     const type: string;
     const children: {
         type: string;

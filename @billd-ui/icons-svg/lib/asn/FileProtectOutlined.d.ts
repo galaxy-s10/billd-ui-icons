@@ -1,5 +1,5 @@
-export default FileProtectoutlined;
-declare namespace FileProtectoutlined {
+export default FileProtectOutlined;
+declare namespace FileProtectOutlined {
     const type: string;
     const children: {
         type: string;

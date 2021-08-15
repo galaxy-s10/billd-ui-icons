@@ -1,5 +1,5 @@
-export default Containeroutlined;
-declare namespace Containeroutlined {
+export default ContainerOutlined;
+declare namespace ContainerOutlined {
     const type: string;
     const children: {
         type: string;

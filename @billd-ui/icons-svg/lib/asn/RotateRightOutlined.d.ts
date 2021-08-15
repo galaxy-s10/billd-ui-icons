@@ -1,5 +1,5 @@
-export default RotateRightoutlined;
-declare namespace RotateRightoutlined {
+export default RotateRightOutlined;
+declare namespace RotateRightOutlined {
     const type: string;
     const children: {
         type: string;

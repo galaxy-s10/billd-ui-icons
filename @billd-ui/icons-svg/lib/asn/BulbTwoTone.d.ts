@@ -1,5 +1,5 @@
-export default BulbtwoTone;
-declare namespace BulbtwoTone {
+export default BulbTwoTone;
+declare namespace BulbTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default TrademarkCirclefilled;
-declare namespace TrademarkCirclefilled {
+export default TrademarkCircleFilled;
+declare namespace TrademarkCircleFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Yahoooutlined;
-declare namespace Yahoooutlined {
+export default YahooOutlined;
+declare namespace YahooOutlined {
     const type: string;
     const children: {
         type: string;

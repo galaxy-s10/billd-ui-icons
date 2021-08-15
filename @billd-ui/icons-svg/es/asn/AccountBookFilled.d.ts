@@ -1,5 +1,5 @@
-export default AccountBookfilled;
-declare namespace AccountBookfilled {
+export default AccountBookFilled;
+declare namespace AccountBookFilled {
     const type: string;
     const children: {
         type: string;

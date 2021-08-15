@@ -1,5 +1,5 @@
-export default Subnodeoutlined;
-declare namespace Subnodeoutlined {
+export default SubnodeOutlined;
+declare namespace SubnodeOutlined {
     const type: string;
     const children: {
         type: string;

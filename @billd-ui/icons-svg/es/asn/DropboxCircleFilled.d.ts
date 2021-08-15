@@ -1,5 +1,5 @@
-export default DropboxCirclefilled;
-declare namespace DropboxCirclefilled {
+export default DropboxCircleFilled;
+declare namespace DropboxCircleFilled {
     const type: string;
     const children: {
         type: string;

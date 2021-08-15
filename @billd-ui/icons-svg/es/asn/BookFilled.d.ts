@@ -1,5 +1,5 @@
-export default Bookfilled;
-declare namespace Bookfilled {
+export default BookFilled;
+declare namespace BookFilled {
     const type: string;
     const children: {
         type: string;

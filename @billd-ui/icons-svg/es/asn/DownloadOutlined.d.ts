@@ -1,5 +1,5 @@
-export default Downloadoutlined;
-declare namespace Downloadoutlined {
+export default DownloadOutlined;
+declare namespace DownloadOutlined {
     const type: string;
     const children: {
         type: string;

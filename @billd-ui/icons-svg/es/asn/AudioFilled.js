@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Audiofilled = {
+var AudioFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Audiofilled = {
   "name": "audio",
   "theme": "filled"
 };
-export default Audiofilled;
+export default AudioFilled;

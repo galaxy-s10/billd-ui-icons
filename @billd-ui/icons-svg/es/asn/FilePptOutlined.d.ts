@@ -1,5 +1,5 @@
-export default FilePptoutlined;
-declare namespace FilePptoutlined {
+export default FilePptOutlined;
+declare namespace FilePptOutlined {
     const type: string;
     const children: {
         type: string;

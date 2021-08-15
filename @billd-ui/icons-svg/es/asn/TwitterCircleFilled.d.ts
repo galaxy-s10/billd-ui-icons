@@ -1,5 +1,5 @@
-export default TwitterCirclefilled;
-declare namespace TwitterCirclefilled {
+export default TwitterCircleFilled;
+declare namespace TwitterCircleFilled {
     const type: string;
     const children: {
         type: string;

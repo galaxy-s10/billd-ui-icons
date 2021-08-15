@@ -1,5 +1,5 @@
-export default CloudUploadoutlined;
-declare namespace CloudUploadoutlined {
+export default CloudUploadOutlined;
+declare namespace CloudUploadOutlined {
     const type: string;
     const children: {
         type: string;

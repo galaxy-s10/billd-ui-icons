@@ -1,5 +1,5 @@
-export default Rightoutlined;
-declare namespace Rightoutlined {
+export default RightOutlined;
+declare namespace RightOutlined {
     const type: string;
     const children: {
         type: string;

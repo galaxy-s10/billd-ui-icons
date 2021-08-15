@@ -1,5 +1,5 @@
-export default Appstorefilled;
-declare namespace Appstorefilled {
+export default AppstoreFilled;
+declare namespace AppstoreFilled {
     const type: string;
     const children: {
         type: string;

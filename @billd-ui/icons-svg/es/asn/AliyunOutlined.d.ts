@@ -1,5 +1,5 @@
-export default Aliyunoutlined;
-declare namespace Aliyunoutlined {
+export default AliyunOutlined;
+declare namespace AliyunOutlined {
     const type: string;
     const children: {
         type: string;

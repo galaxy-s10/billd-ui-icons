@@ -1,5 +1,5 @@
-export default RockettwoTone;
-declare namespace RockettwoTone {
+export default RocketTwoTone;
+declare namespace RocketTwoTone {
     const type: string;
     const children: {
         type: string;

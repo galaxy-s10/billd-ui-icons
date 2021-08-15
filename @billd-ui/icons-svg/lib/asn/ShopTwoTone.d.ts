@@ -1,5 +1,5 @@
-export default ShoptwoTone;
-declare namespace ShoptwoTone {
+export default ShopTwoTone;
+declare namespace ShopTwoTone {
     const type: string;
     const children: {
         type: string;

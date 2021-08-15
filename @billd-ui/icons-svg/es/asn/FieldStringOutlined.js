@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FieldStringoutlined = {
+var FieldStringOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -48,4 +48,4 @@ var FieldStringoutlined = {
   "name": "field-string",
   "theme": "outlined"
 };
-export default FieldStringoutlined;
+export default FieldStringOutlined;

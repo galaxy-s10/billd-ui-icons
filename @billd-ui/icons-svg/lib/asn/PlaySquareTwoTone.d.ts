@@ -1,5 +1,5 @@
-export default PlaySquaretwoTone;
-declare namespace PlaySquaretwoTone {
+export default PlaySquareTwoTone;
+declare namespace PlaySquareTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Instagramfilled;
-declare namespace Instagramfilled {
+export default InstagramFilled;
+declare namespace InstagramFilled {
     const type: string;
     const children: {
         type: string;

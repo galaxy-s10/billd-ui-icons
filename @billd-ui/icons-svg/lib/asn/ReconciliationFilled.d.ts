@@ -1,5 +1,5 @@
-export default Reconciliationfilled;
-declare namespace Reconciliationfilled {
+export default ReconciliationFilled;
+declare namespace ReconciliationFilled {
     const type: string;
     const children: {
         type: string;

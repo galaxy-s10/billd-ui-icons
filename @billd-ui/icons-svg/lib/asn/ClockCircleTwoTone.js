@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var ClockCircletwoTone = {
+var ClockCircleTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -45,5 +45,5 @@ var ClockCircletwoTone = {
   "name": "clock-circle",
   "theme": "twoTone"
 };
-var _default = ClockCircletwoTone;
+var _default = ClockCircleTwoTone;
 exports.default = _default;

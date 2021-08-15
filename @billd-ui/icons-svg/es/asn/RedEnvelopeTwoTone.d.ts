@@ -1,5 +1,5 @@
-export default RedEnvelopetwoTone;
-declare namespace RedEnvelopetwoTone {
+export default RedEnvelopeTwoTone;
+declare namespace RedEnvelopeTwoTone {
     const type: string;
     const children: {
         type: string;

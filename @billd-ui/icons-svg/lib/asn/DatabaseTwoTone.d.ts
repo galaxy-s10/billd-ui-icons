@@ -1,5 +1,5 @@
-export default DatabasetwoTone;
-declare namespace DatabasetwoTone {
+export default DatabaseTwoTone;
+declare namespace DatabaseTwoTone {
     const type: string;
     const children: {
         type: string;

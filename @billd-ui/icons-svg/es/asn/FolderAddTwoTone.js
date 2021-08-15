@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FolderAddtwoTone = {
+var FolderAddTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,4 +36,4 @@ var FolderAddtwoTone = {
   "name": "folder-add",
   "theme": "twoTone"
 };
-export default FolderAddtwoTone;
+export default FolderAddTwoTone;

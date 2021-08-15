@@ -1,5 +1,5 @@
-export default Calendaroutlined;
-declare namespace Calendaroutlined {
+export default CalendarOutlined;
+declare namespace CalendarOutlined {
     const type: string;
     const children: {
         type: string;

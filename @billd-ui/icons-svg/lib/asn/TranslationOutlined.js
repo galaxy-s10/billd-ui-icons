@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Translationoutlined = {
+var TranslationOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -47,5 +47,5 @@ var Translationoutlined = {
   "name": "translation",
   "theme": "outlined"
 };
-var _default = Translationoutlined;
+var _default = TranslationOutlined;
 exports.default = _default;

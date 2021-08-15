@@ -1,5 +1,5 @@
-export default Interactionoutlined;
-declare namespace Interactionoutlined {
+export default InteractionOutlined;
+declare namespace InteractionOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Savefilled;
-declare namespace Savefilled {
+export default SaveFilled;
+declare namespace SaveFilled {
     const type: string;
     const children: {
         type: string;

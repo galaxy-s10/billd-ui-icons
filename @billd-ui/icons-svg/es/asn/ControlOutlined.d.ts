@@ -1,5 +1,5 @@
-export default Controloutlined;
-declare namespace Controloutlined {
+export default ControlOutlined;
+declare namespace ControlOutlined {
     const type: string;
     const children: {
         type: string;

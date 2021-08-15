@@ -1,5 +1,5 @@
-export default Trademarkoutlined;
-declare namespace Trademarkoutlined {
+export default TrademarkOutlined;
+declare namespace TrademarkOutlined {
     const type: string;
     const children: {
         type: string;

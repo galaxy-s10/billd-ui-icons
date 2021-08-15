@@ -1,5 +1,5 @@
-export default MailtwoTone;
-declare namespace MailtwoTone {
+export default MailTwoTone;
+declare namespace MailTwoTone {
     const type: string;
     const children: {
         type: string;

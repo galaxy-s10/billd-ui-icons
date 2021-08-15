@@ -1,5 +1,5 @@
-export default Snippetsoutlined;
-declare namespace Snippetsoutlined {
+export default SnippetsOutlined;
+declare namespace SnippetsOutlined {
     const type: string;
     const children: {
         type: string;

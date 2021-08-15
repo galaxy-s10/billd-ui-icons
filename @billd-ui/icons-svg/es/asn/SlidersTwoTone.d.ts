@@ -1,5 +1,5 @@
-export default SliderstwoTone;
-declare namespace SliderstwoTone {
+export default SlidersTwoTone;
+declare namespace SlidersTwoTone {
     const type: string;
     const children: {
         type: string;

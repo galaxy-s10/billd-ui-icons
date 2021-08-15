@@ -1,5 +1,5 @@
-export default DingtalkCirclefilled;
-declare namespace DingtalkCirclefilled {
+export default DingtalkCircleFilled;
+declare namespace DingtalkCircleFilled {
     const type: string;
     const children: {
         type: string;

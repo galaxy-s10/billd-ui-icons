@@ -1,5 +1,5 @@
-export default CloseSquarefilled;
-declare namespace CloseSquarefilled {
+export default CloseSquareFilled;
+declare namespace CloseSquareFilled {
     const type: string;
     const children: {
         type: string;

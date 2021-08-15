@@ -1,5 +1,5 @@
-export default Chromefilled;
-declare namespace Chromefilled {
+export default ChromeFilled;
+declare namespace ChromeFilled {
     const type: string;
     const children: {
         type: string;

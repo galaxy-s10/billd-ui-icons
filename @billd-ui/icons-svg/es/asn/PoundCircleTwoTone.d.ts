@@ -1,5 +1,5 @@
-export default PoundCircletwoTone;
-declare namespace PoundCircletwoTone {
+export default PoundCircleTwoTone;
+declare namespace PoundCircleTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default IdcardtwoTone;
-declare namespace IdcardtwoTone {
+export default IdcardTwoTone;
+declare namespace IdcardTwoTone {
     const type: string;
     const children: {
         type: string;

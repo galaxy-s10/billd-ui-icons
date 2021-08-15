@@ -1,5 +1,5 @@
-export default DisliketwoTone;
-declare namespace DisliketwoTone {
+export default DislikeTwoTone;
+declare namespace DislikeTwoTone {
     const type: string;
     const children: {
         type: string;

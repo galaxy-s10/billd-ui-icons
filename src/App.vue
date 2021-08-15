@@ -1,16 +1,17 @@
 <template>
   <div>
-    <billd-icon-error></billd-icon-error>
-    <BilldIconError></BilldIconError>
+    <!-- <billd-icon-error></billd-icon-error>
+    <BilldIconError></BilldIconError> -->
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
 // import { ErrorTwoTone } from '@huangshuisheng/icons-vue';
-import { ErrorTwoTone } from '../@billd-ui/icons-vue/es';
+import { AccountBookFilled } from '../@billd-ui/icons-vue/es/index';
 
-Vue.component('BilldIconError', ErrorTwoTone);
+console.log(AccountBookFilled);
+// Vue.component('BilldIconError', ErrorTwoTone);
 
 export default {};
 </script>

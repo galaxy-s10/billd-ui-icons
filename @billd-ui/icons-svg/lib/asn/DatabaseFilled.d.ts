@@ -1,5 +1,5 @@
-export default Databasefilled;
-declare namespace Databasefilled {
+export default DatabaseFilled;
+declare namespace DatabaseFilled {
     const type: string;
     const children: {
         type: string;

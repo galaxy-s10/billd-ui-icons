@@ -1,5 +1,5 @@
-export default MoneyCollectoutlined;
-declare namespace MoneyCollectoutlined {
+export default MoneyCollectOutlined;
+declare namespace MoneyCollectOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CloudtwoTone = {
+var CloudTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -29,4 +29,4 @@ var CloudtwoTone = {
   "name": "cloud",
   "theme": "twoTone"
 };
-export default CloudtwoTone;
+export default CloudTwoTone;

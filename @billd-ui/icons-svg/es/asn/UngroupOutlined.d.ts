@@ -1,5 +1,5 @@
-export default Ungroupoutlined;
-declare namespace Ungroupoutlined {
+export default UngroupOutlined;
+declare namespace UngroupOutlined {
     const type: string;
     const children: {
         type: string;

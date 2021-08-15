@@ -1,5 +1,5 @@
-export default Rollbackoutlined;
-declare namespace Rollbackoutlined {
+export default RollbackOutlined;
+declare namespace RollbackOutlined {
     const type: string;
     const children: {
         type: string;

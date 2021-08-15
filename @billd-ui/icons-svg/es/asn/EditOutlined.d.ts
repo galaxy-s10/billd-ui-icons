@@ -1,5 +1,5 @@
-export default Editoutlined;
-declare namespace Editoutlined {
+export default EditOutlined;
+declare namespace EditOutlined {
     const type: string;
     const children: {
         type: string;

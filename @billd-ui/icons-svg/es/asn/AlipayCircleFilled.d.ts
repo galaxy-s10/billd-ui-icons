@@ -1,5 +1,5 @@
-export default AlipayCirclefilled;
-declare namespace AlipayCirclefilled {
+export default AlipayCircleFilled;
+declare namespace AlipayCircleFilled {
     const type: string;
     const children: {
         type: string;

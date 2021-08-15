@@ -1,5 +1,5 @@
-export default RedditSquarefilled;
-declare namespace RedditSquarefilled {
+export default RedditSquareFilled;
+declare namespace RedditSquareFilled {
     const type: string;
     const children: {
         type: string;

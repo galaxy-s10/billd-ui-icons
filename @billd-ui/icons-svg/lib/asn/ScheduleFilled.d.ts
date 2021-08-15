@@ -1,5 +1,5 @@
-export default Schedulefilled;
-declare namespace Schedulefilled {
+export default ScheduleFilled;
+declare namespace ScheduleFilled {
     const type: string;
     const children: {
         type: string;

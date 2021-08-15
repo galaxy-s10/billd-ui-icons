@@ -1,5 +1,5 @@
-export default Keyoutlined;
-declare namespace Keyoutlined {
+export default KeyOutlined;
+declare namespace KeyOutlined {
     const type: string;
     const children: {
         type: string;

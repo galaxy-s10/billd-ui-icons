@@ -1,5 +1,5 @@
-export default StartwoTone;
-declare namespace StartwoTone {
+export default StarTwoTone;
+declare namespace StarTwoTone {
     const type: string;
     const children: {
         type: string;

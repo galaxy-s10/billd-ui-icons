@@ -1,5 +1,5 @@
-export default Lockoutlined;
-declare namespace Lockoutlined {
+export default LockOutlined;
+declare namespace LockOutlined {
     const type: string;
     const children: {
         type: string;

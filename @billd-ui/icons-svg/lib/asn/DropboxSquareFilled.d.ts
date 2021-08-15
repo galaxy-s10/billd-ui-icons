@@ -1,5 +1,5 @@
-export default DropboxSquarefilled;
-declare namespace DropboxSquarefilled {
+export default DropboxSquareFilled;
+declare namespace DropboxSquareFilled {
     const type: string;
     const children: {
         type: string;

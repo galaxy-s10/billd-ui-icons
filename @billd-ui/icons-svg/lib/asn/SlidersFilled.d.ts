@@ -1,5 +1,5 @@
-export default Slidersfilled;
-declare namespace Slidersfilled {
+export default SlidersFilled;
+declare namespace SlidersFilled {
     const type: string;
     const children: {
         type: string;

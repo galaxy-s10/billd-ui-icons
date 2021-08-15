@@ -1,5 +1,5 @@
-export default NodeExpandoutlined;
-declare namespace NodeExpandoutlined {
+export default NodeExpandOutlined;
+declare namespace NodeExpandOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Uploadoutlined;
-declare namespace Uploadoutlined {
+export default UploadOutlined;
+declare namespace UploadOutlined {
     const type: string;
     const children: {
         type: string;

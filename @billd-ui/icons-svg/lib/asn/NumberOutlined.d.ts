@@ -1,5 +1,5 @@
-export default Numberoutlined;
-declare namespace Numberoutlined {
+export default NumberOutlined;
+declare namespace NumberOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default UpCirclefilled;
-declare namespace UpCirclefilled {
+export default UpCircleFilled;
+declare namespace UpCircleFilled {
     const type: string;
     const children: {
         type: string;

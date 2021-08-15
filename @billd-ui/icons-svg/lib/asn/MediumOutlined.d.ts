@@ -1,5 +1,5 @@
-export default Mediumoutlined;
-declare namespace Mediumoutlined {
+export default MediumOutlined;
+declare namespace MediumOutlined {
     const type: string;
     const children: {
         type: string;

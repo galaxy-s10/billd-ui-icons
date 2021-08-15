@@ -1,5 +1,5 @@
-export default Upoutlined;
-declare namespace Upoutlined {
+export default UpOutlined;
+declare namespace UpOutlined {
     const type: string;
     const children: {
         type: string;

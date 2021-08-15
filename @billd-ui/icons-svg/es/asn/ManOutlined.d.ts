@@ -1,5 +1,5 @@
-export default Manoutlined;
-declare namespace Manoutlined {
+export default ManOutlined;
+declare namespace ManOutlined {
     const type: string;
     const children: {
         type: string;

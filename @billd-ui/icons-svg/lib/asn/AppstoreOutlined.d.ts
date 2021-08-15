@@ -1,5 +1,5 @@
-export default Appstoreoutlined;
-declare namespace Appstoreoutlined {
+export default AppstoreOutlined;
+declare namespace AppstoreOutlined {
     const type: string;
     const children: {
         type: string;

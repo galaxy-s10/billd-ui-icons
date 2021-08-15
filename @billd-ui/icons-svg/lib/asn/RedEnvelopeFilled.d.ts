@@ -1,5 +1,5 @@
-export default RedEnvelopefilled;
-declare namespace RedEnvelopefilled {
+export default RedEnvelopeFilled;
+declare namespace RedEnvelopeFilled {
     const type: string;
     const children: {
         type: string;

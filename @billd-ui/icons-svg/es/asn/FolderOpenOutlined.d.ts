@@ -1,5 +1,5 @@
-export default FolderOpenoutlined;
-declare namespace FolderOpenoutlined {
+export default FolderOpenOutlined;
+declare namespace FolderOpenOutlined {
     const type: string;
     const children: {
         type: string;

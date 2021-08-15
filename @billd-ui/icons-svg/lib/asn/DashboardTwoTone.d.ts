@@ -1,5 +1,5 @@
-export default DashboardtwoTone;
-declare namespace DashboardtwoTone {
+export default DashboardTwoTone;
+declare namespace DashboardTwoTone {
     const type: string;
     const children: {
         type: string;

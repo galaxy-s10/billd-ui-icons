@@ -1,5 +1,5 @@
-export default ClockCircletwoTone;
-declare namespace ClockCircletwoTone {
+export default ClockCircleTwoTone;
+declare namespace ClockCircleTwoTone {
     const type: string;
     const children: {
         type: string;

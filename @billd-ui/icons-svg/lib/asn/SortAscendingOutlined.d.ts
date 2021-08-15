@@ -1,5 +1,5 @@
-export default SortAscendingoutlined;
-declare namespace SortAscendingoutlined {
+export default SortAscendingOutlined;
+declare namespace SortAscendingOutlined {
     const type: string;
     const children: {
         type: string;

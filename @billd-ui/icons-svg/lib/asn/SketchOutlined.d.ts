@@ -1,5 +1,5 @@
-export default Sketchoutlined;
-declare namespace Sketchoutlined {
+export default SketchOutlined;
+declare namespace SketchOutlined {
     const type: string;
     const children: {
         type: string;

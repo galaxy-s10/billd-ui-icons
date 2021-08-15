@@ -1,5 +1,5 @@
-export default LineHeightoutlined;
-declare namespace LineHeightoutlined {
+export default LineHeightOutlined;
+declare namespace LineHeightOutlined {
     const type: string;
     const children: {
         type: string;

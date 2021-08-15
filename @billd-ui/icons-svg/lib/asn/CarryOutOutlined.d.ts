@@ -1,5 +1,5 @@
-export default CarryOutoutlined;
-declare namespace CarryOutoutlined {
+export default CarryOutOutlined;
+declare namespace CarryOutOutlined {
     const type: string;
     const children: {
         type: string;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Alibabaoutlined = {
+var AlibabaOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -29,5 +29,5 @@ var Alibabaoutlined = {
   "name": "alibaba",
   "theme": "outlined"
 };
-var _default = Alibabaoutlined;
+var _default = AlibabaOutlined;
 exports.default = _default;

@@ -1,5 +1,5 @@
-export default ProfiletwoTone;
-declare namespace ProfiletwoTone {
+export default ProfileTwoTone;
+declare namespace ProfileTwoTone {
     const type: string;
     const children: {
         type: string;

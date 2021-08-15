@@ -1,5 +1,5 @@
-export default CloudServeroutlined;
-declare namespace CloudServeroutlined {
+export default CloudServerOutlined;
+declare namespace CloudServerOutlined {
     const type: string;
     const children: {
         type: string;

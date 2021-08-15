@@ -1,5 +1,5 @@
-export default VideoCameratwoTone;
-declare namespace VideoCameratwoTone {
+export default VideoCameraTwoTone;
+declare namespace VideoCameraTwoTone {
     const type: string;
     const children: {
         type: string;

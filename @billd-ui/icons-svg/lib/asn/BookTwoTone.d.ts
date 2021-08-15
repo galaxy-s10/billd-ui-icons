@@ -1,5 +1,5 @@
-export default BooktwoTone;
-declare namespace BooktwoTone {
+export default BookTwoTone;
+declare namespace BookTwoTone {
     const type: string;
     const children: {
         type: string;

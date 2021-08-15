@@ -1,5 +1,5 @@
-export default DownCircleoutlined;
-declare namespace DownCircleoutlined {
+export default DownCircleOutlined;
+declare namespace DownCircleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default PieChartoutlined;
-declare namespace PieChartoutlined {
+export default PieChartOutlined;
+declare namespace PieChartOutlined {
     const type: string;
     const children: {
         type: string;

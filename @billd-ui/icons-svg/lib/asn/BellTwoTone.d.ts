@@ -1,5 +1,5 @@
-export default BelltwoTone;
-declare namespace BelltwoTone {
+export default BellTwoTone;
+declare namespace BellTwoTone {
     const type: string;
     const children: {
         type: string;

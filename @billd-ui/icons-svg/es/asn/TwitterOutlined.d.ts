@@ -1,5 +1,5 @@
-export default Twitteroutlined;
-declare namespace Twitteroutlined {
+export default TwitterOutlined;
+declare namespace TwitterOutlined {
     const type: string;
     const children: {
         type: string;

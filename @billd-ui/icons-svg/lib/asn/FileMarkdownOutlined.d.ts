@@ -1,5 +1,5 @@
-export default FileMarkdownoutlined;
-declare namespace FileMarkdownoutlined {
+export default FileMarkdownOutlined;
+declare namespace FileMarkdownOutlined {
     const type: string;
     const children: {
         type: string;

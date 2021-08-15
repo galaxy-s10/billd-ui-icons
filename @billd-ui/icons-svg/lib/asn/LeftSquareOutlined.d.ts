@@ -1,5 +1,5 @@
-export default LeftSquareoutlined;
-declare namespace LeftSquareoutlined {
+export default LeftSquareOutlined;
+declare namespace LeftSquareOutlined {
     const type: string;
     const children: {
         type: string;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var AccountBooktwoTone = {
+var AccountBookTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -43,5 +43,5 @@ var AccountBooktwoTone = {
   "name": "account-book",
   "theme": "twoTone"
 };
-var _default = AccountBooktwoTone;
+var _default = AccountBookTwoTone;
 exports.default = _default;

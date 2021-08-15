@@ -1,5 +1,5 @@
-export default DeploymentUnitoutlined;
-declare namespace DeploymentUnitoutlined {
+export default DeploymentUnitOutlined;
+declare namespace DeploymentUnitOutlined {
     const type: string;
     const children: {
         type: string;

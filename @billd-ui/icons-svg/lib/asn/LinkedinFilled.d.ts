@@ -1,5 +1,5 @@
-export default Linkedinfilled;
-declare namespace Linkedinfilled {
+export default LinkedinFilled;
+declare namespace LinkedinFilled {
     const type: string;
     const children: {
         type: string;

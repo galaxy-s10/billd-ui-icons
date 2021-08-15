@@ -1,5 +1,5 @@
-export default SlackCirclefilled;
-declare namespace SlackCirclefilled {
+export default SlackCircleFilled;
+declare namespace SlackCircleFilled {
     const type: string;
     const children: {
         type: string;

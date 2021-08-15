@@ -1,5 +1,5 @@
-export default Buildfilled;
-declare namespace Buildfilled {
+export default BuildFilled;
+declare namespace BuildFilled {
     const type: string;
     const children: {
         type: string;

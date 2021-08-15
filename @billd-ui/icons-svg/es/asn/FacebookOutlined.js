@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Facebookoutlined = {
+var FacebookOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Facebookoutlined = {
   "name": "facebook",
   "theme": "outlined"
 };
-export default Facebookoutlined;
+export default FacebookOutlined;

@@ -1,5 +1,5 @@
-export default EyetwoTone;
-declare namespace EyetwoTone {
+export default EyeTwoTone;
+declare namespace EyeTwoTone {
     const type: string;
     const children: {
         type: string;

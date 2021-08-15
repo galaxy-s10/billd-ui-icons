@@ -1,5 +1,5 @@
-export default FieldNumberoutlined;
-declare namespace FieldNumberoutlined {
+export default FieldNumberOutlined;
+declare namespace FieldNumberOutlined {
     const type: string;
     const children: {
         type: string;

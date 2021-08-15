@@ -1,5 +1,5 @@
-export default ZoomOutfilled;
-declare namespace ZoomOutfilled {
+export default ZoomOutFilled;
+declare namespace ZoomOutFilled {
     const type: string;
     const children: {
         type: string;

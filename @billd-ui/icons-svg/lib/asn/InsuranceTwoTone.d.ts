@@ -1,5 +1,5 @@
-export default InsurancetwoTone;
-declare namespace InsurancetwoTone {
+export default InsuranceTwoTone;
+declare namespace InsuranceTwoTone {
     const type: string;
     const children: {
         type: string;

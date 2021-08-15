@@ -1,5 +1,5 @@
-export default BoxPlotfilled;
-declare namespace BoxPlotfilled {
+export default BoxPlotFilled;
+declare namespace BoxPlotFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Selectoutlined;
-declare namespace Selectoutlined {
+export default SelectOutlined;
+declare namespace SelectOutlined {
     const type: string;
     const children: {
         type: string;

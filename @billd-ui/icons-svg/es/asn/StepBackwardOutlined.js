@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var StepBackwardoutlined = {
+var StepBackwardOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -21,4 +21,4 @@ var StepBackwardoutlined = {
   "name": "step-backward",
   "theme": "outlined"
 };
-export default StepBackwardoutlined;
+export default StepBackwardOutlined;

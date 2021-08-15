@@ -1,5 +1,5 @@
-export default CopytwoTone;
-declare namespace CopytwoTone {
+export default CopyTwoTone;
+declare namespace CopyTwoTone {
     const type: string;
     const children: {
         type: string;

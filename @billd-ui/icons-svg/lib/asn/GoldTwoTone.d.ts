@@ -1,5 +1,5 @@
-export default GoldtwoTone;
-declare namespace GoldtwoTone {
+export default GoldTwoTone;
+declare namespace GoldTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Giftoutlined;
-declare namespace Giftoutlined {
+export default GiftOutlined;
+declare namespace GiftOutlined {
     const type: string;
     const children: {
         type: string;

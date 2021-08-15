@@ -1,5 +1,5 @@
-export default FormatPainteroutlined;
-declare namespace FormatPainteroutlined {
+export default FormatPainterOutlined;
+declare namespace FormatPainterOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Readfilled;
-declare namespace Readfilled {
+export default ReadFilled;
+declare namespace ReadFilled {
     const type: string;
     const children: {
         type: string;

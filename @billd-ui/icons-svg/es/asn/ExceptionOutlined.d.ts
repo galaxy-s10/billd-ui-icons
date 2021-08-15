@@ -1,5 +1,5 @@
-export default Exceptionoutlined;
-declare namespace Exceptionoutlined {
+export default ExceptionOutlined;
+declare namespace ExceptionOutlined {
     const type: string;
     const children: {
         type: string;

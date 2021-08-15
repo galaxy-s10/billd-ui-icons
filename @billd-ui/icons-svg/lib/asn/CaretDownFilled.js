@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CaretDownfilled = {
+var CaretDownFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,5 +28,5 @@ var CaretDownfilled = {
   "name": "caret-down",
   "theme": "filled"
 };
-var _default = CaretDownfilled;
+var _default = CaretDownFilled;
 exports.default = _default;

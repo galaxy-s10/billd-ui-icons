@@ -1,5 +1,5 @@
-export default Thunderboltfilled;
-declare namespace Thunderboltfilled {
+export default ThunderboltFilled;
+declare namespace ThunderboltFilled {
     const type: string;
     const children: {
         type: string;

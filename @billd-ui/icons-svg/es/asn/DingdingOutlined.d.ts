@@ -1,5 +1,5 @@
-export default Dingdingoutlined;
-declare namespace Dingdingoutlined {
+export default DingdingOutlined;
+declare namespace DingdingOutlined {
     const type: string;
     const children: {
         type: string;

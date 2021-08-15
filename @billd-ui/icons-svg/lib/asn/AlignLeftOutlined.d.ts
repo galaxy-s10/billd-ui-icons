@@ -1,5 +1,5 @@
-export default AlignLeftoutlined;
-declare namespace AlignLeftoutlined {
+export default AlignLeftOutlined;
+declare namespace AlignLeftOutlined {
     const type: string;
     const children: {
         type: string;

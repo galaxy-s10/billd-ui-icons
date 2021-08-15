@@ -1,5 +1,5 @@
-export default FontColorsoutlined;
-declare namespace FontColorsoutlined {
+export default FontColorsOutlined;
+declare namespace FontColorsOutlined {
     const type: string;
     const children: {
         type: string;

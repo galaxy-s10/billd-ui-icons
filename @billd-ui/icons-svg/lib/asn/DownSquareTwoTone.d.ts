@@ -1,5 +1,5 @@
-export default DownSquaretwoTone;
-declare namespace DownSquaretwoTone {
+export default DownSquareTwoTone;
+declare namespace DownSquareTwoTone {
     const type: string;
     const children: {
         type: string;

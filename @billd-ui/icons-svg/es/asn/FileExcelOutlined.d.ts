@@ -1,5 +1,5 @@
-export default FileExceloutlined;
-declare namespace FileExceloutlined {
+export default FileExcelOutlined;
+declare namespace FileExcelOutlined {
     const type: string;
     const children: {
         type: string;

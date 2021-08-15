@@ -1,5 +1,5 @@
-export default DeletetwoTone;
-declare namespace DeletetwoTone {
+export default DeleteTwoTone;
+declare namespace DeleteTwoTone {
     const type: string;
     const children: {
         type: string;

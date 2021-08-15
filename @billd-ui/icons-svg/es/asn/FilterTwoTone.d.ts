@@ -1,5 +1,5 @@
-export default FiltertwoTone;
-declare namespace FiltertwoTone {
+export default FilterTwoTone;
+declare namespace FilterTwoTone {
     const type: string;
     const children: {
         type: string;

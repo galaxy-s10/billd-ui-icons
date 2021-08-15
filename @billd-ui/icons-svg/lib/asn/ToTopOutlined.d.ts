@@ -1,5 +1,5 @@
-export default ToTopoutlined;
-declare namespace ToTopoutlined {
+export default ToTopOutlined;
+declare namespace ToTopOutlined {
     const type: string;
     const children: {
         type: string;

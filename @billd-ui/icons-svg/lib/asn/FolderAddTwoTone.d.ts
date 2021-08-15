@@ -1,5 +1,5 @@
-export default FolderAddtwoTone;
-declare namespace FolderAddtwoTone {
+export default FolderAddTwoTone;
+declare namespace FolderAddTwoTone {
     const type: string;
     const children: {
         type: string;

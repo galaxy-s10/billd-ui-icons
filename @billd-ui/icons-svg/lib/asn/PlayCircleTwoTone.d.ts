@@ -1,5 +1,5 @@
-export default PlayCircletwoTone;
-declare namespace PlayCircletwoTone {
+export default PlayCircleTwoTone;
+declare namespace PlayCircleTwoTone {
     const type: string;
     const children: {
         type: string;

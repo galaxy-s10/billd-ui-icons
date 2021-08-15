@@ -1,5 +1,5 @@
-export default IeCirclefilled;
-declare namespace IeCirclefilled {
+export default IeCircleFilled;
+declare namespace IeCircleFilled {
     const type: string;
     const children: {
         type: string;

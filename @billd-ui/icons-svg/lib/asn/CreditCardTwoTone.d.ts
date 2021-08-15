@@ -1,5 +1,5 @@
-export default CreditCardtwoTone;
-declare namespace CreditCardtwoTone {
+export default CreditCardTwoTone;
+declare namespace CreditCardTwoTone {
     const type: string;
     const children: {
         type: string;

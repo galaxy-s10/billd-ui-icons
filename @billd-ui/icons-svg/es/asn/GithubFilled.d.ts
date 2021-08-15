@@ -1,5 +1,5 @@
-export default Githubfilled;
-declare namespace Githubfilled {
+export default GithubFilled;
+declare namespace GithubFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Messageoutlined;
-declare namespace Messageoutlined {
+export default MessageOutlined;
+declare namespace MessageOutlined {
     const type: string;
     const children: {
         type: string;

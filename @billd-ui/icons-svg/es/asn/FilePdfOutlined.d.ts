@@ -1,5 +1,5 @@
-export default FilePdfoutlined;
-declare namespace FilePdfoutlined {
+export default FilePdfOutlined;
+declare namespace FilePdfOutlined {
     const type: string;
     const children: {
         type: string;

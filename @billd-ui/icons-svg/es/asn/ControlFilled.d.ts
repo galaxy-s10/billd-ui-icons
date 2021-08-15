@@ -1,5 +1,5 @@
-export default Controlfilled;
-declare namespace Controlfilled {
+export default ControlFilled;
+declare namespace ControlFilled {
     const type: string;
     const children: {
         type: string;

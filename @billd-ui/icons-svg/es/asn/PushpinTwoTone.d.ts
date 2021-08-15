@@ -1,5 +1,5 @@
-export default PushpintwoTone;
-declare namespace PushpintwoTone {
+export default PushpinTwoTone;
+declare namespace PushpinTwoTone {
     const type: string;
     const children: {
         type: string;

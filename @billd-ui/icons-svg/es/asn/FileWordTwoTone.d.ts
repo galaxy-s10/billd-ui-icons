@@ -1,5 +1,5 @@
-export default FileWordtwoTone;
-declare namespace FileWordtwoTone {
+export default FileWordTwoTone;
+declare namespace FileWordTwoTone {
     const type: string;
     const children: {
         type: string;

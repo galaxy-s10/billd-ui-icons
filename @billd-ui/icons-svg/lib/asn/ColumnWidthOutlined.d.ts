@@ -1,5 +1,5 @@
-export default ColumnWidthoutlined;
-declare namespace ColumnWidthoutlined {
+export default ColumnWidthOutlined;
+declare namespace ColumnWidthOutlined {
     const type: string;
     const children: {
         type: string;

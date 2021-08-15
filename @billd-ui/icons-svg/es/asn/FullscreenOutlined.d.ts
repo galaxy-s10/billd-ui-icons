@@ -1,5 +1,5 @@
-export default Fullscreenoutlined;
-declare namespace Fullscreenoutlined {
+export default FullscreenOutlined;
+declare namespace FullscreenOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Lineoutlined;
-declare namespace Lineoutlined {
+export default LineOutlined;
+declare namespace LineOutlined {
     const type: string;
     const children: {
         type: string;

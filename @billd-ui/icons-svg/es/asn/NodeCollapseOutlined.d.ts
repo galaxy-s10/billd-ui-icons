@@ -1,5 +1,5 @@
-export default NodeCollapseoutlined;
-declare namespace NodeCollapseoutlined {
+export default NodeCollapseOutlined;
+declare namespace NodeCollapseOutlined {
     const type: string;
     const children: {
         type: string;

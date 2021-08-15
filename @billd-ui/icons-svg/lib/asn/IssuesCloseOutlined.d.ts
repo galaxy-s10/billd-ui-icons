@@ -1,5 +1,5 @@
-export default IssuesCloseoutlined;
-declare namespace IssuesCloseoutlined {
+export default IssuesCloseOutlined;
+declare namespace IssuesCloseOutlined {
     const type: string;
     const children: {
         type: string;

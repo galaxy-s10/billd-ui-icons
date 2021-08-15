@@ -1,5 +1,5 @@
-export default Cameraoutlined;
-declare namespace Cameraoutlined {
+export default CameraOutlined;
+declare namespace CameraOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Backwardfilled;
-declare namespace Backwardfilled {
+export default BackwardFilled;
+declare namespace BackwardFilled {
     const type: string;
     const children: {
         type: string;

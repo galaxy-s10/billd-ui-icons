@@ -1,5 +1,5 @@
-export default LeftCircleoutlined;
-declare namespace LeftCircleoutlined {
+export default LeftCircleOutlined;
+declare namespace LeftCircleOutlined {
     const type: string;
     const children: {
         type: string;

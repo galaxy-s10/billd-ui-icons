@@ -1,5 +1,5 @@
-export default Fundfilled;
-declare namespace Fundfilled {
+export default FundFilled;
+declare namespace FundFilled {
     const type: string;
     const children: {
         type: string;

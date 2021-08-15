@@ -1,5 +1,5 @@
-export default ProjecttwoTone;
-declare namespace ProjecttwoTone {
+export default ProjectTwoTone;
+declare namespace ProjectTwoTone {
     const type: string;
     const children: {
         type: string;

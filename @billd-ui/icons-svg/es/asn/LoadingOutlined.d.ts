@@ -1,5 +1,5 @@
-export default Loadingoutlined;
-declare namespace Loadingoutlined {
+export default LoadingOutlined;
+declare namespace LoadingOutlined {
     const type: string;
     const children: {
         type: string;

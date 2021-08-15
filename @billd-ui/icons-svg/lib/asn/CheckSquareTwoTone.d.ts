@@ -1,5 +1,5 @@
-export default CheckSquaretwoTone;
-declare namespace CheckSquaretwoTone {
+export default CheckSquareTwoTone;
+declare namespace CheckSquareTwoTone {
     const type: string;
     const children: {
         type: string;

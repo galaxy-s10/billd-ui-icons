@@ -1,5 +1,5 @@
-export default Pauseoutlined;
-declare namespace Pauseoutlined {
+export default PauseOutlined;
+declare namespace PauseOutlined {
     const type: string;
     const children: {
         type: string;

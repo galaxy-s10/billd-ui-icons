@@ -1,5 +1,5 @@
-export default ExclamationCircleoutlined;
-declare namespace ExclamationCircleoutlined {
+export default ExclamationCircleOutlined;
+declare namespace ExclamationCircleOutlined {
     const type: string;
     const children: {
         type: string;

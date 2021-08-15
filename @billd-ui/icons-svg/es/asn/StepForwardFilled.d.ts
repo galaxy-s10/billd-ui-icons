@@ -1,5 +1,5 @@
-export default StepForwardfilled;
-declare namespace StepForwardfilled {
+export default StepForwardFilled;
+declare namespace StepForwardFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Dropboxoutlined;
-declare namespace Dropboxoutlined {
+export default DropboxOutlined;
+declare namespace DropboxOutlined {
     const type: string;
     const children: {
         type: string;

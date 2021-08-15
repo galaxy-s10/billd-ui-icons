@@ -1,5 +1,5 @@
-export default AntCloudoutlined;
-declare namespace AntCloudoutlined {
+export default AntCloudOutlined;
+declare namespace AntCloudOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Filterfilled;
-declare namespace Filterfilled {
+export default FilterFilled;
+declare namespace FilterFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Goldenfilled;
-declare namespace Goldenfilled {
+export default GoldenFilled;
+declare namespace GoldenFilled {
     const type: string;
     const children: {
         type: string;

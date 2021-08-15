@@ -1,5 +1,5 @@
-export default Stopfilled;
-declare namespace Stopfilled {
+export default StopFilled;
+declare namespace StopFilled {
     const type: string;
     const children: {
         type: string;

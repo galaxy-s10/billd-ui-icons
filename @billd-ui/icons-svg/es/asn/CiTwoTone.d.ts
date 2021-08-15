@@ -1,5 +1,5 @@
-export default CitwoTone;
-declare namespace CitwoTone {
+export default CiTwoTone;
+declare namespace CiTwoTone {
     const type: string;
     const children: {
         type: string;

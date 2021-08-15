@@ -1,5 +1,5 @@
-export default Robotoutlined;
-declare namespace Robotoutlined {
+export default RobotOutlined;
+declare namespace RobotOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ControltwoTone;
-declare namespace ControltwoTone {
+export default ControlTwoTone;
+declare namespace ControlTwoTone {
     const type: string;
     const children: {
         type: string;

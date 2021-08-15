@@ -1,5 +1,5 @@
-export default HearttwoTone;
-declare namespace HearttwoTone {
+export default HeartTwoTone;
+declare namespace HeartTwoTone {
     const type: string;
     const children: {
         type: string;

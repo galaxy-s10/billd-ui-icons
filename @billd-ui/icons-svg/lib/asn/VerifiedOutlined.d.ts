@@ -1,5 +1,5 @@
-export default Verifiedoutlined;
-declare namespace Verifiedoutlined {
+export default VerifiedOutlined;
+declare namespace VerifiedOutlined {
     const type: string;
     const children: {
         type: string;

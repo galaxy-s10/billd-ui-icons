@@ -1,5 +1,5 @@
-export default PrintertwoTone;
-declare namespace PrintertwoTone {
+export default PrinterTwoTone;
+declare namespace PrinterTwoTone {
     const type: string;
     const children: {
         type: string;

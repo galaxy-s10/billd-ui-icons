@@ -1,5 +1,5 @@
-export default CodepenSquarefilled;
-declare namespace CodepenSquarefilled {
+export default CodepenSquareFilled;
+declare namespace CodepenSquareFilled {
     const type: string;
     const children: {
         type: string;

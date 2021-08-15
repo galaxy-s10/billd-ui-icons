@@ -1,5 +1,5 @@
-export default Riseoutlined;
-declare namespace Riseoutlined {
+export default RiseOutlined;
+declare namespace RiseOutlined {
     const type: string;
     const children: {
         type: string;

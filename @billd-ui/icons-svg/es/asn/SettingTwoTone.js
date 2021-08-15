@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var SettingtwoTone = {
+var SettingTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -44,4 +44,4 @@ var SettingtwoTone = {
   "name": "setting",
   "theme": "twoTone"
 };
-export default SettingtwoTone;
+export default SettingTwoTone;

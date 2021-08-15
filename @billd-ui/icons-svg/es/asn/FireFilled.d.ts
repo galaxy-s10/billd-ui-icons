@@ -1,5 +1,5 @@
-export default Firefilled;
-declare namespace Firefilled {
+export default FireFilled;
+declare namespace FireFilled {
     const type: string;
     const children: {
         type: string;

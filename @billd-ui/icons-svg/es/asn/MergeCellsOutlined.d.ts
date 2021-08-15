@@ -1,5 +1,5 @@
-export default MergeCellsoutlined;
-declare namespace MergeCellsoutlined {
+export default MergeCellsOutlined;
+declare namespace MergeCellsOutlined {
     const type: string;
     const children: {
         type: string;

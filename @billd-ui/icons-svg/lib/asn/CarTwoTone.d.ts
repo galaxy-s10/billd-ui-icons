@@ -1,5 +1,5 @@
-export default CartwoTone;
-declare namespace CartwoTone {
+export default CarTwoTone;
+declare namespace CarTwoTone {
     const type: string;
     const children: {
         type: string;

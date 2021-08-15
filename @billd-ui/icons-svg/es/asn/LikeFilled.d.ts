@@ -1,5 +1,5 @@
-export default Likefilled;
-declare namespace Likefilled {
+export default LikeFilled;
+declare namespace LikeFilled {
     const type: string;
     const children: {
         type: string;

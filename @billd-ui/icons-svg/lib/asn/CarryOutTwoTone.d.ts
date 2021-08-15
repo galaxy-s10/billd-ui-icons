@@ -1,5 +1,5 @@
-export default CarryOuttwoTone;
-declare namespace CarryOuttwoTone {
+export default CarryOutTwoTone;
+declare namespace CarryOutTwoTone {
     const type: string;
     const children: {
         type: string;

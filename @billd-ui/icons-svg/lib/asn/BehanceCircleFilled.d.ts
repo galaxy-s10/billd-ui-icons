@@ -1,5 +1,5 @@
-export default BehanceCirclefilled;
-declare namespace BehanceCirclefilled {
+export default BehanceCircleFilled;
+declare namespace BehanceCircleFilled {
     const type: string;
     const children: {
         type: string;

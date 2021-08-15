@@ -1,5 +1,5 @@
-export default Facebookoutlined;
-declare namespace Facebookoutlined {
+export default FacebookOutlined;
+declare namespace FacebookOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Tagsfilled;
-declare namespace Tagsfilled {
+export default TagsFilled;
+declare namespace TagsFilled {
     const type: string;
     const children: {
         type: string;

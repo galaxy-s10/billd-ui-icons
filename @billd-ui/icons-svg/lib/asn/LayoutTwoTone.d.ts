@@ -1,5 +1,5 @@
-export default LayouttwoTone;
-declare namespace LayouttwoTone {
+export default LayoutTwoTone;
+declare namespace LayoutTwoTone {
     const type: string;
     const children: {
         type: string;

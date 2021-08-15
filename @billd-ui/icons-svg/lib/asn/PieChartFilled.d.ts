@@ -1,5 +1,5 @@
-export default PieChartfilled;
-declare namespace PieChartfilled {
+export default PieChartFilled;
+declare namespace PieChartFilled {
     const type: string;
     const children: {
         type: string;

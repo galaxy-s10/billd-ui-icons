@@ -1,5 +1,5 @@
-export default Mehfilled;
-declare namespace Mehfilled {
+export default MehFilled;
+declare namespace MehFilled {
     const type: string;
     const children: {
         type: string;

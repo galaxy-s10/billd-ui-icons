@@ -1,5 +1,5 @@
-export default Infooutlined;
-declare namespace Infooutlined {
+export default InfoOutlined;
+declare namespace InfoOutlined {
     const type: string;
     const children: {
         type: string;

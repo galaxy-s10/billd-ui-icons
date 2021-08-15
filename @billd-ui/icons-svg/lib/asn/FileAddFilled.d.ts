@@ -1,5 +1,5 @@
-export default FileAddfilled;
-declare namespace FileAddfilled {
+export default FileAddFilled;
+declare namespace FileAddFilled {
     const type: string;
     const children: {
         type: string;

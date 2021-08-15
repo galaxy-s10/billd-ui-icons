@@ -1,5 +1,5 @@
-export default Saveoutlined;
-declare namespace Saveoutlined {
+export default SaveOutlined;
+declare namespace SaveOutlined {
     const type: string;
     const children: {
         type: string;

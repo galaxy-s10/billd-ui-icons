@@ -1,5 +1,5 @@
-export default Disconnectoutlined;
-declare namespace Disconnectoutlined {
+export default DisconnectOutlined;
+declare namespace DisconnectOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Switcherfilled;
-declare namespace Switcherfilled {
+export default SwitcherFilled;
+declare namespace SwitcherFilled {
     const type: string;
     const children: {
         type: string;

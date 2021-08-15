@@ -1,5 +1,5 @@
-export default EdittwoTone;
-declare namespace EdittwoTone {
+export default EditTwoTone;
+declare namespace EditTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DisliketwoTone = {
+var DislikeTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,5 +36,5 @@ var DisliketwoTone = {
   "name": "dislike",
   "theme": "twoTone"
 };
-var _default = DisliketwoTone;
+var _default = DislikeTwoTone;
 exports.default = _default;

@@ -1,5 +1,5 @@
-export default Aliwangwangoutlined;
-declare namespace Aliwangwangoutlined {
+export default AliwangwangOutlined;
+declare namespace AliwangwangOutlined {
     const type: string;
     const children: {
         type: string;

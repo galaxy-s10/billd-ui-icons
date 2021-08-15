@@ -1,5 +1,5 @@
-export default BorderlessTableoutlined;
-declare namespace BorderlessTableoutlined {
+export default BorderlessTableOutlined;
+declare namespace BorderlessTableOutlined {
     const type: string;
     const children: {
         type: string;

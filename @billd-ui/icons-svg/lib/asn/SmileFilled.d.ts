@@ -1,5 +1,5 @@
-export default Smilefilled;
-declare namespace Smilefilled {
+export default SmileFilled;
+declare namespace SmileFilled {
     const type: string;
     const children: {
         type: string;

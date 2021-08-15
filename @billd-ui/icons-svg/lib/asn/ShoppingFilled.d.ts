@@ -1,5 +1,5 @@
-export default Shoppingfilled;
-declare namespace Shoppingfilled {
+export default ShoppingFilled;
+declare namespace ShoppingFilled {
     const type: string;
     const children: {
         type: string;

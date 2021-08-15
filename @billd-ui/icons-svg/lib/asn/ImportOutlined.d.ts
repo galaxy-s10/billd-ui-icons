@@ -1,5 +1,5 @@
-export default Importoutlined;
-declare namespace Importoutlined {
+export default ImportOutlined;
+declare namespace ImportOutlined {
     const type: string;
     const children: {
         type: string;

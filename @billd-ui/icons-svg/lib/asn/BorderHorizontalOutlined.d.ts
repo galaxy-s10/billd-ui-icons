@@ -1,5 +1,5 @@
-export default BorderHorizontaloutlined;
-declare namespace BorderHorizontaloutlined {
+export default BorderHorizontalOutlined;
+declare namespace BorderHorizontalOutlined {
     const type: string;
     const children: {
         type: string;

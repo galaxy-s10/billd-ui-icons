@@ -1,5 +1,5 @@
-export default Notificationoutlined;
-declare namespace Notificationoutlined {
+export default NotificationOutlined;
+declare namespace NotificationOutlined {
     const type: string;
     const children: {
         type: string;

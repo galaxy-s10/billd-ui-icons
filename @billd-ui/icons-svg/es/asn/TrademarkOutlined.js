@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Trademarkoutlined = {
+var TrademarkOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Trademarkoutlined = {
   "name": "trademark",
   "theme": "outlined"
 };
-export default Trademarkoutlined;
+export default TrademarkOutlined;

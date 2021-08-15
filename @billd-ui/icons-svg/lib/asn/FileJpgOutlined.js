@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var FileJpgoutlined = {
+var FileJpgOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,5 +28,5 @@ var FileJpgoutlined = {
   "name": "file-jpg",
   "theme": "outlined"
 };
-var _default = FileJpgoutlined;
+var _default = FileJpgOutlined;
 exports.default = _default;

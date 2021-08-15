@@ -1,5 +1,5 @@
-export default CheckSquareoutlined;
-declare namespace CheckSquareoutlined {
+export default CheckSquareOutlined;
+declare namespace CheckSquareOutlined {
     const type: string;
     const children: {
         type: string;

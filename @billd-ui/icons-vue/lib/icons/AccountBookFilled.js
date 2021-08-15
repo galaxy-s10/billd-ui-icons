@@ -11,7 +11,7 @@ var _billdIcon = _interopRequireDefault(require("../billdIcon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// 这个文件是自动生成的，请勿手动修改！1
+// 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
 var _default2 = {
   name: 'AccountBookFilledSvg',
   displayName: 'AccountBookFilledSvg',

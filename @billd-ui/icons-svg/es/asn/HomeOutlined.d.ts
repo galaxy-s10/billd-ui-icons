@@ -1,5 +1,5 @@
-export default Homeoutlined;
-declare namespace Homeoutlined {
+export default HomeOutlined;
+declare namespace HomeOutlined {
     const type: string;
     const children: {
         type: string;

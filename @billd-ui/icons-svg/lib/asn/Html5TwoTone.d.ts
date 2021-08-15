@@ -1,5 +1,5 @@
-export default Html5twoTone;
-declare namespace Html5twoTone {
+export default Html5TwoTone;
+declare namespace Html5TwoTone {
     const type: string;
     const children: {
         type: string;

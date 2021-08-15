@@ -1,5 +1,5 @@
-export default Slackoutlined;
-declare namespace Slackoutlined {
+export default SlackOutlined;
+declare namespace SlackOutlined {
     const type: string;
     const children: {
         type: string;

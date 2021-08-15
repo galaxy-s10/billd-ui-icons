@@ -1,5 +1,5 @@
-export default BuildtwoTone;
-declare namespace BuildtwoTone {
+export default BuildTwoTone;
+declare namespace BuildTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FileWordfilled;
-declare namespace FileWordfilled {
+export default FileWordFilled;
+declare namespace FileWordFilled {
     const type: string;
     const children: {
         type: string;

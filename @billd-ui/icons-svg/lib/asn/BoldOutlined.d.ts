@@ -1,5 +1,5 @@
-export default Boldoutlined;
-declare namespace Boldoutlined {
+export default BoldOutlined;
+declare namespace BoldOutlined {
     const type: string;
     const children: {
         type: string;

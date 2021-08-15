@@ -1,5 +1,5 @@
-export default VerticalAlignBottomoutlined;
-declare namespace VerticalAlignBottomoutlined {
+export default VerticalAlignBottomOutlined;
+declare namespace VerticalAlignBottomOutlined {
     const type: string;
     const children: {
         type: string;

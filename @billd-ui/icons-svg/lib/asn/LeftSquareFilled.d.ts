@@ -1,5 +1,5 @@
-export default LeftSquarefilled;
-declare namespace LeftSquarefilled {
+export default LeftSquareFilled;
+declare namespace LeftSquareFilled {
     const type: string;
     const children: {
         type: string;

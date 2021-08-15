@@ -1,5 +1,5 @@
-export default Sisternodeoutlined;
-declare namespace Sisternodeoutlined {
+export default SisternodeOutlined;
+declare namespace SisternodeOutlined {
     const type: string;
     const children: {
         type: string;

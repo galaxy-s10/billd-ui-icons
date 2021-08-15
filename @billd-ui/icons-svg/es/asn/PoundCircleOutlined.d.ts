@@ -1,5 +1,5 @@
-export default PoundCircleoutlined;
-declare namespace PoundCircleoutlined {
+export default PoundCircleOutlined;
+declare namespace PoundCircleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FileZiptwoTone;
-declare namespace FileZiptwoTone {
+export default FileZipTwoTone;
+declare namespace FileZipTwoTone {
     const type: string;
     const children: {
         type: string;

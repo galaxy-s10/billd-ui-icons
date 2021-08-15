@@ -1,5 +1,5 @@
-export default CaretDownfilled;
-declare namespace CaretDownfilled {
+export default CaretDownFilled;
+declare namespace CaretDownFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Dislikeoutlined;
-declare namespace Dislikeoutlined {
+export default DislikeOutlined;
+declare namespace DislikeOutlined {
     const type: string;
     const children: {
         type: string;

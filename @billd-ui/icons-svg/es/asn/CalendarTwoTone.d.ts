@@ -1,5 +1,5 @@
-export default CalendartwoTone;
-declare namespace CalendartwoTone {
+export default CalendarTwoTone;
+declare namespace CalendarTwoTone {
     const type: string;
     const children: {
         type: string;

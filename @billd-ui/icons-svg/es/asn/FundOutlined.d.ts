@@ -1,5 +1,5 @@
-export default Fundoutlined;
-declare namespace Fundoutlined {
+export default FundOutlined;
+declare namespace FundOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default RightSquareoutlined;
-declare namespace RightSquareoutlined {
+export default RightSquareOutlined;
+declare namespace RightSquareOutlined {
     const type: string;
     const children: {
         type: string;

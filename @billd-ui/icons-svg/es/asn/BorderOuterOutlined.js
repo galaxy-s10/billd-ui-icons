@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var BorderOuteroutlined = {
+var BorderOuterOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var BorderOuteroutlined = {
   "name": "border-outer",
   "theme": "outlined"
 };
-export default BorderOuteroutlined;
+export default BorderOuterOutlined;

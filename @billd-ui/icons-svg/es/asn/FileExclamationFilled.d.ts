@@ -1,5 +1,5 @@
-export default FileExclamationfilled;
-declare namespace FileExclamationfilled {
+export default FileExclamationFilled;
+declare namespace FileExclamationFilled {
     const type: string;
     const children: {
         type: string;

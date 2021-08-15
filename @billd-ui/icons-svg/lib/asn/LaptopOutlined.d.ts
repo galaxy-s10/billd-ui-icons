@@ -1,5 +1,5 @@
-export default Laptopoutlined;
-declare namespace Laptopoutlined {
+export default LaptopOutlined;
+declare namespace LaptopOutlined {
     const type: string;
     const children: {
         type: string;

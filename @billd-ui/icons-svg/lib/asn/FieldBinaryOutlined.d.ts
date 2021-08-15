@@ -1,5 +1,5 @@
-export default FieldBinaryoutlined;
-declare namespace FieldBinaryoutlined {
+export default FieldBinaryOutlined;
+declare namespace FieldBinaryOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default RightSquaretwoTone;
-declare namespace RightSquaretwoTone {
+export default RightSquareTwoTone;
+declare namespace RightSquareTwoTone {
     const type: string;
     const children: {
         type: string;

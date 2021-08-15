@@ -1,5 +1,5 @@
-export default CloseCirclefilled;
-declare namespace CloseCirclefilled {
+export default CloseCircleFilled;
+declare namespace CloseCircleFilled {
     const type: string;
     const children: {
         type: string;

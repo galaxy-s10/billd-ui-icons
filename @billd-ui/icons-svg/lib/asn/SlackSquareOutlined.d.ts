@@ -1,5 +1,5 @@
-export default SlackSquareoutlined;
-declare namespace SlackSquareoutlined {
+export default SlackSquareOutlined;
+declare namespace SlackSquareOutlined {
     const type: string;
     const children: {
         type: string;

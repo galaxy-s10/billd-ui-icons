@@ -1,5 +1,5 @@
-export default Buildoutlined;
-declare namespace Buildoutlined {
+export default BuildOutlined;
+declare namespace BuildOutlined {
     const type: string;
     const children: {
         type: string;

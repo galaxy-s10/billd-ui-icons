@@ -1,5 +1,5 @@
-export default WarningtwoTone;
-declare namespace WarningtwoTone {
+export default WarningTwoTone;
+declare namespace WarningTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default HddtwoTone;
-declare namespace HddtwoTone {
+export default HddTwoTone;
+declare namespace HddTwoTone {
     const type: string;
     const children: {
         type: string;

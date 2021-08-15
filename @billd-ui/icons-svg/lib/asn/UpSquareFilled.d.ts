@@ -1,5 +1,5 @@
-export default UpSquarefilled;
-declare namespace UpSquarefilled {
+export default UpSquareFilled;
+declare namespace UpSquareFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ClockCircleoutlined;
-declare namespace ClockCircleoutlined {
+export default ClockCircleOutlined;
+declare namespace ClockCircleOutlined {
     const type: string;
     const children: {
         type: string;

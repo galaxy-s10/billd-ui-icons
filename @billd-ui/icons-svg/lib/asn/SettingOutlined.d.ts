@@ -1,5 +1,5 @@
-export default Settingoutlined;
-declare namespace Settingoutlined {
+export default SettingOutlined;
+declare namespace SettingOutlined {
     const type: string;
     const children: {
         type: string;

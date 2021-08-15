@@ -1,5 +1,5 @@
-export default DollartwoTone;
-declare namespace DollartwoTone {
+export default DollarTwoTone;
+declare namespace DollarTwoTone {
     const type: string;
     const children: {
         type: string;

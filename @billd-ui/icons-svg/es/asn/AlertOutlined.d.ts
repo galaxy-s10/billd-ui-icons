@@ -1,5 +1,5 @@
-export default Alertoutlined;
-declare namespace Alertoutlined {
+export default AlertOutlined;
+declare namespace AlertOutlined {
     const type: string;
     const children: {
         type: string;

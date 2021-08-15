@@ -1,5 +1,5 @@
-export default Skinoutlined;
-declare namespace Skinoutlined {
+export default SkinOutlined;
+declare namespace SkinOutlined {
     const type: string;
     const children: {
         type: string;

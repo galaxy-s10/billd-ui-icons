@@ -1,5 +1,5 @@
-export default Html5filled;
-declare namespace Html5filled {
+export default Html5Filled;
+declare namespace Html5Filled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Historyoutlined;
-declare namespace Historyoutlined {
+export default HistoryOutlined;
+declare namespace HistoryOutlined {
     const type: string;
     const children: {
         type: string;

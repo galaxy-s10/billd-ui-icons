@@ -1,5 +1,5 @@
-export default FolderAddoutlined;
-declare namespace FolderAddoutlined {
+export default FolderAddOutlined;
+declare namespace FolderAddOutlined {
     const type: string;
     const children: {
         type: string;

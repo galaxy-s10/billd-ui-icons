@@ -1,5 +1,5 @@
-export default AntDesignoutlined;
-declare namespace AntDesignoutlined {
+export default AntDesignOutlined;
+declare namespace AntDesignOutlined {
     const type: string;
     const children: {
         type: string;

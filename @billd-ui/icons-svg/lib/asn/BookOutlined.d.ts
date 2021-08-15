@@ -1,5 +1,5 @@
-export default Bookoutlined;
-declare namespace Bookoutlined {
+export default BookOutlined;
+declare namespace BookOutlined {
     const type: string;
     const children: {
         type: string;

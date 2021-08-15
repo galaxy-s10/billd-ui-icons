@@ -1,5 +1,5 @@
-export default Codefilled;
-declare namespace Codefilled {
+export default CodeFilled;
+declare namespace CodeFilled {
     const type: string;
     const children: {
         type: string;

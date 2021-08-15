@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Downloadoutlined = {
+var DownloadOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Downloadoutlined = {
   "name": "download",
   "theme": "outlined"
 };
-export default Downloadoutlined;
+export default DownloadOutlined;

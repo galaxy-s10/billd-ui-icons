@@ -1,5 +1,5 @@
-export default Backwardoutlined;
-declare namespace Backwardoutlined {
+export default BackwardOutlined;
+declare namespace BackwardOutlined {
     const type: string;
     const children: {
         type: string;

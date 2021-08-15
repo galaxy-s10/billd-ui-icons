@@ -1,5 +1,5 @@
-export default CheckCircletwoTone;
-declare namespace CheckCircletwoTone {
+export default CheckCircleTwoTone;
+declare namespace CheckCircleTwoTone {
     const type: string;
     const children: {
         type: string;

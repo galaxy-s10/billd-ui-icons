@@ -1,5 +1,5 @@
-export default Settingfilled;
-declare namespace Settingfilled {
+export default SettingFilled;
+declare namespace SettingFilled {
     const type: string;
     const children: {
         type: string;

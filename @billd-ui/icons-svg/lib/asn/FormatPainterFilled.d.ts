@@ -1,5 +1,5 @@
-export default FormatPainterfilled;
-declare namespace FormatPainterfilled {
+export default FormatPainterFilled;
+declare namespace FormatPainterFilled {
     const type: string;
     const children: {
         type: string;

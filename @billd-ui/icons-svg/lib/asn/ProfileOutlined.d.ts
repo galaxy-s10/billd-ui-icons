@@ -1,5 +1,5 @@
-export default Profileoutlined;
-declare namespace Profileoutlined {
+export default ProfileOutlined;
+declare namespace ProfileOutlined {
     const type: string;
     const children: {
         type: string;

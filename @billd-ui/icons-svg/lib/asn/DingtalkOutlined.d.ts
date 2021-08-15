@@ -1,5 +1,5 @@
-export default Dingtalkoutlined;
-declare namespace Dingtalkoutlined {
+export default DingtalkOutlined;
+declare namespace DingtalkOutlined {
     const type: string;
     const children: {
         type: string;

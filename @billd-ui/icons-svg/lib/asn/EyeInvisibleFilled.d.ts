@@ -1,5 +1,5 @@
-export default EyeInvisiblefilled;
-declare namespace EyeInvisiblefilled {
+export default EyeInvisibleFilled;
+declare namespace EyeInvisibleFilled {
     const type: string;
     const children: {
         type: string;

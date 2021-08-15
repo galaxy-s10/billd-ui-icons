@@ -1,5 +1,5 @@
-export default BoxPlottwoTone;
-declare namespace BoxPlottwoTone {
+export default BoxPlotTwoTone;
+declare namespace BoxPlotTwoTone {
     const type: string;
     const children: {
         type: string;

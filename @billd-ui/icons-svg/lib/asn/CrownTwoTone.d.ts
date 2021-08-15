@@ -1,5 +1,5 @@
-export default CrowntwoTone;
-declare namespace CrowntwoTone {
+export default CrownTwoTone;
+declare namespace CrownTwoTone {
     const type: string;
     const children: {
         type: string;

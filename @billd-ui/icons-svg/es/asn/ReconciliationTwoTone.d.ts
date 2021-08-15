@@ -1,5 +1,5 @@
-export default ReconciliationtwoTone;
-declare namespace ReconciliationtwoTone {
+export default ReconciliationTwoTone;
+declare namespace ReconciliationTwoTone {
     const type: string;
     const children: {
         type: string;

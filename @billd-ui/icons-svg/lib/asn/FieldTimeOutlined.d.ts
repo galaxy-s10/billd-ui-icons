@@ -1,5 +1,5 @@
-export default FieldTimeoutlined;
-declare namespace FieldTimeoutlined {
+export default FieldTimeOutlined;
+declare namespace FieldTimeOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Snippetsfilled;
-declare namespace Snippetsfilled {
+export default SnippetsFilled;
+declare namespace SnippetsFilled {
     const type: string;
     const children: {
         type: string;

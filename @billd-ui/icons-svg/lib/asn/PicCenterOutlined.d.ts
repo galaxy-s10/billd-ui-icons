@@ -1,5 +1,5 @@
-export default PicCenteroutlined;
-declare namespace PicCenteroutlined {
+export default PicCenterOutlined;
+declare namespace PicCenterOutlined {
     const type: string;
     const children: {
         type: string;

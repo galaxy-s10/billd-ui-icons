@@ -1,5 +1,5 @@
-export default SettingtwoTone;
-declare namespace SettingtwoTone {
+export default SettingTwoTone;
+declare namespace SettingTwoTone {
     const type: string;
     const children: {
         type: string;

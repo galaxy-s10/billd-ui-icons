@@ -1,5 +1,5 @@
-export default Wifioutlined;
-declare namespace Wifioutlined {
+export default WifiOutlined;
+declare namespace WifiOutlined {
     const type: string;
     const children: {
         type: string;

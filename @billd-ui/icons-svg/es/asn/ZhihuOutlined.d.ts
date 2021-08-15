@@ -1,5 +1,5 @@
-export default Zhihuoutlined;
-declare namespace Zhihuoutlined {
+export default ZhihuOutlined;
+declare namespace ZhihuOutlined {
     const type: string;
     const children: {
         type: string;

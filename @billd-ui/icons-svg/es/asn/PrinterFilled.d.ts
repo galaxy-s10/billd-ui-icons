@@ -1,5 +1,5 @@
-export default Printerfilled;
-declare namespace Printerfilled {
+export default PrinterFilled;
+declare namespace PrinterFilled {
     const type: string;
     const children: {
         type: string;

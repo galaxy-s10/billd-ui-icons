@@ -1,5 +1,5 @@
-export default PropertySafetyoutlined;
-declare namespace PropertySafetyoutlined {
+export default PropertySafetyOutlined;
+declare namespace PropertySafetyOutlined {
     const type: string;
     const children: {
         type: string;

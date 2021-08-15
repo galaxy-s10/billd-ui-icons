@@ -1,5 +1,5 @@
-export default Difffilled;
-declare namespace Difffilled {
+export default DiffFilled;
+declare namespace DiffFilled {
     const type: string;
     const children: {
         type: string;

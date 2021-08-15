@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Safetyoutlined = {
+var SafetyOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,4 +28,4 @@ var Safetyoutlined = {
   "name": "safety",
   "theme": "outlined"
 };
-export default Safetyoutlined;
+export default SafetyOutlined;

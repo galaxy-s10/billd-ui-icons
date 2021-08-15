@@ -1,5 +1,5 @@
-export default CustomerServicetwoTone;
-declare namespace CustomerServicetwoTone {
+export default CustomerServiceTwoTone;
+declare namespace CustomerServiceTwoTone {
     const type: string;
     const children: {
         type: string;

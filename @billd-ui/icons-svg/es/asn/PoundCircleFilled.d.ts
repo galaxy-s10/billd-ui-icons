@@ -1,5 +1,5 @@
-export default PoundCirclefilled;
-declare namespace PoundCirclefilled {
+export default PoundCircleFilled;
+declare namespace PoundCircleFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default PlaySquareoutlined;
-declare namespace PlaySquareoutlined {
+export default PlaySquareOutlined;
+declare namespace PlaySquareOutlined {
     const type: string;
     const children: {
         type: string;

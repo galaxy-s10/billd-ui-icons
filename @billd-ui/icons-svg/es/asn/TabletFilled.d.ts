@@ -1,5 +1,5 @@
-export default Tabletfilled;
-declare namespace Tabletfilled {
+export default TabletFilled;
+declare namespace TabletFilled {
     const type: string;
     const children: {
         type: string;

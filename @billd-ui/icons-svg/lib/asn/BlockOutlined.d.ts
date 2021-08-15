@@ -1,5 +1,5 @@
-export default Blockoutlined;
-declare namespace Blockoutlined {
+export default BlockOutlined;
+declare namespace BlockOutlined {
     const type: string;
     const children: {
         type: string;

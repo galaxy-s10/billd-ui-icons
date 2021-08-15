@@ -1,5 +1,5 @@
-export default Heartfilled;
-declare namespace Heartfilled {
+export default HeartFilled;
+declare namespace HeartFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default DollarCirclefilled;
-declare namespace DollarCirclefilled {
+export default DollarCircleFilled;
+declare namespace DollarCircleFilled {
     const type: string;
     const children: {
         type: string;

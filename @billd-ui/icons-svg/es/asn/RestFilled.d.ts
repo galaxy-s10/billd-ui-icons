@@ -1,5 +1,5 @@
-export default Restfilled;
-declare namespace Restfilled {
+export default RestFilled;
+declare namespace RestFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default SkintwoTone;
-declare namespace SkintwoTone {
+export default SkinTwoTone;
+declare namespace SkinTwoTone {
     const type: string;
     const children: {
         type: string;

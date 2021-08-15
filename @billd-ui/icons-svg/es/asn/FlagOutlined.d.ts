@@ -1,5 +1,5 @@
-export default Flagoutlined;
-declare namespace Flagoutlined {
+export default FlagOutlined;
+declare namespace FlagOutlined {
     const type: string;
     const children: {
         type: string;

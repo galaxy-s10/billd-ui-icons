@@ -1,5 +1,5 @@
-export default CheckCirclefilled;
-declare namespace CheckCirclefilled {
+export default CheckCircleFilled;
+declare namespace CheckCircleFilled {
     const type: string;
     const children: {
         type: string;

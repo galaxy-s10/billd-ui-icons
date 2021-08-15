@@ -1,5 +1,5 @@
-export default AudioMutedoutlined;
-declare namespace AudioMutedoutlined {
+export default AudioMutedOutlined;
+declare namespace AudioMutedOutlined {
     const type: string;
     const children: {
         type: string;

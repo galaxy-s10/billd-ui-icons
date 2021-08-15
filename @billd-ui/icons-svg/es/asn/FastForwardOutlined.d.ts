@@ -1,5 +1,5 @@
-export default FastForwardoutlined;
-declare namespace FastForwardoutlined {
+export default FastForwardOutlined;
+declare namespace FastForwardOutlined {
     const type: string;
     const children: {
         type: string;

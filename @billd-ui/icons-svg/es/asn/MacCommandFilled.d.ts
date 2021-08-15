@@ -1,5 +1,5 @@
-export default MacCommandfilled;
-declare namespace MacCommandfilled {
+export default MacCommandFilled;
+declare namespace MacCommandFilled {
     const type: string;
     const children: {
         type: string;

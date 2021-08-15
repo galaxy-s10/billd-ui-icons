@@ -1,5 +1,5 @@
-export default CiCirclefilled;
-declare namespace CiCirclefilled {
+export default CiCircleFilled;
+declare namespace CiCircleFilled {
     const type: string;
     const children: {
         type: string;

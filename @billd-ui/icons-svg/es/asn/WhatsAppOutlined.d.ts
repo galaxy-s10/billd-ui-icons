@@ -1,5 +1,5 @@
-export default WhatsAppoutlined;
-declare namespace WhatsAppoutlined {
+export default WhatsAppOutlined;
+declare namespace WhatsAppOutlined {
     const type: string;
     const children: {
         type: string;

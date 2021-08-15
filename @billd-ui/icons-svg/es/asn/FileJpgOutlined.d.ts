@@ -1,5 +1,5 @@
-export default FileJpgoutlined;
-declare namespace FileJpgoutlined {
+export default FileJpgOutlined;
+declare namespace FileJpgOutlined {
     const type: string;
     const children: {
         type: string;

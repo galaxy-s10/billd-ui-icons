@@ -1,5 +1,5 @@
-export default SlackSquarefilled;
-declare namespace SlackSquarefilled {
+export default SlackSquareFilled;
+declare namespace SlackSquareFilled {
     const type: string;
     const children: {
         type: string;

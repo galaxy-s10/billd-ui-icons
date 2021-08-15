@@ -1,5 +1,5 @@
-export default ZoomInoutlined;
-declare namespace ZoomInoutlined {
+export default ZoomInOutlined;
+declare namespace ZoomInOutlined {
     const type: string;
     const children: {
         type: string;

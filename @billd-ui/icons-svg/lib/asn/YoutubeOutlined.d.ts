@@ -1,5 +1,5 @@
-export default Youtubeoutlined;
-declare namespace Youtubeoutlined {
+export default YoutubeOutlined;
+declare namespace YoutubeOutlined {
     const type: string;
     const children: {
         type: string;

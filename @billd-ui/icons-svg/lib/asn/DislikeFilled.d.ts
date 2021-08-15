@@ -1,5 +1,5 @@
-export default Dislikefilled;
-declare namespace Dislikefilled {
+export default DislikeFilled;
+declare namespace DislikeFilled {
     const type: string;
     const children: {
         type: string;

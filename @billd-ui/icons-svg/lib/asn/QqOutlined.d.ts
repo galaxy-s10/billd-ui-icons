@@ -1,5 +1,5 @@
-export default Qqoutlined;
-declare namespace Qqoutlined {
+export default QqOutlined;
+declare namespace QqOutlined {
     const type: string;
     const children: {
         type: string;

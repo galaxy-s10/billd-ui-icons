@@ -1,5 +1,5 @@
-export default DoubleRightoutlined;
-declare namespace DoubleRightoutlined {
+export default DoubleRightOutlined;
+declare namespace DoubleRightOutlined {
     const type: string;
     const children: {
         type: string;

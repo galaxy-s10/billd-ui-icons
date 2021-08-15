@@ -1,5 +1,5 @@
-export default Smileoutlined;
-declare namespace Smileoutlined {
+export default SmileOutlined;
+declare namespace SmileOutlined {
     const type: string;
     const children: {
         type: string;

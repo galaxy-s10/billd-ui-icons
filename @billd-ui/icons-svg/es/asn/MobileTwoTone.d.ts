@@ -1,5 +1,5 @@
-export default MobiletwoTone;
-declare namespace MobiletwoTone {
+export default MobileTwoTone;
+declare namespace MobileTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Hddfilled;
-declare namespace Hddfilled {
+export default HddFilled;
+declare namespace HddFilled {
     const type: string;
     const children: {
         type: string;

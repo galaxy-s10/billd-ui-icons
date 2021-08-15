@@ -1,5 +1,5 @@
-export default PicRightoutlined;
-declare namespace PicRightoutlined {
+export default PicRightOutlined;
+declare namespace PicRightOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default InfoCircletwoTone;
-declare namespace InfoCircletwoTone {
+export default InfoCircleTwoTone;
+declare namespace InfoCircleTwoTone {
     const type: string;
     const children: {
         type: string;

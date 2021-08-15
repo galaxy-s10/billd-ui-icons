@@ -1,5 +1,5 @@
-export default Mailoutlined;
-declare namespace Mailoutlined {
+export default MailOutlined;
+declare namespace MailOutlined {
     const type: string;
     const children: {
         type: string;

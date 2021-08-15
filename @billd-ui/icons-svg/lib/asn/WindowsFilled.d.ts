@@ -1,5 +1,5 @@
-export default Windowsfilled;
-declare namespace Windowsfilled {
+export default WindowsFilled;
+declare namespace WindowsFilled {
     const type: string;
     const children: {
         type: string;

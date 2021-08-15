@@ -1,5 +1,5 @@
-export default Forwardfilled;
-declare namespace Forwardfilled {
+export default ForwardFilled;
+declare namespace ForwardFilled {
     const type: string;
     const children: {
         type: string;

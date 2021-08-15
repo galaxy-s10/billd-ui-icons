@@ -1,5 +1,5 @@
-export default Layoutoutlined;
-declare namespace Layoutoutlined {
+export default LayoutOutlined;
+declare namespace LayoutOutlined {
     const type: string;
     const children: {
         type: string;

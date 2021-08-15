@@ -1,5 +1,5 @@
-export default Rocketoutlined;
-declare namespace Rocketoutlined {
+export default RocketOutlined;
+declare namespace RocketOutlined {
     const type: string;
     const children: {
         type: string;

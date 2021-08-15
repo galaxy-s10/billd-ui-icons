@@ -1,5 +1,5 @@
-export default Questionoutlined;
-declare namespace Questionoutlined {
+export default QuestionOutlined;
+declare namespace QuestionOutlined {
     const type: string;
     const children: {
         type: string;

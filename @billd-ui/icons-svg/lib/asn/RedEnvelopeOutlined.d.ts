@@ -1,5 +1,5 @@
-export default RedEnvelopeoutlined;
-declare namespace RedEnvelopeoutlined {
+export default RedEnvelopeOutlined;
+declare namespace RedEnvelopeOutlined {
     const type: string;
     const children: {
         type: string;

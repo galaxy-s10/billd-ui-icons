@@ -1,5 +1,5 @@
-export default StoptwoTone;
-declare namespace StoptwoTone {
+export default StopTwoTone;
+declare namespace StopTwoTone {
     const type: string;
     const children: {
         type: string;

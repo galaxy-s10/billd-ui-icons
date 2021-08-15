@@ -1,5 +1,5 @@
-export default Reloadoutlined;
-declare namespace Reloadoutlined {
+export default ReloadOutlined;
+declare namespace ReloadOutlined {
     const type: string;
     const children: {
         type: string;

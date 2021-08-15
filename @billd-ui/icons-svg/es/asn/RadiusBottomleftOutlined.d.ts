@@ -1,5 +1,5 @@
-export default RadiusBottomleftoutlined;
-declare namespace RadiusBottomleftoutlined {
+export default RadiusBottomleftOutlined;
+declare namespace RadiusBottomleftOutlined {
     const type: string;
     const children: {
         type: string;

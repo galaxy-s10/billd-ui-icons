@@ -1,5 +1,5 @@
-export default Readoutlined;
-declare namespace Readoutlined {
+export default ReadOutlined;
+declare namespace ReadOutlined {
     const type: string;
     const children: {
         type: string;

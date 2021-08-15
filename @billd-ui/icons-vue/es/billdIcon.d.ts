@@ -33,6 +33,8 @@ declare namespace _default {
             export { _default as default };
         }
     }
+    function mounted(): void;
+    function mounted(): void;
     function render(): any;
     function render(): any;
 }

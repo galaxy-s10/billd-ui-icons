@@ -1,5 +1,5 @@
-export default WeiboCircleoutlined;
-declare namespace WeiboCircleoutlined {
+export default WeiboCircleOutlined;
+declare namespace WeiboCircleOutlined {
     const type: string;
     const children: {
         type: string;

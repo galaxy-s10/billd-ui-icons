@@ -1,5 +1,5 @@
-export default EnvironmenttwoTone;
-declare namespace EnvironmenttwoTone {
+export default EnvironmentTwoTone;
+declare namespace EnvironmentTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Alipayoutlined;
-declare namespace Alipayoutlined {
+export default AlipayOutlined;
+declare namespace AlipayOutlined {
     const type: string;
     const children: {
         type: string;

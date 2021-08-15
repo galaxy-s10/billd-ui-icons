@@ -1,5 +1,5 @@
-export default CodetwoTone;
-declare namespace CodetwoTone {
+export default CodeTwoTone;
+declare namespace CodeTwoTone {
     const type: string;
     const children: {
         type: string;

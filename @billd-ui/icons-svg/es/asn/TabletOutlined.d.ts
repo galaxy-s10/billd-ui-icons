@@ -1,5 +1,5 @@
-export default Tabletoutlined;
-declare namespace Tabletoutlined {
+export default TabletOutlined;
+declare namespace TabletOutlined {
     const type: string;
     const children: {
         type: string;

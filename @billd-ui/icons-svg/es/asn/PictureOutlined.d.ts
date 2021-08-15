@@ -1,5 +1,5 @@
-export default Pictureoutlined;
-declare namespace Pictureoutlined {
+export default PictureOutlined;
+declare namespace PictureOutlined {
     const type: string;
     const children: {
         type: string;

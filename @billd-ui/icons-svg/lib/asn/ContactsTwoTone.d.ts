@@ -1,5 +1,5 @@
-export default ContactstwoTone;
-declare namespace ContactstwoTone {
+export default ContactsTwoTone;
+declare namespace ContactsTwoTone {
     const type: string;
     const children: {
         type: string;

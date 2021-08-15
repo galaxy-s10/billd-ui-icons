@@ -1,5 +1,5 @@
-export default Globaloutlined;
-declare namespace Globaloutlined {
+export default GlobalOutlined;
+declare namespace GlobalOutlined {
     const type: string;
     const children: {
         type: string;

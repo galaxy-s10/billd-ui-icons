@@ -1,5 +1,5 @@
-export default Tagoutlined;
-declare namespace Tagoutlined {
+export default TagOutlined;
+declare namespace TagOutlined {
     const type: string;
     const children: {
         type: string;

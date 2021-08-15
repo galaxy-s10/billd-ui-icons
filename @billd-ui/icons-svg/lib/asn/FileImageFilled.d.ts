@@ -1,5 +1,5 @@
-export default FileImagefilled;
-declare namespace FileImagefilled {
+export default FileImageFilled;
+declare namespace FileImageFilled {
     const type: string;
     const children: {
         type: string;

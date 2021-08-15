@@ -1,5 +1,5 @@
-export default DownCirclefilled;
-declare namespace DownCirclefilled {
+export default DownCircleFilled;
+declare namespace DownCircleFilled {
     const type: string;
     const children: {
         type: string;

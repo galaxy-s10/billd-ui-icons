@@ -1,5 +1,5 @@
-export default LiketwoTone;
-declare namespace LiketwoTone {
+export default LikeTwoTone;
+declare namespace LikeTwoTone {
     const type: string;
     const children: {
         type: string;

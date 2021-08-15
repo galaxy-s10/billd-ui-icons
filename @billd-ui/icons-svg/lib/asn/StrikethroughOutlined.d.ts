@@ -1,5 +1,5 @@
-export default Strikethroughoutlined;
-declare namespace Strikethroughoutlined {
+export default StrikethroughOutlined;
+declare namespace StrikethroughOutlined {
     const type: string;
     const children: {
         type: string;

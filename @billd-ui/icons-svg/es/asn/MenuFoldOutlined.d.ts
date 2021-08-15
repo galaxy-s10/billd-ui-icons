@@ -1,5 +1,5 @@
-export default MenuFoldoutlined;
-declare namespace MenuFoldoutlined {
+export default MenuFoldOutlined;
+declare namespace MenuFoldOutlined {
     const type: string;
     const children: {
         type: string;

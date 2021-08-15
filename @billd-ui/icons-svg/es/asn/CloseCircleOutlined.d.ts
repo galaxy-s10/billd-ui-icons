@@ -1,5 +1,5 @@
-export default CloseCircleoutlined;
-declare namespace CloseCircleoutlined {
+export default CloseCircleOutlined;
+declare namespace CloseCircleOutlined {
     const type: string;
     const children: {
         type: string;

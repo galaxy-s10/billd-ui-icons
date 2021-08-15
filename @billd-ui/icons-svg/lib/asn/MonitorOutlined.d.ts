@@ -1,5 +1,5 @@
-export default Monitoroutlined;
-declare namespace Monitoroutlined {
+export default MonitorOutlined;
+declare namespace MonitorOutlined {
     const type: string;
     const children: {
         type: string;

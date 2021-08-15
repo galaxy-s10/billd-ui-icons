@@ -1,5 +1,5 @@
-export default FileImageoutlined;
-declare namespace FileImageoutlined {
+export default FileImageOutlined;
+declare namespace FileImageOutlined {
     const type: string;
     const children: {
         type: string;

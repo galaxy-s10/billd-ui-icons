@@ -1,5 +1,5 @@
-export default Homefilled;
-declare namespace Homefilled {
+export default HomeFilled;
+declare namespace HomeFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default MedicineBoxoutlined;
-declare namespace MedicineBoxoutlined {
+export default MedicineBoxOutlined;
+declare namespace MedicineBoxOutlined {
     const type: string;
     const children: {
         type: string;

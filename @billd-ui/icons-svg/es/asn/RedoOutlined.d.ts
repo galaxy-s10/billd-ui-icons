@@ -1,5 +1,5 @@
-export default Redooutlined;
-declare namespace Redooutlined {
+export default RedoOutlined;
+declare namespace RedoOutlined {
     const type: string;
     const children: {
         type: string;

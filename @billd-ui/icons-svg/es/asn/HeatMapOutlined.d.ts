@@ -1,5 +1,5 @@
-export default HeatMapoutlined;
-declare namespace HeatMapoutlined {
+export default HeatMapOutlined;
+declare namespace HeatMapOutlined {
     const type: string;
     const children: {
         type: string;

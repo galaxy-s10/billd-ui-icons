@@ -1,5 +1,5 @@
-export default Goldfilled;
-declare namespace Goldfilled {
+export default GoldFilled;
+declare namespace GoldFilled {
     const type: string;
     const children: {
         type: string;

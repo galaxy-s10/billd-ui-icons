@@ -1,5 +1,5 @@
-export default SecurityScantwoTone;
-declare namespace SecurityScantwoTone {
+export default SecurityScanTwoTone;
+declare namespace SecurityScanTwoTone {
     const type: string;
     const children: {
         type: string;

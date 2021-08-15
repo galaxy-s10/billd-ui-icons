@@ -1,5 +1,5 @@
-export default FileUnknownoutlined;
-declare namespace FileUnknownoutlined {
+export default FileUnknownOutlined;
+declare namespace FileUnknownOutlined {
     const type: string;
     const children: {
         type: string;

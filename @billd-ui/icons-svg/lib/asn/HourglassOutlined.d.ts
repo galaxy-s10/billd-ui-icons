@@ -1,5 +1,5 @@
-export default Hourglassoutlined;
-declare namespace Hourglassoutlined {
+export default HourglassOutlined;
+declare namespace HourglassOutlined {
     const type: string;
     const children: {
         type: string;

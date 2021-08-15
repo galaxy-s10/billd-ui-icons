@@ -1,5 +1,5 @@
-export default Ieoutlined;
-declare namespace Ieoutlined {
+export default IeOutlined;
+declare namespace IeOutlined {
     const type: string;
     const children: {
         type: string;

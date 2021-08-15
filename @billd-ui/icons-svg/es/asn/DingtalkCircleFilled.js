@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DingtalkCirclefilled = {
+var DingtalkCircleFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var DingtalkCirclefilled = {
   "name": "dingtalk-circle",
   "theme": "filled"
 };
-export default DingtalkCirclefilled;
+export default DingtalkCircleFilled;

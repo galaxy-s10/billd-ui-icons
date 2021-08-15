@@ -1,5 +1,5 @@
-export default BanktwoTone;
-declare namespace BanktwoTone {
+export default BankTwoTone;
+declare namespace BankTwoTone {
     const type: string;
     const children: {
         type: string;

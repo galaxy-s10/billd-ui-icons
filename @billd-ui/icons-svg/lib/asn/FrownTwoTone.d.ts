@@ -1,5 +1,5 @@
-export default FrowntwoTone;
-declare namespace FrowntwoTone {
+export default FrownTwoTone;
+declare namespace FrownTwoTone {
     const type: string;
     const children: {
         type: string;

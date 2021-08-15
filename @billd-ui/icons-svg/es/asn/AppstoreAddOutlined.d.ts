@@ -1,5 +1,5 @@
-export default AppstoreAddoutlined;
-declare namespace AppstoreAddoutlined {
+export default AppstoreAddOutlined;
+declare namespace AppstoreAddOutlined {
     const type: string;
     const children: {
         type: string;

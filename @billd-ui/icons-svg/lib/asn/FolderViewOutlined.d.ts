@@ -1,5 +1,5 @@
-export default FolderViewoutlined;
-declare namespace FolderViewoutlined {
+export default FolderViewOutlined;
+declare namespace FolderViewOutlined {
     const type: string;
     const children: {
         type: string;

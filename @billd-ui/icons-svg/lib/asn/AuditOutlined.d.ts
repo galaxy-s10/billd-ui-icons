@@ -1,5 +1,5 @@
-export default Auditoutlined;
-declare namespace Auditoutlined {
+export default AuditOutlined;
+declare namespace AuditOutlined {
     const type: string;
     const children: {
         type: string;

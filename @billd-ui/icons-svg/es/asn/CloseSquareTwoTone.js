@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var CloseSquaretwoTone = {
+var CloseSquareTwoTone = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -38,4 +38,4 @@ var CloseSquaretwoTone = {
   "name": "close-square",
   "theme": "twoTone"
 };
-export default CloseSquaretwoTone;
+export default CloseSquareTwoTone;

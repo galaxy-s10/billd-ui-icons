@@ -1,5 +1,5 @@
-export default Apifilled;
-declare namespace Apifilled {
+export default ApiFilled;
+declare namespace ApiFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Teamoutlined;
-declare namespace Teamoutlined {
+export default TeamOutlined;
+declare namespace TeamOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FlagtwoTone;
-declare namespace FlagtwoTone {
+export default FlagTwoTone;
+declare namespace FlagTwoTone {
     const type: string;
     const children: {
         type: string;

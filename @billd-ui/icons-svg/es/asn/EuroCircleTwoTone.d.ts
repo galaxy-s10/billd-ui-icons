@@ -1,5 +1,5 @@
-export default EuroCircletwoTone;
-declare namespace EuroCircletwoTone {
+export default EuroCircleTwoTone;
+declare namespace EuroCircleTwoTone {
     const type: string;
     const children: {
         type: string;

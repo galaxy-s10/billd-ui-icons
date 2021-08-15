@@ -1,5 +1,5 @@
-export default Warningoutlined;
-declare namespace Warningoutlined {
+export default WarningOutlined;
+declare namespace WarningOutlined {
     const type: string;
     const children: {
         type: string;

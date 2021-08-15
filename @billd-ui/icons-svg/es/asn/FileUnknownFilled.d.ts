@@ -1,5 +1,5 @@
-export default FileUnknownfilled;
-declare namespace FileUnknownfilled {
+export default FileUnknownFilled;
+declare namespace FileUnknownFilled {
     const type: string;
     const children: {
         type: string;

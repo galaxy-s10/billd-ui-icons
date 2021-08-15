@@ -1,5 +1,5 @@
-export default FileExcelfilled;
-declare namespace FileExcelfilled {
+export default FileExcelFilled;
+declare namespace FileExcelFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Heartoutlined;
-declare namespace Heartoutlined {
+export default HeartOutlined;
+declare namespace HeartOutlined {
     const type: string;
     const children: {
         type: string;

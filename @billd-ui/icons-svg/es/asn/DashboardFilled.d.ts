@@ -1,5 +1,5 @@
-export default Dashboardfilled;
-declare namespace Dashboardfilled {
+export default DashboardFilled;
+declare namespace DashboardFilled {
     const type: string;
     const children: {
         type: string;

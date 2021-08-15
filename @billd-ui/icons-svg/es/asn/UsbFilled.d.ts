@@ -1,5 +1,5 @@
-export default Usbfilled;
-declare namespace Usbfilled {
+export default UsbFilled;
+declare namespace UsbFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Facebookfilled;
-declare namespace Facebookfilled {
+export default FacebookFilled;
+declare namespace FacebookFilled {
     const type: string;
     const children: {
         type: string;

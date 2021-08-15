@@ -1,5 +1,5 @@
-export default Enteroutlined;
-declare namespace Enteroutlined {
+export default EnterOutlined;
+declare namespace EnterOutlined {
     const type: string;
     const children: {
         type: string;

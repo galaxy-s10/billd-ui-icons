@@ -1,5 +1,5 @@
-export default PaperClipoutlined;
-declare namespace PaperClipoutlined {
+export default PaperClipOutlined;
+declare namespace PaperClipOutlined {
     const type: string;
     const children: {
         type: string;

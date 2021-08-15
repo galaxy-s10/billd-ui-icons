@@ -1,5 +1,5 @@
-export default PlusSquaretwoTone;
-declare namespace PlusSquaretwoTone {
+export default PlusSquareTwoTone;
+declare namespace PlusSquareTwoTone {
     const type: string;
     const children: {
         type: string;

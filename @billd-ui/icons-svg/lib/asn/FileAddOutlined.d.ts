@@ -1,5 +1,5 @@
-export default FileAddoutlined;
-declare namespace FileAddoutlined {
+export default FileAddOutlined;
+declare namespace FileAddOutlined {
     const type: string;
     const children: {
         type: string;

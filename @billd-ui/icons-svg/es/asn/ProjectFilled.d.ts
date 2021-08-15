@@ -1,5 +1,5 @@
-export default Projectfilled;
-declare namespace Projectfilled {
+export default ProjectFilled;
+declare namespace ProjectFilled {
     const type: string;
     const children: {
         type: string;

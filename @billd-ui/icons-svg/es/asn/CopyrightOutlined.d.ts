@@ -1,5 +1,5 @@
-export default Copyrightoutlined;
-declare namespace Copyrightoutlined {
+export default CopyrightOutlined;
+declare namespace CopyrightOutlined {
     const type: string;
     const children: {
         type: string;

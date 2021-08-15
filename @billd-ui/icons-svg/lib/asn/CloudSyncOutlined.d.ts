@@ -1,5 +1,5 @@
-export default CloudSyncoutlined;
-declare namespace CloudSyncoutlined {
+export default CloudSyncOutlined;
+declare namespace CloudSyncOutlined {
     const type: string;
     const children: {
         type: string;

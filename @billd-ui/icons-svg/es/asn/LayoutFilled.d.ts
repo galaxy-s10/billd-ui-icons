@@ -1,5 +1,5 @@
-export default Layoutfilled;
-declare namespace Layoutfilled {
+export default LayoutFilled;
+declare namespace LayoutFilled {
     const type: string;
     const children: {
         type: string;

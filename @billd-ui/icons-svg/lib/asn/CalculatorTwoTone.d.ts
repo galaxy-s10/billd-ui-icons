@@ -1,5 +1,5 @@
-export default CalculatortwoTone;
-declare namespace CalculatortwoTone {
+export default CalculatorTwoTone;
+declare namespace CalculatorTwoTone {
     const type: string;
     const children: {
         type: string;

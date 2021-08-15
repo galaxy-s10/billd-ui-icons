@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var StepForwardoutlined = {
+var StepForwardOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -28,5 +28,5 @@ var StepForwardoutlined = {
   "name": "step-forward",
   "theme": "outlined"
 };
-var _default = StepForwardoutlined;
+var _default = StepForwardOutlined;
 exports.default = _default;

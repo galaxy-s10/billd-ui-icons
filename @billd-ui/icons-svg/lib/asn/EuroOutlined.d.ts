@@ -1,5 +1,5 @@
-export default Eurooutlined;
-declare namespace Eurooutlined {
+export default EuroOutlined;
+declare namespace EuroOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FunnelPlotoutlined;
-declare namespace FunnelPlotoutlined {
+export default FunnelPlotOutlined;
+declare namespace FunnelPlotOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FilePptfilled;
-declare namespace FilePptfilled {
+export default FilePptFilled;
+declare namespace FilePptFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default CodeSandboxoutlined;
-declare namespace CodeSandboxoutlined {
+export default CodeSandboxOutlined;
+declare namespace CodeSandboxOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Appstoreoutlined = {
+var AppstoreOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Appstoreoutlined = {
   "name": "appstore",
   "theme": "outlined"
 };
-export default Appstoreoutlined;
+export default AppstoreOutlined;

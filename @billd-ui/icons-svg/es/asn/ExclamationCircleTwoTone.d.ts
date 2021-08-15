@@ -1,5 +1,5 @@
-export default ExclamationCircletwoTone;
-declare namespace ExclamationCircletwoTone {
+export default ExclamationCircleTwoTone;
+declare namespace ExclamationCircleTwoTone {
     const type: string;
     const children: {
         type: string;

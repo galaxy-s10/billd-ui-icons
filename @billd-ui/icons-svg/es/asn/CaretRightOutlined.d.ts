@@ -1,5 +1,5 @@
-export default CaretRightoutlined;
-declare namespace CaretRightoutlined {
+export default CaretRightOutlined;
+declare namespace CaretRightOutlined {
     const type: string;
     const children: {
         type: string;

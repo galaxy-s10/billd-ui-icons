@@ -1,5 +1,5 @@
-export default PropertySafetytwoTone;
-declare namespace PropertySafetytwoTone {
+export default PropertySafetyTwoTone;
+declare namespace PropertySafetyTwoTone {
     const type: string;
     const children: {
         type: string;

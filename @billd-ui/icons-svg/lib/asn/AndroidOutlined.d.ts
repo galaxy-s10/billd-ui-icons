@@ -1,5 +1,5 @@
-export default Androidoutlined;
-declare namespace Androidoutlined {
+export default AndroidOutlined;
+declare namespace AndroidOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Cioutlined;
-declare namespace Cioutlined {
+export default CiOutlined;
+declare namespace CiOutlined {
     const type: string;
     const children: {
         type: string;

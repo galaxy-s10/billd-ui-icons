@@ -1,5 +1,5 @@
-export default Apioutlined;
-declare namespace Apioutlined {
+export default ApiOutlined;
+declare namespace ApiOutlined {
     const type: string;
     const children: {
         type: string;

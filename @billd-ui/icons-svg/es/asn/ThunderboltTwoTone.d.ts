@@ -1,5 +1,5 @@
-export default ThunderbolttwoTone;
-declare namespace ThunderbolttwoTone {
+export default ThunderboltTwoTone;
+declare namespace ThunderboltTwoTone {
     const type: string;
     const children: {
         type: string;

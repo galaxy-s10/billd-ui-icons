@@ -1,5 +1,5 @@
-export default Pushpinfilled;
-declare namespace Pushpinfilled {
+export default PushpinFilled;
+declare namespace PushpinFilled {
     const type: string;
     const children: {
         type: string;

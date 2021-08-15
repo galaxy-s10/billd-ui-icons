@@ -1,5 +1,5 @@
-export default CustomerServicefilled;
-declare namespace CustomerServicefilled {
+export default CustomerServiceFilled;
+declare namespace CustomerServiceFilled {
     const type: string;
     const children: {
         type: string;

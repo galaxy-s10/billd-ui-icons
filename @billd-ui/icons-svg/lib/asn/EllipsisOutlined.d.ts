@@ -1,5 +1,5 @@
-export default Ellipsisoutlined;
-declare namespace Ellipsisoutlined {
+export default EllipsisOutlined;
+declare namespace EllipsisOutlined {
     const type: string;
     const children: {
         type: string;

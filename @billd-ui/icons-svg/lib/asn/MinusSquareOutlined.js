@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var MinusSquareoutlined = {
+var MinusSquareOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -36,5 +36,5 @@ var MinusSquareoutlined = {
   "name": "minus-square",
   "theme": "outlined"
 };
-var _default = MinusSquareoutlined;
+var _default = MinusSquareOutlined;
 exports.default = _default;

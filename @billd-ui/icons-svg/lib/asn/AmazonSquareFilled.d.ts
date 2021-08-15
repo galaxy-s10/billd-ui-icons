@@ -1,5 +1,5 @@
-export default AmazonSquarefilled;
-declare namespace AmazonSquarefilled {
+export default AmazonSquareFilled;
+declare namespace AmazonSquareFilled {
     const type: string;
     const children: {
         type: string;

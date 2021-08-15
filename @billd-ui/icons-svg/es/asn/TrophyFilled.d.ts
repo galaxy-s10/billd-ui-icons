@@ -1,5 +1,5 @@
-export default Trophyfilled;
-declare namespace Trophyfilled {
+export default TrophyFilled;
+declare namespace TrophyFilled {
     const type: string;
     const children: {
         type: string;

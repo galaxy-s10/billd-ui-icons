@@ -1,5 +1,5 @@
-export default FileMarkdowntwoTone;
-declare namespace FileMarkdowntwoTone {
+export default FileMarkdownTwoTone;
+declare namespace FileMarkdownTwoTone {
     const type: string;
     const children: {
         type: string;

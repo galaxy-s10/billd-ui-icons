@@ -1,5 +1,5 @@
-export default Shopfilled;
-declare namespace Shopfilled {
+export default ShopFilled;
+declare namespace ShopFilled {
     const type: string;
     const children: {
         type: string;

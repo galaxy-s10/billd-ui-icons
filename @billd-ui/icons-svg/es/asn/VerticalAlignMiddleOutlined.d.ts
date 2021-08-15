@@ -1,5 +1,5 @@
-export default VerticalAlignMiddleoutlined;
-declare namespace VerticalAlignMiddleoutlined {
+export default VerticalAlignMiddleOutlined;
+declare namespace VerticalAlignMiddleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default DingtalkSquarefilled;
-declare namespace DingtalkSquarefilled {
+export default DingtalkSquareFilled;
+declare namespace DingtalkSquareFilled {
     const type: string;
     const children: {
         type: string;

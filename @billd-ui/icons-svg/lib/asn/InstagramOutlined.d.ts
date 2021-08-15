@@ -1,5 +1,5 @@
-export default Instagramoutlined;
-declare namespace Instagramoutlined {
+export default InstagramOutlined;
+declare namespace InstagramOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default AlignCenteroutlined;
-declare namespace AlignCenteroutlined {
+export default AlignCenterOutlined;
+declare namespace AlignCenterOutlined {
     const type: string;
     const children: {
         type: string;

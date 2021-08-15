@@ -1,5 +1,5 @@
-export default SavetwoTone;
-declare namespace SavetwoTone {
+export default SaveTwoTone;
+declare namespace SaveTwoTone {
     const type: string;
     const children: {
         type: string;

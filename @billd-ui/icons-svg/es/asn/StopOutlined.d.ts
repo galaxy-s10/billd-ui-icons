@@ -1,5 +1,5 @@
-export default Stopoutlined;
-declare namespace Stopoutlined {
+export default StopOutlined;
+declare namespace StopOutlined {
     const type: string;
     const children: {
         type: string;

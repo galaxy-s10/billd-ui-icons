@@ -1,5 +1,5 @@
-export default Googleoutlined;
-declare namespace Googleoutlined {
+export default GoogleOutlined;
+declare namespace GoogleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ShareAltoutlined;
-declare namespace ShareAltoutlined {
+export default ShareAltOutlined;
+declare namespace ShareAltOutlined {
     const type: string;
     const children: {
         type: string;

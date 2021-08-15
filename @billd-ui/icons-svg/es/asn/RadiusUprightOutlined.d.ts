@@ -1,5 +1,5 @@
-export default RadiusUprightoutlined;
-declare namespace RadiusUprightoutlined {
+export default RadiusUprightOutlined;
+declare namespace RadiusUprightOutlined {
     const type: string;
     const children: {
         type: string;

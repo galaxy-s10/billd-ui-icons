@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var DeleteRowoutlined = {
+var DeleteRowOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -39,5 +39,5 @@ var DeleteRowoutlined = {
   "name": "delete-row",
   "theme": "outlined"
 };
-var _default = DeleteRowoutlined;
+var _default = DeleteRowOutlined;
 exports.default = _default;

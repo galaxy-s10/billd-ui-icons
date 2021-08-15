@@ -1,5 +1,5 @@
-export default Stockoutlined;
-declare namespace Stockoutlined {
+export default StockOutlined;
+declare namespace StockOutlined {
     const type: string;
     const children: {
         type: string;

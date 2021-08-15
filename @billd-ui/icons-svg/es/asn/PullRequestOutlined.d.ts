@@ -1,5 +1,5 @@
-export default PullRequestoutlined;
-declare namespace PullRequestoutlined {
+export default PullRequestOutlined;
+declare namespace PullRequestOutlined {
     const type: string;
     const children: {
         type: string;

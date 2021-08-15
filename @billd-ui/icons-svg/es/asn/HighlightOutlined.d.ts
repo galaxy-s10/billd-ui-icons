@@ -1,5 +1,5 @@
-export default Highlightoutlined;
-declare namespace Highlightoutlined {
+export default HighlightOutlined;
+declare namespace HighlightOutlined {
     const type: string;
     const children: {
         type: string;

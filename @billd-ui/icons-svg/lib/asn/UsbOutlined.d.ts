@@ -1,5 +1,5 @@
-export default Usboutlined;
-declare namespace Usboutlined {
+export default UsbOutlined;
+declare namespace UsbOutlined {
     const type: string;
     const children: {
         type: string;

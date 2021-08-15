@@ -1,5 +1,5 @@
-export default Staroutlined;
-declare namespace Staroutlined {
+export default StarOutlined;
+declare namespace StarOutlined {
     const type: string;
     const children: {
         type: string;

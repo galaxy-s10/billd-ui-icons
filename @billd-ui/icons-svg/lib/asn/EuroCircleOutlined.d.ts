@@ -1,5 +1,5 @@
-export default EuroCircleoutlined;
-declare namespace EuroCircleoutlined {
+export default EuroCircleOutlined;
+declare namespace EuroCircleOutlined {
     const type: string;
     const children: {
         type: string;

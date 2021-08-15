@@ -1,5 +1,5 @@
-export default InsertRowAboveoutlined;
-declare namespace InsertRowAboveoutlined {
+export default InsertRowAboveOutlined;
+declare namespace InsertRowAboveOutlined {
     const type: string;
     const children: {
         type: string;

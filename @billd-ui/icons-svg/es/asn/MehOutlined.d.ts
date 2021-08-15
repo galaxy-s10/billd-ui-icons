@@ -1,5 +1,5 @@
-export default Mehoutlined;
-declare namespace Mehoutlined {
+export default MehOutlined;
+declare namespace MehOutlined {
     const type: string;
     const children: {
         type: string;

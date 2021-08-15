@@ -1,5 +1,5 @@
-export default CiCircletwoTone;
-declare namespace CiCircletwoTone {
+export default CiCircleTwoTone;
+declare namespace CiCircleTwoTone {
     const type: string;
     const children: {
         type: string;

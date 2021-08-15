@@ -1,5 +1,5 @@
-export default MinusCircletwoTone;
-declare namespace MinusCircletwoTone {
+export default MinusCircleTwoTone;
+declare namespace MinusCircleTwoTone {
     const type: string;
     const children: {
         type: string;

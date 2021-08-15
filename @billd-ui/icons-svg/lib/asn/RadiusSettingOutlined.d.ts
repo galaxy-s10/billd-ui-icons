@@ -1,5 +1,5 @@
-export default RadiusSettingoutlined;
-declare namespace RadiusSettingoutlined {
+export default RadiusSettingOutlined;
+declare namespace RadiusSettingOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ResttwoTone;
-declare namespace ResttwoTone {
+export default RestTwoTone;
+declare namespace RestTwoTone {
     const type: string;
     const children: {
         type: string;

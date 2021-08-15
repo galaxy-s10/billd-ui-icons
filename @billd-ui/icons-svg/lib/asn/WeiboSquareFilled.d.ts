@@ -1,5 +1,5 @@
-export default WeiboSquarefilled;
-declare namespace WeiboSquarefilled {
+export default WeiboSquareFilled;
+declare namespace WeiboSquareFilled {
     const type: string;
     const children: {
         type: string;

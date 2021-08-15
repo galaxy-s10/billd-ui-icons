@@ -1,5 +1,5 @@
-export default Pushpinoutlined;
-declare namespace Pushpinoutlined {
+export default PushpinOutlined;
+declare namespace PushpinOutlined {
     const type: string;
     const children: {
         type: string;

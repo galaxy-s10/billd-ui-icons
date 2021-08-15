@@ -1,5 +1,5 @@
-export default LocktwoTone;
-declare namespace LocktwoTone {
+export default LockTwoTone;
+declare namespace LockTwoTone {
     const type: string;
     const children: {
         type: string;

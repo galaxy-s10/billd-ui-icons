@@ -7,7 +7,7 @@ exports.default = void 0;
 
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Subnodeoutlined = {
+var SubnodeOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -39,5 +39,5 @@ var Subnodeoutlined = {
   "name": "subnode",
   "theme": "outlined"
 };
-var _default = Subnodeoutlined;
+var _default = SubnodeOutlined;
 exports.default = _default;

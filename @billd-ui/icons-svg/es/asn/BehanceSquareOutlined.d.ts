@@ -1,5 +1,5 @@
-export default BehanceSquareoutlined;
-declare namespace BehanceSquareoutlined {
+export default BehanceSquareOutlined;
+declare namespace BehanceSquareOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var EyeInvisiblefilled = {
+var EyeInvisibleFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -29,4 +29,4 @@ var EyeInvisiblefilled = {
   "name": "eye-invisible",
   "theme": "filled"
 };
-export default EyeInvisiblefilled;
+export default EyeInvisibleFilled;

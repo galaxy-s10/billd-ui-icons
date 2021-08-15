@@ -1,5 +1,5 @@
-export default Tableoutlined;
-declare namespace Tableoutlined {
+export default TableOutlined;
+declare namespace TableOutlined {
     const type: string;
     const children: {
         type: string;

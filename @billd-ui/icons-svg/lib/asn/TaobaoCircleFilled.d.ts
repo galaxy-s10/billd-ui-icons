@@ -1,5 +1,5 @@
-export default TaobaoCirclefilled;
-declare namespace TaobaoCirclefilled {
+export default TaobaoCircleFilled;
+declare namespace TaobaoCircleFilled {
     const type: string;
     const children: {
         type: string;

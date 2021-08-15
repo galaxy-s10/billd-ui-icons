@@ -1,5 +1,5 @@
-export default PhonetwoTone;
-declare namespace PhonetwoTone {
+export default PhoneTwoTone;
+declare namespace PhoneTwoTone {
     const type: string;
     const children: {
         type: string;

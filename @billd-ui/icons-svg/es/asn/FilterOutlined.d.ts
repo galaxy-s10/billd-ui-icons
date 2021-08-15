@@ -1,5 +1,5 @@
-export default Filteroutlined;
-declare namespace Filteroutlined {
+export default FilterOutlined;
+declare namespace FilterOutlined {
     const type: string;
     const children: {
         type: string;

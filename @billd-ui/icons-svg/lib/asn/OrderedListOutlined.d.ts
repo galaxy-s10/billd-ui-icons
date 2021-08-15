@@ -1,5 +1,5 @@
-export default OrderedListoutlined;
-declare namespace OrderedListoutlined {
+export default OrderedListOutlined;
+declare namespace OrderedListOutlined {
     const type: string;
     const children: {
         type: string;

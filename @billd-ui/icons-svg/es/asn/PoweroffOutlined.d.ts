@@ -1,5 +1,5 @@
-export default Poweroffoutlined;
-declare namespace Poweroffoutlined {
+export default PoweroffOutlined;
+declare namespace PoweroffOutlined {
     const type: string;
     const children: {
         type: string;

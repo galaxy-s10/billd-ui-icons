@@ -1,5 +1,5 @@
-export default Barsoutlined;
-declare namespace Barsoutlined {
+export default BarsOutlined;
+declare namespace BarsOutlined {
     const type: string;
     const children: {
         type: string;

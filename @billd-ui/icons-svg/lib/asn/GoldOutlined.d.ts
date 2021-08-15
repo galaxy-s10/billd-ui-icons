@@ -1,5 +1,5 @@
-export default Goldoutlined;
-declare namespace Goldoutlined {
+export default GoldOutlined;
+declare namespace GoldOutlined {
     const type: string;
     const children: {
         type: string;

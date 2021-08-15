@@ -1,5 +1,5 @@
-export default FontSizeoutlined;
-declare namespace FontSizeoutlined {
+export default FontSizeOutlined;
+declare namespace FontSizeOutlined {
     const type: string;
     const children: {
         type: string;

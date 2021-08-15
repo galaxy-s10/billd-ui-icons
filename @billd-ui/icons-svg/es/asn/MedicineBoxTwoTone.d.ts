@@ -1,5 +1,5 @@
-export default MedicineBoxtwoTone;
-declare namespace MedicineBoxtwoTone {
+export default MedicineBoxTwoTone;
+declare namespace MedicineBoxTwoTone {
     const type: string;
     const children: {
         type: string;

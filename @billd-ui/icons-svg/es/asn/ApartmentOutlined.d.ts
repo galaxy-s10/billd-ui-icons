@@ -1,5 +1,5 @@
-export default Apartmentoutlined;
-declare namespace Apartmentoutlined {
+export default ApartmentOutlined;
+declare namespace ApartmentOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default PauseCircleoutlined;
-declare namespace PauseCircleoutlined {
+export default PauseCircleOutlined;
+declare namespace PauseCircleOutlined {
     const type: string;
     const children: {
         type: string;

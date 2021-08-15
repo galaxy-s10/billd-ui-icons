@@ -1,5 +1,5 @@
-export default CloudDownloadoutlined;
-declare namespace CloudDownloadoutlined {
+export default CloudDownloadOutlined;
+declare namespace CloudDownloadOutlined {
     const type: string;
     const children: {
         type: string;

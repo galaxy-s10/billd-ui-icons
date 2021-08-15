@@ -1,5 +1,5 @@
-export default Weibooutlined;
-declare namespace Weibooutlined {
+export default WeiboOutlined;
+declare namespace WeiboOutlined {
     const type: string;
     const children: {
         type: string;

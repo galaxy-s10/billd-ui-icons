@@ -1,5 +1,5 @@
-export default Phoneoutlined;
-declare namespace Phoneoutlined {
+export default PhoneOutlined;
+declare namespace PhoneOutlined {
     const type: string;
     const children: {
         type: string;

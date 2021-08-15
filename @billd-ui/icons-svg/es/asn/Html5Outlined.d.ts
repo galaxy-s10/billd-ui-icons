@@ -1,5 +1,5 @@
-export default Html5outlined;
-declare namespace Html5outlined {
+export default Html5Outlined;
+declare namespace Html5Outlined {
     const type: string;
     const children: {
         type: string;

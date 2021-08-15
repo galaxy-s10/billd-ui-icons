@@ -1,5 +1,5 @@
-export default Appleoutlined;
-declare namespace Appleoutlined {
+export default AppleOutlined;
+declare namespace AppleOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default FullscreenExitoutlined;
-declare namespace FullscreenExitoutlined {
+export default FullscreenExitOutlined;
+declare namespace FullscreenExitOutlined {
     const type: string;
     const children: {
         type: string;

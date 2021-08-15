@@ -1,5 +1,5 @@
-export default Sendoutlined;
-declare namespace Sendoutlined {
+export default SendOutlined;
+declare namespace SendOutlined {
     const type: string;
     const children: {
         type: string;

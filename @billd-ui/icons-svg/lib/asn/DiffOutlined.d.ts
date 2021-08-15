@@ -1,5 +1,5 @@
-export default Diffoutlined;
-declare namespace Diffoutlined {
+export default DiffOutlined;
+declare namespace DiffOutlined {
     const type: string;
     const children: {
         type: string;

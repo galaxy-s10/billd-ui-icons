@@ -1,5 +1,5 @@
-export default Linkoutlined;
-declare namespace Linkoutlined {
+export default LinkOutlined;
+declare namespace LinkOutlined {
     const type: string;
     const children: {
         type: string;

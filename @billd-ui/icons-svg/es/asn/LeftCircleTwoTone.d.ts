@@ -1,5 +1,5 @@
-export default LeftCircletwoTone;
-declare namespace LeftCircletwoTone {
+export default LeftCircleTwoTone;
+declare namespace LeftCircleTwoTone {
     const type: string;
     const children: {
         type: string;

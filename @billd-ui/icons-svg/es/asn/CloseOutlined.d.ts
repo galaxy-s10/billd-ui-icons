@@ -1,5 +1,5 @@
-export default Closeoutlined;
-declare namespace Closeoutlined {
+export default CloseOutlined;
+declare namespace CloseOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default MediumCirclefilled;
-declare namespace MediumCirclefilled {
+export default MediumCircleFilled;
+declare namespace MediumCircleFilled {
     const type: string;
     const children: {
         type: string;

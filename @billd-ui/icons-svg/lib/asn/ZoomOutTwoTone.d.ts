@@ -1,5 +1,5 @@
-export default ZoomOuttwoTone;
-declare namespace ZoomOuttwoTone {
+export default ZoomOutTwoTone;
+declare namespace ZoomOutTwoTone {
     const type: string;
     const children: {
         type: string;

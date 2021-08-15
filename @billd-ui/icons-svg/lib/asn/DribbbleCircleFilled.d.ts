@@ -1,5 +1,5 @@
-export default DribbbleCirclefilled;
-declare namespace DribbbleCirclefilled {
+export default DribbbleCircleFilled;
+declare namespace DribbbleCircleFilled {
     const type: string;
     const children: {
         type: string;

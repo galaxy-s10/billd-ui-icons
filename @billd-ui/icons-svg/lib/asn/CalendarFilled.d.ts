@@ -1,5 +1,5 @@
-export default Calendarfilled;
-declare namespace Calendarfilled {
+export default CalendarFilled;
+declare namespace CalendarFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Slidersoutlined;
-declare namespace Slidersoutlined {
+export default SlidersOutlined;
+declare namespace SlidersOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default IeSquarefilled;
-declare namespace IeSquarefilled {
+export default IeSquareFilled;
+declare namespace IeSquareFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default ExperimenttwoTone;
-declare namespace ExperimenttwoTone {
+export default ExperimentTwoTone;
+declare namespace ExperimentTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default DotChartoutlined;
-declare namespace DotChartoutlined {
+export default DotChartOutlined;
+declare namespace DotChartOutlined {
     const type: string;
     const children: {
         type: string;

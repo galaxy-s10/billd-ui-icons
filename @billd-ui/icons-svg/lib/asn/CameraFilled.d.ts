@@ -1,5 +1,5 @@
-export default Camerafilled;
-declare namespace Camerafilled {
+export default CameraFilled;
+declare namespace CameraFilled {
     const type: string;
     const children: {
         type: string;

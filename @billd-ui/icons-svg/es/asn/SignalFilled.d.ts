@@ -1,5 +1,5 @@
-export default Signalfilled;
-declare namespace Signalfilled {
+export default SignalFilled;
+declare namespace SignalFilled {
     const type: string;
     const children: {
         type: string;

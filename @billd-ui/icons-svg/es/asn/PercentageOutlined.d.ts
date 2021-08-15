@@ -1,5 +1,5 @@
-export default Percentageoutlined;
-declare namespace Percentageoutlined {
+export default PercentageOutlined;
+declare namespace PercentageOutlined {
     const type: string;
     const children: {
         type: string;

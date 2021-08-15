@@ -1,5 +1,5 @@
-export default MediumWorkmarkoutlined;
-declare namespace MediumWorkmarkoutlined {
+export default MediumWorkmarkOutlined;
+declare namespace MediumWorkmarkOutlined {
     const type: string;
     const children: {
         type: string;

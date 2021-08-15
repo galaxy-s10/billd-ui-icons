@@ -1,5 +1,5 @@
-export default ScheduletwoTone;
-declare namespace ScheduletwoTone {
+export default ScheduleTwoTone;
+declare namespace ScheduleTwoTone {
     const type: string;
     const children: {
         type: string;

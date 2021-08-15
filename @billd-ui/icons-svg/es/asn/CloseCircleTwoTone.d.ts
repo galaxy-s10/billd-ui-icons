@@ -1,5 +1,5 @@
-export default CloseCircletwoTone;
-declare namespace CloseCircletwoTone {
+export default CloseCircleTwoTone;
+declare namespace CloseCircleTwoTone {
     const type: string;
     const children: {
         type: string;

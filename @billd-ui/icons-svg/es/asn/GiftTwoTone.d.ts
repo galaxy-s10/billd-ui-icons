@@ -1,5 +1,5 @@
-export default GifttwoTone;
-declare namespace GifttwoTone {
+export default GiftTwoTone;
+declare namespace GiftTwoTone {
     const type: string;
     const children: {
         type: string;

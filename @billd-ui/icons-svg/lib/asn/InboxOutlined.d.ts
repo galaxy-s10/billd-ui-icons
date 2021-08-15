@@ -1,5 +1,5 @@
-export default Inboxoutlined;
-declare namespace Inboxoutlined {
+export default InboxOutlined;
+declare namespace InboxOutlined {
     const type: string;
     const children: {
         type: string;

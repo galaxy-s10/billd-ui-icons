@@ -1,5 +1,5 @@
-export default ArrowDownoutlined;
-declare namespace ArrowDownoutlined {
+export default ArrowDownOutlined;
+declare namespace ArrowDownOutlined {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default CompasstwoTone;
-declare namespace CompasstwoTone {
+export default CompassTwoTone;
+declare namespace CompassTwoTone {
     const type: string;
     const children: {
         type: string;

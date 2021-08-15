@@ -1,5 +1,5 @@
-export default Environmentfilled;
-declare namespace Environmentfilled {
+export default EnvironmentFilled;
+declare namespace EnvironmentFilled {
     const type: string;
     const children: {
         type: string;

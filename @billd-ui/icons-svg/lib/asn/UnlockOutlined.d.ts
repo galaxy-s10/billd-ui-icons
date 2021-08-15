@@ -1,5 +1,5 @@
-export default Unlockoutlined;
-declare namespace Unlockoutlined {
+export default UnlockOutlined;
+declare namespace UnlockOutlined {
     const type: string;
     const children: {
         type: string;

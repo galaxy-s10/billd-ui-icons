@@ -1,5 +1,5 @@
-export default Thunderboltoutlined;
-declare namespace Thunderboltoutlined {
+export default ThunderboltOutlined;
+declare namespace ThunderboltOutlined {
     const type: string;
     const children: {
         type: string;

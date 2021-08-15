@@ -1,5 +1,5 @@
-export default UnlocktwoTone;
-declare namespace UnlocktwoTone {
+export default UnlockTwoTone;
+declare namespace UnlockTwoTone {
     const type: string;
     const children: {
         type: string;

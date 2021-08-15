@@ -1,5 +1,5 @@
-export default UserDeleteoutlined;
-declare namespace UserDeleteoutlined {
+export default UserDeleteOutlined;
+declare namespace UserDeleteOutlined {
     const type: string;
     const children: {
         type: string;

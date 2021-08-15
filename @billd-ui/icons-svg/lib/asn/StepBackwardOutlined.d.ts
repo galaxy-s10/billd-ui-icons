@@ -1,5 +1,5 @@
-export default StepBackwardoutlined;
-declare namespace StepBackwardoutlined {
+export default StepBackwardOutlined;
+declare namespace StepBackwardOutlined {
     const type: string;
     const children: {
         type: string;

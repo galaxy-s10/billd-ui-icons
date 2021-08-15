@@ -1,5 +1,5 @@
-export default Downoutlined;
-declare namespace Downoutlined {
+export default DownOutlined;
+declare namespace DownOutlined {
     const type: string;
     const children: {
         type: string;

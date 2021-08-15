@@ -1,5 +1,5 @@
-export default Gitlabfilled;
-declare namespace Gitlabfilled {
+export default GitlabFilled;
+declare namespace GitlabFilled {
     const type: string;
     const children: {
         type: string;

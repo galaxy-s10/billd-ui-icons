@@ -6,7 +6,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 // billdIcon.jsx这个文件是icons里面所有文件都依赖的组件
 // 处理css
-import './handlecss';
+// import './handlecss';
 export default {
   props: {
     innerSvgProps: {
@@ -36,6 +36,9 @@ export default {
       }
     }
   },
+  mounted: function mounted() {
+    import('./handlecss').then(function (res) {});
+  },
   render: function render() {
     var h = arguments[0];
     var svgBaseProps = {
@@ -44,15 +47,16 @@ export default {
       fill: 'currentColor'
     };
     return h("i", {
+      "class": "billd-icon",
       "style": this.customStyle
     }, [h("svg", {
       "attrs": _objectSpread({}, Object.assign(this.innerSvgProps, svgBaseProps)),
       "class": {
         'billd-icon-ani': this.spin
       },
-      "style": {
+      "style": [this.spin && this.rotate !== 360 && {
         transform: "rotate(".concat(this.rotate, "deg)")
-      }
+      }]
     }, [this.children && this.children.filter(function (item) {
       return item.name === 'path';
     }).map(function (v) {

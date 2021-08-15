@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Syncoutlined = {
+var SyncOutlined = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Syncoutlined = {
   "name": "sync",
   "theme": "outlined"
 };
-export default Syncoutlined;
+export default SyncOutlined;

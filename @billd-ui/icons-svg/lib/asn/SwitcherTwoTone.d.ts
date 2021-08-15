@@ -1,5 +1,5 @@
-export default SwitchertwoTone;
-declare namespace SwitchertwoTone {
+export default SwitcherTwoTone;
+declare namespace SwitcherTwoTone {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Hddoutlined;
-declare namespace Hddoutlined {
+export default HddOutlined;
+declare namespace HddOutlined {
     const type: string;
     const children: {
         type: string;

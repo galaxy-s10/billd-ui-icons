@@ -1,5 +1,5 @@
-export default SplitCellsoutlined;
-declare namespace SplitCellsoutlined {
+export default SplitCellsOutlined;
+declare namespace SplitCellsOutlined {
     const type: string;
     const children: {
         type: string;

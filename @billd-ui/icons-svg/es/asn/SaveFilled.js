@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // 这个文件是由billd-ui-icons/build-tools/svgo/template/icon-svg/asn.ejs自动生成的，请勿手动修改！
-var Savefilled = {
+var SaveFilled = {
   "type": "document",
   "children": [{
     "type": "element",
@@ -22,4 +22,4 @@ var Savefilled = {
   "name": "save",
   "theme": "filled"
 };
-export default Savefilled;
+export default SaveFilled;

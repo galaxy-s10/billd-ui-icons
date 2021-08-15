@@ -1,5 +1,5 @@
-export default Shoppingoutlined;
-declare namespace Shoppingoutlined {
+export default ShoppingOutlined;
+declare namespace ShoppingOutlined {
     const type: string;
     const children: {
         type: string;

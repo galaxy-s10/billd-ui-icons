@@ -1,5 +1,5 @@
-export default PauseCircletwoTone;
-declare namespace PauseCircletwoTone {
+export default PauseCircleTwoTone;
+declare namespace PauseCircleTwoTone {
     const type: string;
     const children: {
         type: string;

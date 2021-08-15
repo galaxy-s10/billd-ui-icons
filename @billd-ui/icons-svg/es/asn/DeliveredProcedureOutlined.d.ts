@@ -1,5 +1,5 @@
-export default DeliveredProcedureoutlined;
-declare namespace DeliveredProcedureoutlined {
+export default DeliveredProcedureOutlined;
+declare namespace DeliveredProcedureOutlined {
     const type: string;
     const children: {
         type: string;

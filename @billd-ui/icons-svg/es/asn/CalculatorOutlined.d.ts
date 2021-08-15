@@ -1,5 +1,5 @@
-export default Calculatoroutlined;
-declare namespace Calculatoroutlined {
+export default CalculatorOutlined;
+declare namespace CalculatorOutlined {
     const type: string;
     const children: {
         type: string;

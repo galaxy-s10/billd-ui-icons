@@ -1,5 +1,5 @@
-export default Compassoutlined;
-declare namespace Compassoutlined {
+export default CompassOutlined;
+declare namespace CompassOutlined {
     const type: string;
     const children: {
         type: string;

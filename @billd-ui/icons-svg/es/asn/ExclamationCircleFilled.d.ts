@@ -1,5 +1,5 @@
-export default ExclamationCirclefilled;
-declare namespace ExclamationCirclefilled {
+export default ExclamationCircleFilled;
+declare namespace ExclamationCircleFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Commentoutlined;
-declare namespace Commentoutlined {
+export default CommentOutlined;
+declare namespace CommentOutlined {
     const type: string;
     const children: {
         type: string;

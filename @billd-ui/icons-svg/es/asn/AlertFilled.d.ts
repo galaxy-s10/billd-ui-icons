@@ -1,5 +1,5 @@
-export default Alertfilled;
-declare namespace Alertfilled {
+export default AlertFilled;
+declare namespace AlertFilled {
     const type: string;
     const children: {
         type: string;

@@ -1,5 +1,5 @@
-export default Contactsfilled;
-declare namespace Contactsfilled {
+export default ContactsFilled;
+declare namespace ContactsFilled {
     const type: string;
     const children: {
         type: string;

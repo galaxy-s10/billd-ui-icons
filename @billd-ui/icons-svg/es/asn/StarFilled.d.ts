@@ -1,5 +1,5 @@
-export default Starfilled;
-declare namespace Starfilled {
+export default StarFilled;
+declare namespace StarFilled {
     const type: string;
     const children: {
         type: string;

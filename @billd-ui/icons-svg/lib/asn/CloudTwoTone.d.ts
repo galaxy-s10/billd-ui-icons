@@ -1,5 +1,5 @@
-export default CloudtwoTone;
-declare namespace CloudtwoTone {
+export default CloudTwoTone;
+declare namespace CloudTwoTone {
     const type: string;
     const children: {
         type: string;

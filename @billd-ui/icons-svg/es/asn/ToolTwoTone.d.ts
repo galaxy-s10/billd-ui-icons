@@ -1,5 +1,5 @@
-export default TooltwoTone;
-declare namespace TooltwoTone {
+export default ToolTwoTone;
+declare namespace ToolTwoTone {
     const type: string;
     const children: {
         type: string;

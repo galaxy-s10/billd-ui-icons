@@ -1,5 +1,5 @@
-export default InsertRowLeftoutlined;
-declare namespace InsertRowLeftoutlined {
+export default InsertRowLeftOutlined;
+declare namespace InsertRowLeftOutlined {
     const type: string;
     const children: {
         type: string;

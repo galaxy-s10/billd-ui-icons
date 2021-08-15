@@ -1,5 +1,5 @@
-export default Bulbfilled;
-declare namespace Bulbfilled {
+export default BulbFilled;
+declare namespace BulbFilled {
     const type: string;
     const children: {
         type: string;
