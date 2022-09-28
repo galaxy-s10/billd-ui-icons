@@ -17,5 +17,8 @@
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
   "main": "lib/index.js",
-  "module": "es/index.js"
+  "module": "es/index.js",
+  "dependencies": {
+    "@huangshuisheng/icons-svg": "^1.1.1"
+  }
 }
