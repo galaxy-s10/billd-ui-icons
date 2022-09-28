@@ -1,4 +1,4 @@
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2490,25 +2490,25 @@ Object.defineProperty(exports, "InboxOutlined", {
 Object.defineProperty(exports, "InfoCircleFilled", {
   enumerable: true,
   get: function get() {
-    return _InfoCircleFilled.default;
+    return chalkINFOCircleFilled.default;
   }
 });
 Object.defineProperty(exports, "InfoCircleOutlined", {
   enumerable: true,
   get: function get() {
-    return _InfoCircleOutlined.default;
+    return chalkINFOCircleOutlined.default;
   }
 });
 Object.defineProperty(exports, "InfoCircleTwoTone", {
   enumerable: true,
   get: function get() {
-    return _InfoCircleTwoTone.default;
+    return chalkINFOCircleTwoTone.default;
   }
 });
 Object.defineProperty(exports, "InfoOutlined", {
   enumerable: true,
   get: function get() {
-    return _InfoOutlined.default;
+    return chalkINFOOutlined.default;
   }
 });
 Object.defineProperty(exports, "InsertRowAboveOutlined", {
@@ -5572,13 +5572,13 @@ var _ImportOutlined = _interopRequireDefault(require("./ImportOutlined"));
 
 var _InboxOutlined = _interopRequireDefault(require("./InboxOutlined"));
 
-var _InfoCircleFilled = _interopRequireDefault(require("./InfoCircleFilled"));
+var chalkINFOCircleFilled = _interopRequireDefault(require("./InfoCircleFilled"));
 
-var _InfoCircleOutlined = _interopRequireDefault(require("./InfoCircleOutlined"));
+var chalkINFOCircleOutlined = _interopRequireDefault(require("./InfoCircleOutlined"));
 
-var _InfoCircleTwoTone = _interopRequireDefault(require("./InfoCircleTwoTone"));
+var chalkINFOCircleTwoTone = _interopRequireDefault(require("./InfoCircleTwoTone"));
 
-var _InfoOutlined = _interopRequireDefault(require("./InfoOutlined"));
+var chalkINFOOutlined = _interopRequireDefault(require("./InfoOutlined"));
 
 var _InsertRowAboveOutlined = _interopRequireDefault(require("./InsertRowAboveOutlined"));
 

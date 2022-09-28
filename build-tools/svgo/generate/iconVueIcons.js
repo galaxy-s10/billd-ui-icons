@@ -1,6 +1,6 @@
 import through2 from 'through2';
 import useTemplate from './useTemplate';
-import { _SUCCESS, emoji } from '../../utils/chalkTip';
+import { chalkSUCCESS, emoji } from '../../utils/chalkTip';
 
 const { readFileSync } = require('fs');
 const { resolve } = require('path');
@@ -19,7 +19,7 @@ export default function generateIconVueIcons() {
     next(null, file);
   });
   res.on('finish', function () {
-    console.log(_SUCCESS(`编译icon-vue组件成功！`), emoji.get('clap'));
+    console.log(chalkSUCCESS(`编译icon-vue组件成功！`), emoji.get('clap'));
   });
   return res;
 }

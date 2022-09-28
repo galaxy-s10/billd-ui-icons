@@ -1,17 +1,29 @@
 <template>
   <div>
-    <!-- <billd-icon-error></billd-icon-error>
-    <BilldIconError></BilldIconError> -->
+    <AccountBookFilled></AccountBookFilled>
+    <AimOutlined></AimOutlined>
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
-// import { ErrorTwoTone } from '@huangshuisheng/icons-vue';
-import { AccountBookFilled } from '../@billd-ui/icons-vue/es/index';
+import {
+  AccountBookFilled,
+  AimOutlined,
+} from '../@billd-ui/icons-vue/es/index';
 
-console.log(AccountBookFilled);
-// Vue.component('BilldIconError', ErrorTwoTone);
+Vue.component('AccountBookFilled', AccountBookFilled);
+Vue.component('AimOutlined', AimOutlined);
+
+// import * as BilldIcon from '../@billd-ui/icons-vue/es/index';
+
+// console.log(BilldIcon);
+
+// Object.keys(BilldIcon).forEach((key) => {
+//   const icon = BilldIcon[key];
+//   Vue.component(key, icon);
+// });
 
 export default {};
 </script>
+P

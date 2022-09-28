@@ -18,8 +18,7 @@ var BorderlessTableOutlined = {
       "class": "icon",
       "viewBox": "0 0 1024 1024",
       "version": "1.1",
-      "p-id": "10937",
-      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      "p-id": "10937"
     },
     "children": [{
       "type": "element",

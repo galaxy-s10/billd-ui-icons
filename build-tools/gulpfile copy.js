@@ -14,7 +14,7 @@ const tsProject = require('../tsconfig.json');
 const transformLess = require('./utils/transformLess.js');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
-const { _SUCCESS, emoji } = require('./utils/chalkTip');
+const { chalkSUCCESS, emoji } = require('./utils/chalkTip');
 
 gulp.task(
   'cleanall',
@@ -32,7 +32,7 @@ gulp.task(
   'clean-all',
   gulp.series('cleanall', (done) => {
     console.log(
-      _SUCCESS('清除旧构建文件成功！'),
+      chalkSUCCESS('清除旧构建文件成功！'),
       emoji.get('white_check_mark')
     );
     done();
@@ -44,7 +44,7 @@ gulp.task('copy-assets', (cb) => {
     .src('../components/assets/**/*', { allowEmpty: true })
     .pipe(gulp.dest('../lib/assets'));
   console.log(
-    _SUCCESS('复制静态资源目录成功！'),
+    chalkSUCCESS('复制静态资源目录成功！'),
     emoji.get('white_check_mark')
   );
   cb();
@@ -120,7 +120,7 @@ gulp.task('compile-less', (cb) => {
   //   .pipe(gulpLess())
   //   .pipe(postcss())
   //   .pipe(gulp.dest("../lib"));
-  console.log(_SUCCESS('编译less成功！'), emoji.get('white_check_mark'));
+  console.log(chalkSUCCESS('编译less成功！'), emoji.get('white_check_mark'));
   cb();
 });
 
@@ -208,7 +208,7 @@ function compile(modules) {
 gulp.task('compile-es', (done) => {
   // console.log("compile es modules");
   compile(false).on('finish', () => {
-    console.log(_SUCCESS('构建es完成！'), emoji.get('white_check_mark'));
+    console.log(chalkSUCCESS('构建es完成！'), emoji.get('white_check_mark'));
     done();
   });
 });
@@ -217,7 +217,7 @@ gulp.task('compile-es', (done) => {
 gulp.task('compile-lib', (done) => {
   // console.log("compile es commonjs");
   compile().on('finish', () => {
-    console.log(_SUCCESS('构建lib完成！'), emoji.get('white_check_mark'));
+    console.log(chalkSUCCESS('构建lib完成！'), emoji.get('white_check_mark'));
     done();
   });
 });
@@ -229,7 +229,7 @@ gulp.task(
     gulp.parallel('copy-assets', 'compile-less', 'compile-es', 'compile-lib')
     // "concat-css",
     // function allTasksDone(done) {
-    //   console.log(_SUCCESS("所有任务执行完成！"));
+    //   console.log(chalkSUCCESS("所有任务执行完成！"));
     //   done();
     // }
   )

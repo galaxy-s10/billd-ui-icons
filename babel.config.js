@@ -1,7 +1,10 @@
-// const chalk = require("chalk");
-const { _INFO, emoji } = require('./build-tools/utils/chalkTip');
+const chalk = require('chalk');
 
-console.log(_INFO('读取babel.config.js '), emoji.get('hourglass'));
+console.log(
+  `${chalk.bgBlueBright.black(' INFO ')} ${chalk.blueBright(
+    `读取了: ${__filename.slice(__dirname.length + 1)}`
+  )}`
+);
 module.exports = {
   presets: [
     // ["@babel/env"],

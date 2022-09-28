@@ -1,18 +1,18 @@
-"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _InfoCircleFilled = _interopRequireDefault(require("@huangshuisheng/icons-svg/lib/asn/InfoCircleFilled"));
+const chalkINFOCircleFilled = _interopRequireDefault(require("@huangshuisheng/icons-svg/lib/asn/InfoCircleFilled"));
 
-var _billdIcon = _interopRequireDefault(require("../billdIcon"));
+const _billdIcon = _interopRequireDefault(require("../billdIcon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
-var _default2 = {
+const _default2 = {
   name: 'InfoCircleFilledSvg',
   displayName: 'InfoCircleFilledSvg',
   functional: true,
@@ -38,8 +38,8 @@ var _default2 = {
         "customStyle": ctx.props.customStyle,
         "spin": ctx.props.spin,
         "rotate": ctx.props.rotate,
-        "innerSvgProps": _InfoCircleFilled.default.children[0].attributes,
-        "children": _InfoCircleFilled.default.children[0].children
+        "innerSvgProps": chalkINFOCircleFilled.default.children[0].attributes,
+        "children": chalkINFOCircleFilled.default.children[0].children
       }
     });
   }

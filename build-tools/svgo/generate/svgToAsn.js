@@ -4,7 +4,7 @@ import through2 from 'through2';
 import useTemplate from './useTemplate';
 import toCameCase from '../../utils/toCameCase';
 import svgOptions from '../svgOptions';
-import { _SUCCESS, emoji } from '../../utils/chalkTip';
+import { chalkSUCCESS, emoji } from '../../utils/chalkTip';
 
 const { optimize } = require('svgo');
 const { readFileSync } = require('fs');
@@ -47,7 +47,7 @@ export default function svgToAsn(dir, { theme }) {
       )
       .pipe(gulp.dest('../components/icons-svg/asn'));
     res.on('finish', function () {
-      console.log(_SUCCESS(`${theme}图标编译成功！`), emoji.get('clap'));
+      console.log(chalkSUCCESS(`${theme}图标编译成功！`), emoji.get('clap'));
       done();
     });
   };

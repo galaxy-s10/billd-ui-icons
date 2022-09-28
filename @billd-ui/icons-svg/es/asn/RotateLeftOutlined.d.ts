@@ -11,7 +11,6 @@ declare namespace RotateLeftOutlined {
             viewBox: string;
             version: string;
             "p-id": string;
-            "xmlns:xlink": string;
         };
         children: ({
             type: string;

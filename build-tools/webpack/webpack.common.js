@@ -4,19 +4,22 @@ const WebpackBar = require('webpackbar');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin'); // webpack4
-// const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin'); // webapck5对等依赖
-// const FriendlyErrorsWebpackPlugin = require('@soda/friendly-errors-webpack-plugin'); // webapck5对等依赖
 // const ESLintPlugin = require('eslint-webpack-plugin');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 // const DashboardPlugin = require('webpack-dashboard/plugin');
+const chalk = require('chalk');
 const devConfig = require('./webpack.dev');
 const prodConfig = require('./webpack.prod.js');
 
-// import { _ERROR, _INFO, _SUCCESS } from "./build-tools/chalkTip";
+// import { chalkERROR, chalkINFO, chalkSUCCESS } from "./build-tools/chalkTip";
 
-const resolveApp = require('./utils/paths');
+const { resolveApp } = require('../utils/paths');
 
+console.log(
+  `${chalk.bgBlueBright.black(' INFO ')} ${chalk.blueBright(
+    `读取了: ${__filename.slice(__dirname.length + 1)}`
+  )}`
+);
 const commonConfig = function (isProduction) {
   return {
     /**
@@ -30,20 +33,24 @@ const commonConfig = function (isProduction) {
     target: isProduction ? 'browserslist' : 'web',
     entry: {
       main: {
-        import: isProduction
-          ? './components/icons-svg/index.js'
-          : './src/index.js',
+        import: resolveApp('./src/index.js'),
         // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
       },
+      // main: {
+      //   import: isProduction
+      //     ? './components/icons-svg/index.js'
+      //     : './src/index.js',
+      //   // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
+      // },
     },
 
     externals: {
       // vue: {
-      //   root: "Vue",
-      //   commonjs2: "vue",
-      //   commonjs: "vue",
-      //   amd: "vue"
-      // }
+      //   root: 'Vue',
+      //   commonjs2: 'vue',
+      //   commonjs: 'vue',
+      //   amd: 'vue',
+      // },
       // vue: "Vue",
       // vuex: 'Vuex',
       // 'vue-router': 'VueRouter',
@@ -112,7 +119,7 @@ const commonConfig = function (isProduction) {
               loader: 'ts-loader',
               options: { appendTsxSuffixTo: [/\.vue$/] },
             },
-            'eslint-loader',
+            // 'eslint-loader',
           ],
         },
         // {
@@ -144,29 +151,29 @@ const commonConfig = function (isProduction) {
                 // presets: ["@babel/preset-env"],
               },
             },
-            'eslint-loader',
+            // 'eslint-loader',
           ],
         },
-        {
-          enforce: 'pre',
-          test: /\.vue$/,
-          exclude: [/node_modules/],
-          use: [
-            {
-              /**
-               * eslint-loader has been deprecated. Please use eslint-webpack-plugin.
-               *  https://github.com/webpack-contrib/eslint-loader
-               */
-              loader: 'eslint-loader',
-              options: {
-                // cache: true,
-                emitWarning: false,
-                emitError: false,
-                // failOnError: true, // 如果有任何错误，将导致模块构建失败
-              },
-            },
-          ],
-        },
+        // {
+        //   enforce: 'pre',
+        //   test: /\.vue$/,
+        //   // exclude: [/node_modules/],
+        //   use: [
+        //     // {
+        //     //   /**
+        //     //    * eslint-loader has been deprecated. Please use eslint-webpack-plugin.
+        //     //    *  https://github.com/webpack-contrib/eslint-loader
+        //     //    */
+        //     //   loader: 'eslint-loader',
+        //     //   options: {
+        //     //     // cache: true,
+        //     //     emitWarning: false,
+        //     //     emitError: false,
+        //     //     // failOnError: true, // 如果有任何错误，将导致模块构建失败
+        //     //   },
+        //     // },
+        //   ],
+        // },
         {
           test: /\.vue$/,
           use: [{ loader: 'vue-loader' }],
@@ -244,13 +251,13 @@ const commonConfig = function (isProduction) {
           test: /\.(jpg|jpeg|png|gif)$/,
           // type: 'asset/resource', // 约等于实现file-loader
           // generator:{
-          //     filename:'img/[name]-[hash:6].[ext]'
+          //     filename:'img/[name]-[contenthash:6].[ext]'
           // }
           // type: 'asset/inline', // 全部都使用url-loader
           // include: /node_modules/,
           type: 'asset',
           generator: {
-            filename: 'img/[name]-[hash:6][ext]',
+            filename: 'img/[name]-[contenthash:6][ext]',
           },
           parser: {
             dataUrlCondition: {
@@ -265,7 +272,7 @@ const commonConfig = function (isProduction) {
           // type: 'asset/resource',
           // type: 'javascript/auto',
           // generator: {
-          //   filename: 'font/[name]-[hash:6][ext]',
+          //   filename: 'font/[name]-[contenthash:6][ext]',
           // },
         },
       ],
@@ -283,8 +290,7 @@ const commonConfig = function (isProduction) {
       // }),
       // 构建进度条
       new WebpackBar({
-        name: 'billd-ui',
-        color: 'yellow',
+        name: 'Billd-UI-Icons',
       }),
       // new DashboardPlugin(),
       // new FriendlyErrorsWebpackPlugin({}),
@@ -327,7 +333,7 @@ const commonConfig = function (isProduction) {
         // 将 CSS 提取到单独的文件中
         // Options similar to the same options in webpackOptions.output
         // all options are optional
-        // filename: "css/[name]-[hash:6].css",
+        // filename: "css/[name]-[contenthash:6].css",
         filename: '/billd.css',
         chunkFilename: 'css/[id].css',
         ignoreOrder: false, // Enable to remove warnings about conflicting order
@@ -354,8 +360,8 @@ module.exports = function (env) {
       // 根据当前环境，合并配置文件
       const mergeConfig = merge(commonConfig(isProduction), config);
       // console.log(mergeConfig);
-      resolve(smp.wrap(mergeConfig));
-      // resolve(mergeConfig);
+      // resolve(smp.wrap(mergeConfig)); // 不要使用SpeedMeasurePlugin插件，使用它会导致MiniCssExtractPlugin插件报错。
+      resolve(mergeConfig);
     });
   });
 };

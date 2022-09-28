@@ -1,6 +1,6 @@
 import through from 'through2';
 import useTemplate from './useTemplate';
-import { _SUCCESS, emoji } from '../../utils/chalkTip';
+import { chalkSUCCESS, emoji } from '../../utils/chalkTip';
 import toCameCase from '../../utils/toCameCase';
 
 const { readFileSync } = require('fs');
@@ -21,7 +21,7 @@ function generateIconSvgEntry() {
     next(null, file);
   });
   res.on('finish', function () {
-    console.log(_SUCCESS('生成icon-svg入口文件成功！'), emoji.get('clap'));
+    console.log(chalkSUCCESS('生成icon-svg入口文件成功！'), emoji.get('clap'));
   });
   return res;
 }

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _InfoOutlined = _interopRequireDefault(require("@huangshuisheng/icons-svg/lib/asn/InfoOutlined"));
+var chalkINFOOutlined = _interopRequireDefault(require("@huangshuisheng/icons-svg/lib/asn/InfoOutlined"));
 
 var _billdIcon = _interopRequireDefault(require("../billdIcon"));
 
@@ -38,8 +38,8 @@ var _default2 = {
         "customStyle": ctx.props.customStyle,
         "spin": ctx.props.spin,
         "rotate": ctx.props.rotate,
-        "innerSvgProps": _InfoOutlined.default.children[0].attributes,
-        "children": _InfoOutlined.default.children[0].children
+        "innerSvgProps": chalkINFOOutlined.default.children[0].attributes,
+        "children": chalkINFOOutlined.default.children[0].children
       }
     });
   }

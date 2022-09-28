@@ -1,4 +1,4 @@
-import { _SUCCESS, emoji } from '../../utils/chalkTip';
+import { chalkSUCCESS, emoji } from '../../utils/chalkTip';
 
 const { writeFile, readdir } = require('fs');
 const { resolve } = require('path');
@@ -28,7 +28,7 @@ export default function generateIconVueIconsIndex(done) {
         indexText,
         () => {
           console.log(
-            _SUCCESS('生成icons-vue/icons/index.js成功！'),
+            chalkSUCCESS('生成icons-vue/icons/index.js成功！'),
             emoji.get('clap')
           );
           done();

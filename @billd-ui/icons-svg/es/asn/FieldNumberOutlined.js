@@ -11,8 +11,7 @@ var FieldNumberOutlined = {
       "class": "icon",
       "viewBox": "0 0 1024 1024",
       "version": "1.1",
-      "p-id": "12000",
-      "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      "p-id": "12000"
     },
     "children": [{
       "type": "element",

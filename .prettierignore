@@ -3,15 +3,8 @@
 /dist/
 /public/
 /node_modules/
-/@billd-ui/
 .gitignore
 .prettierignore
 .eslintignore
 .browserlistrc
 .editorconfig
-**/*.jpg
-**/*.png
-**/*.svg
-**/*.md
-**/*.json
-**/*.ejs

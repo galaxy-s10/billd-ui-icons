@@ -19,7 +19,7 @@ const concat = require('gulp-concat');
 const header = require('gulp-header');
 const babelConfig = require('./getBabelCommonConfig');
 const tsProject = require('../tsconfig.json');
-const { _SUCCESS, emoji } = require('./utils/chalkTip');
+const { chalkSUCCESS, emoji } = require('./utils/chalkTip');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
 
@@ -29,7 +29,7 @@ function cleanDir(dir) {
       .src(dir, { allowEmpty: true })
       .pipe(clean({ force: true }));
     res.on('finish', function () {
-      console.log(_SUCCESS(`删除${dir}目录成功！`), emoji.get('clap'));
+      console.log(chalkSUCCESS(`删除${dir}目录成功！`), emoji.get('clap'));
       done();
     });
   };
@@ -148,7 +148,7 @@ gulp.task(
           .pipe(gulp.dest('../@billd-ui/icons-svg'));
         assetsStream.on('finish', () => {
           console.log(
-            _SUCCESS('复制package.json和README.md成功！'),
+            chalkSUCCESS('复制package.json和README.md成功！'),
             emoji.get('clap')
           );
           done();
@@ -159,7 +159,7 @@ gulp.task(
           'finish',
           function () {
             console.log(
-              _SUCCESS('编译icons-svg-es组件成功！'),
+              chalkSUCCESS('编译icons-svg-es组件成功！'),
               emoji.get('tada')
             );
             done();
@@ -171,7 +171,7 @@ gulp.task(
           'finish',
           function () {
             console.log(
-              _SUCCESS('编译icons-svg-lib组件成功！'),
+              chalkSUCCESS('编译icons-svg-lib组件成功！'),
               emoji.get('tada')
             );
             done();
@@ -200,7 +200,7 @@ gulp.task(
           .pipe(gulp.dest('../@billd-ui/icons-vue'));
         assetsStream.on('finish', () => {
           console.log(
-            _SUCCESS('复制package.json和README.md成功！'),
+            chalkSUCCESS('复制package.json和README.md成功！'),
             emoji.get('clap')
           );
           done();
@@ -211,7 +211,7 @@ gulp.task(
           'finish',
           function () {
             console.log(
-              _SUCCESS('编译icons-vue-es组件成功！'),
+              chalkSUCCESS('编译icons-vue-es组件成功！'),
               emoji.get('tada')
             );
             done();
@@ -223,7 +223,7 @@ gulp.task(
           'finish',
           function () {
             console.log(
-              _SUCCESS('编译icons-vue-lib组件成功！'),
+              chalkSUCCESS('编译icons-vue-lib组件成功！'),
               emoji.get('tada')
             );
             done();
