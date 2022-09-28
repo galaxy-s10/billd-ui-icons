@@ -60,6 +60,9 @@ const selectReleaseVersion = async () => {
     // 更新package.json
     updatePackageJSON();
 
+    execSync(`npm run compile:svg`, { stdio: 'inherit' });
+    execSync(`npm run compile:vue`, { stdio: 'inherit' });
+
     // 生成changelog
     execSync(`npm run changelog`, { stdio: 'inherit' });
 

@@ -8,6 +8,10 @@ const {
   chalkINFO,
 } = require('../build-tools/utils/chalkTip');
 
+// 如果进程超时或有非零退出代码，execSync将抛出Error 对象
+execSync(`git push origin v${pkg.version}`, { stdio: 'inherit' });
+execSync(`git push`, { stdio: 'inherit' });
+
 const packages = fs.readdirSync(path.resolve(__dirname, '../packages/'));
 packages.forEach((res) => {
   const stat = fs.statSync(`${path.resolve(__dirname, '../packages/')}/${res}`);
@@ -16,9 +20,7 @@ packages.forEach((res) => {
       console.log(
         chalkINFO(`开始发布线上@huangshuisheng/${res}@${pkg.version}...`)
       );
-      // 如果进程超时或有非零退出代码，execSync将抛出Error 对象
-      execSync(`git push origin v${pkg.version}`, { stdio: 'inherit' });
-      execSync(`git push`, { stdio: 'inherit' });
+
       execSync('npm publish --access public', {
         stdio: 'inherit',
         cwd: path.resolve(__dirname, '../packages', res, 'dist'),
