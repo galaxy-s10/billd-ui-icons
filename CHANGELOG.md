@@ -1,3 +1,13 @@
+## [1.1.2](https://github.com/galaxy-s10/billd-ui-icons/compare/v1.1.1...v1.1.2) (2022-09-28)
+
+
+### fix
+
+* 修改依赖 ([b806430](https://github.com/galaxy-s10/billd-ui-icons/commit/b8064305881824f899300ca709d0ce09653be3ee))
+* 修改readme ([a98f9cf](https://github.com/galaxy-s10/billd-ui-icons/commit/a98f9cfcb67762eafd6440aa4fab8ce5620311a7))
+
+
+
 ## [1.1.1](https://github.com/galaxy-s10/billd-ui-icons/compare/v1.1.0...v1.1.1) (2022-09-28)
 
 
