@@ -14,7 +14,7 @@ const tsProject = require('../tsconfig.json');
 const transformLess = require('./utils/transformLess.js');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
-const { chalkSUCCESS, emoji } = require('./utils/chalkTip');
+const { chalkSUCCESS } = require('./utils/chalkTip');
 
 gulp.task(
   'cleanall',
@@ -31,10 +31,7 @@ gulp.task(
 gulp.task(
   'clean-all',
   gulp.series('cleanall', (done) => {
-    console.log(
-      chalkSUCCESS('清除旧构建文件成功！'),
-      emoji.get('white_check_mark')
-    );
+    console.log(chalkSUCCESS('清除旧构建文件成功！'));
     done();
   })
 );
@@ -43,10 +40,7 @@ gulp.task('copy-assets', (cb) => {
   gulp
     .src('../components/assets/**/*', { allowEmpty: true })
     .pipe(gulp.dest('../lib/assets'));
-  console.log(
-    chalkSUCCESS('复制静态资源目录成功！'),
-    emoji.get('white_check_mark')
-  );
+  console.log(chalkSUCCESS('复制静态资源目录成功！'));
   cb();
 });
 
@@ -120,7 +114,7 @@ gulp.task('compile-less', (cb) => {
   //   .pipe(gulpLess())
   //   .pipe(postcss())
   //   .pipe(gulp.dest("../lib"));
-  console.log(chalkSUCCESS('编译less成功！'), emoji.get('white_check_mark'));
+  console.log(chalkSUCCESS('编译less成功！'));
   cb();
 });
 
@@ -208,7 +202,7 @@ function compile(modules) {
 gulp.task('compile-es', (done) => {
   // console.log("compile es modules");
   compile(false).on('finish', () => {
-    console.log(chalkSUCCESS('构建es完成！'), emoji.get('white_check_mark'));
+    console.log(chalkSUCCESS('构建es完成！'));
     done();
   });
 });
@@ -217,7 +211,7 @@ gulp.task('compile-es', (done) => {
 gulp.task('compile-lib', (done) => {
   // console.log("compile es commonjs");
   compile().on('finish', () => {
-    console.log(chalkSUCCESS('构建lib完成！'), emoji.get('white_check_mark'));
+    console.log(chalkSUCCESS('构建lib完成！'));
     done();
   });
 });

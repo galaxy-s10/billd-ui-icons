@@ -10,6 +10,7 @@ import {
   generateIconVueIconsIndex,
 } from './svgo/generate';
 import replaceLib from './replaceLib';
+import { iconsSvgDir, iconsVueDir } from './constant';
 
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
@@ -19,20 +20,39 @@ const concat = require('gulp-concat');
 const header = require('gulp-header');
 const babelConfig = require('./getBabelCommonConfig');
 const tsProject = require('../tsconfig.json');
-const { chalkSUCCESS, emoji } = require('./utils/chalkTip');
+const { chalkSUCCESS } = require('./utils/chalkTip');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
 
+// 删除目录
 function cleanDir(dir) {
   return (done) => {
     const res = gulp
       .src(dir, { allowEmpty: true })
       .pipe(clean({ force: true }));
     res.on('finish', function () {
-      console.log(chalkSUCCESS(`删除${dir}目录成功！`), emoji.get('clap'));
+      console.log(chalkSUCCESS(`删除${dir}目录成功！`));
       done();
     });
   };
+}
+
+// 复制资源
+function copyAssets(name, done) {
+  gulp
+    .src(
+      [
+        `../packages/${name}/package.json`,
+        `../packages/${name}/README.md`,
+        `../LICENSE`,
+      ],
+      { allowEmpty: true }
+    )
+    .pipe(gulp.dest(`../packages/${name}/dist/`))
+    .on('finish', () => {
+      console.log(chalkSUCCESS('复制package.json和README.md成功！'));
+      done();
+    });
 }
 
 function compileIcon(entryDir, outputDir, modules) {
@@ -79,22 +99,22 @@ function compileIconVue(entryDir, outputDir, modules) {
 }
 
 const iconVueFlies = [
-  '../components/icons-vue/**/*.js',
-  '../components/icons-vue/**/*.jsx',
+  '../packages/icons-vue/**/*.js',
+  '../packages/icons-vue/**/*.jsx',
 ];
-const iconSvgFlies = ['../components/icons-svg/**/*.js'];
+const iconSvgFlies = ['../packages/icons-svg/**/*.js'];
 
 // 1,将icons-svg里的svg文件解析为Abstract Node，生成icons-svg的asn
 gulp.task(
   'icons-svg-asn',
   gulp.parallel(
-    generateSvgToAsn('../components/icons-svg/svg/filled/*.svg', {
+    generateSvgToAsn('../packages/icons-svg/svg/filled/*.svg', {
       theme: 'filled', // 实底
     }),
-    generateSvgToAsn('../components/icons-svg/svg/outlined/*.svg', {
+    generateSvgToAsn('../packages/icons-svg/svg/outlined/*.svg', {
       theme: 'outlined', // 线框
     }),
-    generateSvgToAsn('../components/icons-svg/svg/twotone/*.svg', {
+    generateSvgToAsn('../packages/icons-svg/svg/twotone/*.svg', {
       theme: 'twoTone', // two-tone双色
     })
   )
@@ -103,7 +123,7 @@ gulp.task(
 // 2,根据icons-svg里的asn，生成icons-svg的入口文件
 gulp.task('icons-svg-entry', () =>
   gulp
-    .src('../components/icons-svg/asn/**/*.js')
+    .src('../packages/icons-svg/asn/**/*.js')
     .pipe(generateIconSvgEntry())
     .pipe(concat('index.js'))
     .pipe(
@@ -111,7 +131,7 @@ gulp.task('icons-svg-entry', () =>
         '// 这个文件是由build-tools/svgo/template/icon-svg/entry.ejs自动生成的，请勿手动修改！\n'
       )
     )
-    .pipe(gulp.dest('../components/icons-svg'))
+    .pipe(gulp.dest('../packages/icons-svg'))
 );
 
 // 3,根据icons-svg里的asn，生成icons-vue的icons，以及生成icons的index.js
@@ -120,9 +140,9 @@ gulp.task(
   gulp.series(
     function task1() {
       return gulp
-        .src('../components/icons-svg/asn/*.js')
+        .src('../packages/icons-svg/asn/*.js')
         .pipe(generateIconVueIcons())
-        .pipe(gulp.dest('../components/icons-vue/icons'));
+        .pipe(gulp.dest('../packages/icons-vue/icons'));
     },
     function task2(done) {
       generateIconVueIconsIndex(done);
@@ -130,50 +150,29 @@ gulp.task(
   )
 );
 
-// npm run compile compile-icons-svg
+// npm run compile svg
 gulp.task(
-  'compile-icons-svg',
+  'svg',
   gulp.series(
-    cleanDir('../@billd-ui/icons-svg'),
+    cleanDir(iconsSvgDir),
     gulp.parallel(
       function copy(done) {
-        const assetsStream = gulp
-          .src(
-            [
-              `../components/icons-svg/package.json`,
-              `../components/icons-svg/README.md`,
-            ],
-            { allowEmpty: true }
-          )
-          .pipe(gulp.dest('../@billd-ui/icons-svg'));
-        assetsStream.on('finish', () => {
-          console.log(
-            chalkSUCCESS('复制package.json和README.md成功！'),
-            emoji.get('clap')
-          );
-          done();
-        });
+        copyAssets('icons-svg', done);
       },
       function compileIconSvgEs(done) {
-        compileIconSvg(iconSvgFlies, '../@billd-ui/icons-svg', false).on(
+        compileIconSvg(iconSvgFlies, iconsSvgDir, false).on(
           'finish',
           function () {
-            console.log(
-              chalkSUCCESS('编译icons-svg-es组件成功！'),
-              emoji.get('tada')
-            );
+            console.log(chalkSUCCESS('编译icons-svg的es版本成功！'));
             done();
           }
         );
       },
       function compileIconSvgLib(done) {
-        compileIconSvg(iconSvgFlies, '../@billd-ui/icons-svg', undefined).on(
+        compileIconSvg(iconSvgFlies, iconsSvgDir, undefined).on(
           'finish',
           function () {
-            console.log(
-              chalkSUCCESS('编译icons-svg-lib组件成功！'),
-              emoji.get('tada')
-            );
+            console.log(chalkSUCCESS('编译icons-svg的lib版本成功！'));
             done();
           }
         );
@@ -182,50 +181,29 @@ gulp.task(
   )
 );
 
-// npm run compile compile-icons-vue
+// npm run compile vue
 gulp.task(
-  'compile-icons-vue',
+  'vue',
   gulp.series(
-    cleanDir('../@billd-ui/icons-vue'),
+    cleanDir(iconsVueDir),
     gulp.parallel(
-      function copyIconsVueAssets(done) {
-        const assetsStream = gulp
-          .src(
-            [
-              `../components/icons-vue/package.json`,
-              `../components/icons-vue/README.md`,
-            ],
-            { allowEmpty: true }
-          )
-          .pipe(gulp.dest('../@billd-ui/icons-vue'));
-        assetsStream.on('finish', () => {
-          console.log(
-            chalkSUCCESS('复制package.json和README.md成功！'),
-            emoji.get('clap')
-          );
-          done();
-        });
+      function copy(done) {
+        copyAssets('icons-vue', done);
       },
       function compileIconVueEs(done) {
-        compileIconVue(iconVueFlies, '../@billd-ui/icons-vue', false).on(
+        compileIconVue(iconVueFlies, iconsVueDir, false).on(
           'finish',
           function () {
-            console.log(
-              chalkSUCCESS('编译icons-vue-es组件成功！'),
-              emoji.get('tada')
-            );
+            console.log(chalkSUCCESS('编译icons-vue的es版本成功！'));
             done();
           }
         );
       },
       function compileIconVueLib(done) {
-        compileIconVue(iconVueFlies, '../@billd-ui/icons-vue', undefined).on(
+        compileIconVue(iconVueFlies, iconsVueDir, undefined).on(
           'finish',
           function () {
-            console.log(
-              chalkSUCCESS('编译icons-vue-lib组件成功！'),
-              emoji.get('tada')
-            );
+            console.log(chalkSUCCESS('编译icons-vue的lib版本成功！'));
             done();
           }
         );

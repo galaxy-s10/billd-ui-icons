@@ -34,6 +34,7 @@ const commonConfig = function (isProduction) {
     entry: {
       main: {
         import: resolveApp('./src/index.js'),
+        // import: resolveApp('./packages/icons-vue/index.js'),
         // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
       },
       // main: {
