@@ -4,8 +4,8 @@
 
 <div align="center">
 
-[![NPM version](https://img.shields.io/npm/v/@huangshuisheng/icons-svg.svg)](https://npmjs.org/package/@ant-design/icons-svg)
-[![NPM downloads](https://img.shields.io/npm/dw/@huangshuisheng/icons-svg.svg)](https://npmjs.org/package/@ant-design/icons-svg)
+[![NPM version](https://img.shields.io/npm/v/@huangshuisheng/icons-svg.svg)](https://npmjs.org/package/@huangshuisheng/icons-svg)
+[![NPM downloads](https://img.shields.io/npm/dw/@huangshuisheng/icons-svg.svg)](https://npmjs.org/package/@huangshuisheng/icons-svg)
 
 </div>
 

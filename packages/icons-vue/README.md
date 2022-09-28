@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![NPM version](https://img.shields.io/npm/v/@huangshuisheng/icons-vue.svg)](https://npmjs.org/package/@ant-design/icons-vue)
-[![NPM downloads](https://img.shields.io/npm/dw/@huangshuisheng/icons-vue.svg)](https://npmjs.org/package/@ant-design/icons-vue)
+[![NPM version](https://img.shields.io/npm/v/@huangshuisheng/icons-vue.svg)](https://npmjs.org/package/@huangshuisheng/icons-vue)
+[![NPM downloads](https://img.shields.io/npm/dw/@huangshuisheng/icons-vue.svg)](https://npmjs.org/package/@huangshuisheng/icons-vue)
 
 </div>
 
