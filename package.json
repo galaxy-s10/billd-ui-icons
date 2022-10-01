@@ -18,7 +18,7 @@
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:first": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0",
     "commit": "cz",
-    "compile:dist": "gulp -f ./build-tools/gulpfile.js --series distTask",
+    "compile:all": "gulp -f ./build-tools/gulpfile.js allTask",
     "compile:svg": "gulp -f ./build-tools/gulpfile.js iconsSvgTask",
     "compile:vue": "gulp -f ./build-tools/gulpfile.js iconsVueTask",
     "dev": "webpack serve --config ./build-tools/webpack/webpack.common.js --env development",

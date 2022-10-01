@@ -332,7 +332,7 @@ const iconsVueTask = series(
 );
 
 // gulp4之前, 定义任务的方式
-gulp.task('all', series(iconsSvgTask, iconsVueTask));
+gulp.task('allTask', series(iconsSvgTask, iconsVueTask));
 
 // gulp4定义任务的方式
 module.exports = {
