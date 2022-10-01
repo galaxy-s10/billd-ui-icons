@@ -1,19 +1,19 @@
+const chalk = require('chalk');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const { DefinePlugin } = require('webpack');
 const { merge } = require('webpack-merge');
 const WebpackBar = require('webpackbar');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const ESLintPlugin = require('eslint-webpack-plugin');
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+// const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 // const DashboardPlugin = require('webpack-dashboard/plugin');
-const chalk = require('chalk');
-const devConfig = require('./webpack.dev');
-const prodConfig = require('./webpack.prod.js');
-
-// import { chalkERROR, chalkINFO, chalkSUCCESS } from "./build-tools/chalkTip";
 
 const { resolveApp } = require('../utils/paths');
+const demoConfig = require('./webpack.demo.js');
+const devConfig = require('./webpack.dev');
+const prodConfig = require('./webpack.prod.js');
+const prodMinConfig = require('./webpack.prod.min.js');
 
 console.log(
   `${chalk.bgBlueBright.black(' INFO ')} ${chalk.blueBright(
@@ -31,35 +31,6 @@ const commonConfig = function (isProduction) {
      */
     // target: "browserslist",//设置成browserslist的话，热更新会失效！
     target: isProduction ? 'browserslist' : 'web',
-    entry: {
-      main: {
-        import: resolveApp('./src/index.js'),
-        // import: resolveApp('./packages/icons-vue/index.js'),
-        // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
-      },
-      // main: {
-      //   import: isProduction
-      //     ? './components/icons-svg/index.js'
-      //     : './src/index.js',
-      //   // filename: "output-[name]-bundle.js", //指定要输出的文件名称。
-      // },
-    },
-
-    externals: {
-      // vue: {
-      //   root: 'Vue',
-      //   commonjs2: 'vue',
-      //   commonjs: 'vue',
-      //   amd: 'vue',
-      // },
-      // vue: "Vue",
-      // vuex: 'Vuex',
-      // 'vue-router': 'VueRouter',
-      // axios: 'axios',
-      // less: 'less',
-      // echarts: 'echarts',
-      // iview: 'iview',
-    },
 
     resolve: {
       // 解析路径
@@ -85,28 +56,6 @@ const commonConfig = function (isProduction) {
     resolveLoader: {
       // 用于解析webpack的loader
       modules: ['node_modules'],
-    },
-    optimization: {
-      // splitChunks: {
-      //   cacheGroups: {
-      //     defaultVendors: {
-      //       //重写默认的defaultVendors
-      //       chunks: "initial",
-      //       // minSize: 50 * 1024,
-      //       // maxSize: 50 * 1024,
-      //       test: /[\\/]node_modules[\\/]/,
-      //       filename: "js/[name]-defaultVendors.js",
-      //       priority: -10
-      //     },
-      //     default: {
-      //       //重写默认的default
-      //       chunks: "all",
-      //       filename: "js/[name]-default.js",
-      //       minChunks: 2, //至少被minChunks个入口文件引入了minChunks次。
-      //       priority: -20
-      //     }
-      //   }
-      // }
     },
     module: {
       // loader执行顺序：从下往上，从右往左
@@ -147,9 +96,9 @@ const commonConfig = function (isProduction) {
                 //   // \\ for Windows, \/ for Mac OS and Linux
                 //   /node_modules/,
                 // ],
-                // 显式禁用目录内文件的 Babel 编译。
-                // ignore: [/node_modules[\\\/]aaaa/],
-                // presets: ["@babel/preset-env"],
+                // ignore: [/node_modules[\\/]aaaa/], // 显式禁用目录内文件的 Babel 编译。
+                // 在使用webpack的node api进行自定义构建的时候，请确保node进程工作目录是在项目根目录，否则的话就不会读取项目根目录的babel.config.js
+                // presets: ['@babel/preset-env', '@vue/babel-preset-jsx'],
               },
             },
             // 'eslint-loader',
@@ -350,18 +299,29 @@ const commonConfig = function (isProduction) {
   };
 };
 
-const smp = new SpeedMeasurePlugin();
 module.exports = function (env) {
   return new Promise((resolve) => {
     const isProduction = env.production;
+    const isProductionMin = env.productionMin;
+    // Tip: process.env这个对象里面的所有属性的值都是字符串，给这个对象新增属性时，值都会默认进行toString()
     process.env.NODE_ENV = isProduction ? 'production' : 'development';
-    // prodConfig返回的是普通对象，devConfig返回的是promise，使用Promise.resolve进行包装
-    const config = Promise.resolve(isProduction ? prodConfig : devConfig);
-    config.then((config) => {
+    process.env.isProductionMin = !!isProductionMin;
+    let configPromise;
+    if (process.env.BUILD_DEMO) {
+      configPromise = Promise.resolve(demoConfig);
+    } else {
+      // prodConfig返回的是普通对象，devConfig返回的是promise，使用Promise.resolve进行包装
+      configPromise = Promise.resolve(
+        isProduction
+          ? isProductionMin
+            ? prodMinConfig
+            : prodConfig
+          : devConfig
+      );
+    }
+    configPromise.then((config) => {
       // 根据当前环境，合并配置文件
       const mergeConfig = merge(commonConfig(isProduction), config);
-      // console.log(mergeConfig);
-      // resolve(smp.wrap(mergeConfig)); // 不要使用SpeedMeasurePlugin插件，使用它会导致MiniCssExtractPlugin插件报错。
       resolve(mergeConfig);
     });
   });

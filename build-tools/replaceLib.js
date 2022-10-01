@@ -1,8 +1,3 @@
-const { join, dirname } = require('path');
-const fs = require('fs');
-
-const cwd = process.cwd();
-
 function replacePath(path) {
   if (path.node.source && /\/lib\//.test(path.node.source.value)) {
     console.log(path.node.source.value);

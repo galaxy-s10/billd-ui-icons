@@ -10,6 +10,7 @@
 
 <script>
 import Vue from 'vue';
+
 import {
   AccountBookFilled,
   AimOutlined,
@@ -27,4 +28,3 @@ Vue.component('AimOutlined', AimOutlined);
 
 export default {};
 </script>
-P

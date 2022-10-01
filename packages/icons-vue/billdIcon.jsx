@@ -1,7 +1,22 @@
-// billdIcon.jsx这个文件是icons里面所有文件都依赖的组件
+// BilldIcon.jsx这个文件是icons里面所有文件都依赖的组件
+import insertCss from './insert-css';
 
-// 处理css
-import './handlecss';
+const iconStyles = `
+@keyframes billdIconSpin {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.billd-icon{
+  display: inline-block;
+  line-height: 0;
+}
+
+.billd-icon-ani {
+  animation: billdIconSpin 1s linear infinite;
+}
+`;
 
 export default {
   props: {
@@ -33,7 +48,10 @@ export default {
     },
   },
   mounted() {
-    // import('./handlecss').then((res) => {});
+    // 挂载css到head里
+    insertCss(iconStyles, {
+      prepend: true,
+    });
   },
   render() {
     const svgBaseProps = {

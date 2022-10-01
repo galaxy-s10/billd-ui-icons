@@ -1,14 +1,16 @@
+const { execSync, exec } = require('child_process');
 const path = require('path');
+
+const { readJSONSync, writeJSONSync } = require('fs-extra');
 const inquirer = require('inquirer');
 const semver = require('semver');
-const { execSync, exec } = require('child_process');
-const { readJSONSync, writeJSONSync } = require('fs-extra');
-const { updatePackageJSON } = require('./update');
+
 const {
   chalkSUCCESS,
   chalkERROR,
   chalkINFO,
 } = require('../build-tools/utils/chalkTip');
+const { updatePackageJSON } = require('./update');
 
 const { name: pkgName, version: currentVersion } = readJSONSync('package.json'); // 项目根目录的package.json
 
@@ -86,7 +88,7 @@ function gitIsClean() {
         reject(error || stderr);
       }
       if (stdout.length) {
-        reject('请确保git工作区干净！');
+        reject(new Error('请确保git工作区干净！'));
       } else {
         resolve('ok');
       }

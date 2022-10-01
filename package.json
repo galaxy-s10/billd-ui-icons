@@ -12,22 +12,23 @@
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
+  "sideEffects": true,
   "scripts": {
+    "build": "webpack --config ./build-tools/webpack/webpack.common.js --env BUILD_DEMO",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:first": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0",
     "commit": "cz",
-    "compile": "gulp -f ./build-tools/gulpfile.ts",
-    "compile:dist": "gulp -f ./build-tools/gulpfile.ts --series icons-vue-icons dist",
-    "compile:svg": "gulp -f ./build-tools/gulpfile.ts --series icons-svg-asn icons-svg-entry svg",
-    "compile:vue": "gulp -f ./build-tools/gulpfile.ts --series icons-vue-icons vue",
+    "compile:dist": "gulp -f ./build-tools/gulpfile.js --series distTask",
+    "compile:svg": "gulp -f ./build-tools/gulpfile.js iconsSvgTask",
+    "compile:vue": "gulp -f ./build-tools/gulpfile.js iconsVueTask",
     "dev": "webpack serve --config ./build-tools/webpack/webpack.common.js --env development",
-    "dist": "webpack --config ./build-tools/webpack/webpack.common.js --env production",
     "lint": "eslint --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx,.vue",
     "lint:fix": "eslint --config ./.eslintrc.js --fix . --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install",
     "prettier": "prettier --write *",
     "release:local": "node ./scripts/release.js",
-    "release:online": "node ./scripts/publish.js"
+    "release:online": "node ./scripts/publish.js",
+    "showtask": "gulp -f ./build-tools/gulpfile.js --tasks "
   },
   "config": {
     "commitizen": {
@@ -35,8 +36,8 @@
     }
   },
   "dependencies": {
-    "@huangshuisheng/icons-svg": "^1.0.4",
-    "@huangshuisheng/icons-vue": "^1.0.9",
+    "@huangshuisheng/icons-svg": "^1.1.1",
+    "@huangshuisheng/icons-vue": "^1.1.1",
     "vue": "^2.6.14",
     "vue-fragment": "^1.5.2"
   },
@@ -66,7 +67,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.14.0",
     "eslint-webpack-plugin": "^3.0.1",

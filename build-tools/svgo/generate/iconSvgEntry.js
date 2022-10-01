@@ -1,10 +1,11 @@
-import through from 'through2';
-import useTemplate from './useTemplate';
-import { chalkSUCCESS } from '../../utils/chalkTip';
-import toCameCase from '../../utils/toCameCase';
-
 const { readFileSync } = require('fs');
 const { resolve } = require('path');
+
+const through = require('through2');
+
+const { chalkSUCCESS } = require('../../utils/chalkTip');
+const toCameCase = require('../../utils/toCameCase');
+const useTemplate = require('./useTemplate');
 
 const entryTemplate = readFileSync(
   resolve(__dirname, '../template/icon-svg/entry.ejs'),
@@ -26,4 +27,4 @@ function generateIconSvgEntry() {
   return res;
 }
 
-export default generateIconSvgEntry;
+module.exports = generateIconSvgEntry;

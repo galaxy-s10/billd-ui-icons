@@ -1,16 +1,17 @@
-import through2 from 'through2';
-import useTemplate from './useTemplate';
-import { chalkSUCCESS } from '../../utils/chalkTip';
-
 const { readFileSync } = require('fs');
 const { resolve } = require('path');
+
+const through2 = require('through2');
+
+const { chalkSUCCESS } = require('../../utils/chalkTip');
+const useTemplate = require('./useTemplate');
 
 const iconVueTemplate = readFileSync(
   resolve(__dirname, '../template/icon-vue/icon-vue.ejs'),
   'utf8'
 );
 
-export default function generateIconVueIcons() {
+function generateIconVueIcons() {
   const res = through2.obj(function (file, encoding, next) {
     // const iconname = `${file.path.match(/([^\\/]+)\.js$/)[1]}Icon`;
     const iconname = file.stem;
@@ -23,3 +24,4 @@ export default function generateIconVueIcons() {
   });
   return res;
 }
+module.exports = generateIconVueIcons;

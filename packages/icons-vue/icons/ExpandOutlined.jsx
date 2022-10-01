@@ -1,7 +1,7 @@
 // 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
 
 import ExpandOutlinedSvg from '@huangshuisheng/icons-svg/lib/asn/ExpandOutlined';
-import BilldIcon from '../billdIcon';
+import BilldIcon from '../BilldIcon';
 
 export default {
   name: 'ExpandOutlinedSvg',

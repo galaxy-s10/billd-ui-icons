@@ -1578,3 +1578,5 @@ export { default as ZoomOutFilled } from './asn/ZoomOutFilled';
 export { default as ZoomOutOutlined } from './asn/ZoomOutOutlined';
 
 export { default as ZoomOutTwoTone } from './asn/ZoomOutTwoTone';
+
+export { version } from './package.json';

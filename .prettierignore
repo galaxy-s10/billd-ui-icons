@@ -7,3 +7,4 @@ dist
 .eslintignore
 .browserlistrc
 .editorconfig
+*.ejs

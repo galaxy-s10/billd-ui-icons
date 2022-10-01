@@ -44,6 +44,6 @@ module.exports = {
     //   },
     //   "aaax",
     // ],
-    // "transform-vue-jsx",
+    '@babel/plugin-syntax-jsx',
   ],
 };

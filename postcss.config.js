@@ -1,5 +1,5 @@
-const postcssPresetEnv = require('postcss-preset-env');
 const chalk = require('chalk');
+const postcssPresetEnv = require('postcss-preset-env');
 
 console.log(
   `${chalk.bgBlueBright.black(' INFO ')} ${chalk.blueBright(

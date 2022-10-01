@@ -1,21 +1,22 @@
 {
-  "files": ["src/index.js"],
   "compilerOptions": {
-    "target": "es6",
+    "target": "ESNext",
     "jsx": "preserve",
-    "esModuleInterop":true,
+    "esModuleInterop": true,
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "allowJs": true,
     "moduleResolution": "node",
     "declaration": true,
-    "rootDir": "../"
+    "outDir": "./outDir"
   },
   "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./src/**/*.js",
-    "./src/**/*.jsx"
+    "src/**/*",
+    "build-tools/**/*",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.js",
+    "packages/**/*.jsx"
   ]
 }

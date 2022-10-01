@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const TerserPlugin = require('terser-webpack-plugin');
+
 const { distDir } = require('../constant');
 
 console.log(
@@ -10,66 +10,57 @@ console.log(
 
 module.exports = {
   mode: 'production',
-  devtool: false,
+  devtool: 'source-map',
+  entry: '',
   output: {
-    clean: true, // 在生成文件之前清空 output 目录。替代clean-webpack-plugin
     path: distDir,
-    filename: 'billd-icons-vue.js',
+    filename: '',
     library: {
-      name: 'BilldIconsVue',
-      // root: 'MyLibrary',
-      // amd: 'my-library',
-      // commonjs: 'my-common-library',
-      type: 'umd',
+      // 前端历史：amd（Require.js）、cmd（Sea.js）、commonjs（nodejs）、commonjs2（nodejs）、module(es6)
+      name: '',
+      type: 'umd', // 浏览器window.BilldIconsVue.aaaaa
+      // type: 'var', // 浏览器window.BilldIconsVue.aaaaa
+      // type: `self`, // 浏览器window.BilldIconsVue.aaaaa
+      // type: `window`, // 浏览器window.BilldIconsVue.aaaaa
+      // type: `global`, // 浏览器window.BilldIconsVue.aaaaa
+      // type: `amd`, // Uncaught ReferenceError: define is not defined
+      // type: 'commonjs2', // Uncaught ReferenceError: module is not defined
+      // type: 'commonjs', // Uncaught ReferenceError: exports is not defined
+      // type: 'module', // Error: library type "module" is only allowed when 'experiments.outputModule' is enabled
+      // type: `system`, // Uncaught ReferenceError: System is not defined
+      // type: `jsonp`, // Uncaught ReferenceError: BilldIconsVue is not defined
+      // type: `umd2`, // 浏览器window.BilldIconsVue.aaaaa
+      // type: `this`, // Uncaught TypeError: Cannot set properties of undefined (setting 'BilldIconsVue')
+      // type: `assign`, // 浏览器window.BilldIconsVue.aaaaa
     },
   },
   externals: {
-    // vue: {
-    //   root: 'Vue',
-    //   commonjs2: 'vue',
-    //   commonjs: 'vue',
-    //   amd: 'vue',
-    // },
+    // https://webpack.js.org/configuration/externals/#object
+    // 左边是npm包名，右边是全局变量名
+    // vue: 'Vue', // 不会用node_module里的vue打包，正确
+    // vue: 'vue', // 不会用node_module里的vue打包，但是挂载的全局变量是小写的vue，报错
+    // Vue: 'Vue', // 会用node_module里的vue打包，错误
+    // Vue: 'vue', // 会用node_module里的vue打包，错误
+    // lodash: '_'
+    vue: {
+      /**
+       * library.type设置umd后，webpack会适配commonjs、commonjs2、amd、root这四种配置，
+       * 因此，如果写成对象形式的话，必须正确的设置这四者（如果不设置或者设置错了，比如root设置了小
+       * 写的vue，那么在浏览器环境的话，发现root并没有Vue，就会报错，全局变量名设置的一定要和cdn引的Vue导出的全局大写Vue对得上），
+       * 其他的设不设置好像都没区别，反正umd不会添加他们
+       */
+      commonjs: 'Vue', // 适配commonjs环境的全局变量名
+      commonjs2: 'Vue', // 适配commonjs2环境的全局变量名
+      amd: 'Vue', // 适配amd环境的全局变量名
+      root: 'Vue', // 适配全局变量
+      global: `Vueglobal`, // 适配global环境的全局变量名，其实没用，因为不会添加它
+    },
   },
   optimization: {
-    // splitChunks: {
-    //   chunks: "all"
-    // },
     // concatenateModules: false, // production模式下默认true。告知 webpack 去寻找模块图形中的片段，哪些是可以安全地被合并到单一模块中。
-    usedExports: false, // production模式或者不设置usedExports，它默认就是true。usedExports的目的是标注出来哪些函数是没有被使用 unused，会结合Terser进行处理
-    sideEffects: false, // 告知 webpack 去辨识 package.json 中的 副作用 标记或规则
-    minimize: true, // 是否开启Terser，不手动设置的话默认就根据环境判断，production环境就是true，非production环境就是false。设置false后，不会压缩和转化
-    minimizer: [
-      new TerserPlugin({
-        parallel: true, // 使用多进程并发运行以提高构建速度
-        extractComments: false, // 去除打包生成的bundle.js.LICENSE.txt
-        terserOptions: {
-          // Terser 压缩配置
-          parse: {
-            // default {},如果希望指定其他解析选项，请传递一个对象。
-          },
-          compress: {
-            // default {},传递false表示完全跳过压缩。传递一个对象来指定自定义压缩选项。
-            arguments: true, // default: false,尽可能将参数[index]替换为函数参数名
-            dead_code: true, // 删除死代码，默认就会删除，实际测试设置false也没用，还是会删除
-            toplevel: false, // default: false,在顶级作用域中删除未引用的函数("funcs")和/或变量("vars"), 设置true表示同时删除未引用的函数和变量
-            keep_classnames: false, // default: false,传递true以防止压缩器丢弃类名
-            keep_fnames: false, // default: false,传递true以防止压缩器丢弃函数名
-          },
-          /**
-           * mangle,默认值true,会将keep_classnames,keep_fnames,toplevel等等mangle options的所有选项设为true。
-           * 传递false以跳过篡改名称，或者传递一个对象来指定篡改选项
-           */
-          mangle: true,
-          toplevel: true, // default false,如果希望启用顶级变量和函数名修改,并删除未使用的变量和函数,则设置为true。
-          keep_classnames: true, // default: undefined,传递true以防止丢弃或混淆类名。
-          keep_fnames: true, // default: false,传递true以防止函数名被丢弃或混淆。
-        },
-      }),
-      // new CssMinimizerPlugin({
-      //   parallel: true, // 使用多进程并发执行，提升构建速度。
-      // }), // css压缩，去除无用的空格等等
-    ],
+    usedExports: true, // production模式或者不设置usedExports，它默认就是true。usedExports的目的是标注出来哪些函数是没有被使用 unused，会结合Terser进行处理
+    sideEffects: true, // 告知 webpack 去辨识 package.json 中的 副作用 标记或规则
+    minimize: false, // 是否开启Terser，不手动设置的话默认就根据环境判断，production环境就是true，非production环境就是false。设置false后，不会压缩和转化
   },
   plugins: [],
 };

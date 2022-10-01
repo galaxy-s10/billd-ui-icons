@@ -1,6 +1,7 @@
-import { template } from 'lodash';
+const { template } = require('lodash');
 
-export default function useTemplate(_template, data) {
+function useTemplate(_template, data) {
   const compiled = template(_template);
   return compiled(data);
 }
+module.exports = useTemplate;

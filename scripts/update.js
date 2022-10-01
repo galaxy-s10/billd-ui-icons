@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+
 const { readJSONSync, writeJSONSync } = require('fs-extra');
 
 const DIR_PACKAGES = path.resolve(__dirname, '../packages');

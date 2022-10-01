@@ -1,7 +1,7 @@
 // 这个文件是由build-tools/svgo/template/icon-vue/icon-vue.ejs自动生成的，请勿手动修改！
 
 import NodeIndexOutlinedSvg from '@huangshuisheng/icons-svg/lib/asn/NodeIndexOutlined';
-import BilldIcon from '../billdIcon';
+import BilldIcon from '../BilldIcon';
 
 export default {
   name: 'NodeIndexOutlinedSvg',

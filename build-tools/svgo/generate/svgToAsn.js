@@ -1,20 +1,23 @@
-import gulp from 'gulp';
-import parseXML from '@rgrove/parse-xml';
-import through2 from 'through2';
-import useTemplate from './useTemplate';
-import toCameCase from '../../utils/toCameCase';
-import svgOptions from '../svgOptions';
-import { chalkSUCCESS } from '../../utils/chalkTip';
-
-const { optimize } = require('svgo');
 const { readFileSync } = require('fs');
 const { resolve } = require('path');
+
+const parseXML = require('@rgrove/parse-xml');
+const gulp = require('gulp');
+const { optimize } = require('svgo');
+const through2 = require('through2');
+
+const { iconsSvgToAsnDir } = require('../../constant');
+const { chalkSUCCESS } = require('../../utils/chalkTip');
+const toCameCase = require('../../utils/toCameCase');
+const svgOptions = require('../svgOptions');
+const useTemplate = require('./useTemplate');
 
 const asnTemplate = readFileSync(
   resolve(__dirname, '../template/icon-svg/asn.ejs'),
   'utf8'
 );
-export default function svgToAsn(dir, { theme }) {
+
+function svgToAsn(dir, { theme }) {
   return function (done) {
     const res = gulp
       .src(dir)
@@ -45,10 +48,12 @@ export default function svgToAsn(dir, { theme }) {
           next(null, file);
         })
       )
-      .pipe(gulp.dest('../packages/icons-svg/asn'));
+      .pipe(gulp.dest(iconsSvgToAsnDir));
     res.on('finish', function () {
       console.log(chalkSUCCESS(`${theme}图标编译成功！`));
       done();
     });
   };
 }
+
+module.exports = svgToAsn;

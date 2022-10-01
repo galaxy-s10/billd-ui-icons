@@ -1,8 +1,10 @@
 // const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const portfinder = require('portfinder');
 const FriendlyErrorsWebpackPlugin = require('@soda/friendly-errors-webpack-plugin'); // webapck5对等依赖
-const WebpackDevServer = require('webpack-dev-server');
 const chalk = require('chalk');
+const portfinder = require('portfinder');
+const WebpackDevServer = require('webpack-dev-server');
+
+const { resolveApp } = require('../utils/paths');
 const TerminalPrintPlugin = require('./plugins/TerminalPrintPlugin');
 
 const localIPv4 = WebpackDevServer.internalIPSync('v4');
@@ -24,11 +26,15 @@ module.exports = new Promise((resolve) => {
     .then((port) => {
       resolve({
         /**
-        /**
          * .browserlistrc文件导致的热更新不生效。https://github.com/webpack/webpack-dev-server/pull/2761
          * 删掉.browserlistrc文件即可解决。但是我没有删，将webpack-dev-server升级到了4.x解决了，但也需要修改devServe属性的部分东西。
          */
         // mode: "production",
+        entry: {
+          main: {
+            import: resolveApp('./src/index.js'),
+          },
+        },
         mode: 'development',
         devtool: 'eval', // eval，具有最高性能的开发构建的推荐选择。
         stats: 'none',

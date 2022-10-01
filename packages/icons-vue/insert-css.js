@@ -1,9 +1,17 @@
+/* eslint-disable */
 // copy by:https://github.com/substack/insert-css
+// npm:https://www.npmjs.com/package/insert-css
 const containers = []; // will store container HTMLElement references
 const styleElements = []; // will store {prepend: HTMLElement, append: HTMLElement}
 
 const usage =
   'insert-css: You need to provide a CSS string. Usage: insertCss(cssString[, options]).';
+
+function createStyleElement() {
+  const styleElement = document.createElement('style');
+  styleElement.setAttribute('type', 'text/css');
+  return styleElement;
+}
 
 function insertCss(css, options) {
   options = options || {};
@@ -55,12 +63,6 @@ function insertCss(css, options) {
     styleElement.textContent += css;
   }
 
-  return styleElement;
-}
-
-function createStyleElement() {
-  const styleElement = document.createElement('style');
-  styleElement.setAttribute('type', 'text/css');
   return styleElement;
 }
 

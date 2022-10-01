@@ -1,12 +1,13 @@
+const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
-const pkg = require('../package.json');
+
 const {
   chalkSUCCESS,
   chalkERROR,
   chalkINFO,
 } = require('../build-tools/utils/chalkTip');
+const pkg = require('../package.json');
 
 // 如果进程超时或有非零退出代码，execSync将抛出Error 对象
 execSync(`git push origin v${pkg.version}`, { stdio: 'inherit' });

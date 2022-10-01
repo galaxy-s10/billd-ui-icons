@@ -4,7 +4,9 @@
   "description": "Abstract node of the Billd-UI icons.",
   "keywords": [
     "billd",
-    "icons"
+    "icons",
+    "svg",
+    "vue"
   ],
   "homepage": "https://github.com/galaxy-s10/billd-ui-icons",
   "bugs": {
@@ -16,6 +18,7 @@
   },
   "license": "MIT",
   "author": "shuisheng <https://github.com/galaxy-s10>",
+  "sideEffects": false,
   "main": "lib/index.js",
   "module": "es/index.js",
   "dependencies": {
