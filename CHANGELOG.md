@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/galaxy-s10/billd-ui-icons/compare/v1.1.2...v1.1.3) (2022-10-01)
+
+
+### fix
+
+* 优化70% ([4acc631](https://github.com/galaxy-s10/billd-ui-icons/commit/4acc631993c1a12889624810afc7af3ca11abdd9))
+* 优化脚本 ([1615e6e](https://github.com/galaxy-s10/billd-ui-icons/commit/1615e6e44796c0e54f964b6230e9f22e450e9861))
+
+
+
 ## [1.1.2](https://github.com/galaxy-s10/billd-ui-icons/compare/v1.1.1...v1.1.2) (2022-09-28)
 
 
