@@ -9,21 +9,31 @@
 </template>
 
 <script>
+// 按需导入
+import { AccountBookFilled, AimOutlined } from '@huangshuisheng/icons-vue';
 import Vue from 'vue';
-
-// import {
-//   AccountBookFilled,
-//   AimOutlined,
-// } from '@huangshuisheng/icons-vue';
-import {
-  AccountBookFilled,
-  AimOutlined,
-} from '../packages/icons-vue/dist/es/index';
-
 Vue.component('AccountBookFilled', AccountBookFilled);
 Vue.component('AimOutlined', AimOutlined);
 
-// import * as BilldIcon from '../packages/icons-vue/dist/es/index';
+// 全局导入
+// import * as BilldIcon from '@huangshuisheng/icons-vue';
+// import Vue from 'vue';
+// Object.keys(BilldIcon).forEach((key) => {
+//   const icon = BilldIcon[key];
+//   Vue.component(key, icon);
+// });
+
+// 按需导入
+// import Vue from 'vue';
+
+// import { AccountBookFilled, AimOutlined } from '../packages/icons-vue/dist/es';
+// Vue.component('AccountBookFilled', AccountBookFilled);
+// Vue.component('AimOutlined', AimOutlined);
+
+// 全局导入
+// import Vue from 'vue';
+
+// import * as BilldIcon from '../packages/icons-vue/dist/es';
 
 // Object.keys(BilldIcon).forEach((key) => {
 //   const icon = BilldIcon[key];

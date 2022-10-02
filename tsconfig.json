@@ -10,13 +10,20 @@
     "moduleResolution": "node",
     "declaration": true,
     "outDir": "./outDir"
-  }
-  // "include": [
-  //   "src/**/*",
-  //   "build-tools/**/*",
-  //   "packages/**/*.ts",
-  //   "packages/**/*.tsx",
-  //   "packages/**/*.js",
-  //   "packages/**/*.jsx"
-  // ]
+  },
+  "include": [
+    "src/**/*",
+    "build-tools/**/*",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.js",
+    "packages/**/*.jsx"
+  ],
+  "exclude": [
+    "dist/**/*",
+    "packages/icons-svg/asn/**/*",
+    "packages/icons-svg/dist/**/*",
+    "packages/icons-vue/icons/**/*",
+    "packages/icons-vue/dist/**/*"
+  ]
 }

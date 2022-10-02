@@ -468,7 +468,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
-"@babel/plugin-syntax-jsx@^7.18.6", "@babel/plugin-syntax-jsx@^7.2.0":
+"@babel/plugin-syntax-jsx@^7.2.0":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.18.6.tgz#a8feef63b010150abd97f1649ec296e849943ca0"
   integrity sha512-6mmljtAedFGTWu2p/8WIORGwy+61PLgOMPOdazc7YoJ9ZCWUyFy3A6CpPkRKLKD1ToAesxX8KGEViAiLo9N+7Q==
@@ -1016,10 +1016,15 @@
   resolved "https://registry.npmjs.org/@huangshuisheng/icons-svg/-/icons-svg-1.1.2.tgz#3ef9db087c7c2ba73888366890274fcea775c055"
   integrity sha512-B25C0luhqwVOyAD9Kz22bYomxKTvhqKT3e3N1CIM2tmvsjymkk8BG2DpP3HtPctHnS6HorzlVbu85YgU3m1RyQ==
 
-"@huangshuisheng/icons-vue@^1.1.1":
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/@huangshuisheng/icons-vue/-/icons-vue-1.1.2.tgz#e18215743ee3dcb9bffc4b232a76d8fa0bd46221"
-  integrity sha512-T+IS/CH3H974WgEo3GM1m4czWqKiOcRe24MYUlbEdxOXSC1tGjDpqYM6mQLNffkQ9RRiD+d8fniqM+8fC/WLIQ==
+"@huangshuisheng/icons-svg@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/@huangshuisheng/icons-svg/-/icons-svg-1.1.4.tgz#c8b67517549bb4cf0d029168fbef351db8fedbfc"
+  integrity sha512-o1yw81ZXo21uk9bOu8Ak1KpYAoaUq+p+FtdXT/OJ6nsODi13bUbB4WzsezKhlL3uRa+RGVPPz8aCvKB1HN37Mg==
+
+"@huangshuisheng/icons-vue@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/@huangshuisheng/icons-vue/-/icons-vue-1.1.4.tgz#3747fd5527604611867efec6b187a690413653f6"
+  integrity sha512-Rykj71aIQ6k+UF+Aao4E15c7FKlYUspkWHdKPuO8XkL5nS5wLetPKBmgqhpYB9v9Y5q9IIqys5pyksAPCLWKNw==
   dependencies:
     "@huangshuisheng/icons-svg" "^1.1.1"
 
@@ -3012,7 +3017,14 @@ create-require@^1.1.0:
   resolved "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-env@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.npmjs.org/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
+  dependencies:
+    cross-spawn "^7.0.1"
+
+cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==

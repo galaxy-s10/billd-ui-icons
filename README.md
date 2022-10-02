@@ -22,36 +22,75 @@
 
 # Packages
 
-| name                                                                                 | version                                                                                                                   |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| [@huangshuisheng/icons-vue](https://www.npmjs.com/package/@huangshuisheng/icons-vue) | [![npm](https://img.shields.io/npm/v/@huangshuisheng/icons-vue)](https://www.npmjs.com/package/@huangshuisheng/icons-vue) |
-| [@huangshuisheng/icons-svg](https://www.npmjs.com/package/@huangshuisheng/icons-svg) | [![npm](https://img.shields.io/npm/v/@huangshuisheng/icons-svg)](https://www.npmjs.com/package/@huangshuisheng/icons-svg) |
+| name                                                                                                     | version                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [@huangshuisheng/icons-vue](https://github.com/galaxy-s10/billd-ui-icons/tree/master/packages/icons-vue) | [![npm](https://img.shields.io/npm/v/@huangshuisheng/icons-vue)](https://www.npmjs.com/package/@huangshuisheng/icons-vue) |
+| [@huangshuisheng/icons-svg](https://github.com/galaxy-s10/billd-ui-icons/tree/master/packages/icons-svg) | [![npm](https://img.shields.io/npm/v/@huangshuisheng/icons-svg)](https://www.npmjs.com/package/@huangshuisheng/icons-svg) |
 
-# tsconfig.json
+# 本地调试
 
-```json
-{
-  "files": ["src/index.js"],
-  "compilerOptions": {
-    "target": "es6", // 编译输出目标es版本
-    "module": "es6", // 设置后就不会报这个错：Uncaught ReferenceError: exports is not defined
-    "jsx": "preserve",
-    "esModuleInterop": true, // 可以esm和cjs混用
-    "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错。
-    "experimentalDecorators": true, // 启用实验性的ES装饰器。
-    "lib": ["dom"], //	编译过程中需要引入的库文件的列表。
-    "skipLibCheck": true, // https://github.com/webpack/webpack/issues/12185
-    "allowJs": true,
-    "moduleResolution": "node", // 如何处理模块
-    "declaration": true, // 生成相应的 .d.ts文件。
-    "rootDir": "../",
-    "outDir": "./"
-  },
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./src/**/*.js",
-    "./src/**/*.jsx"
-  ]
-}
+> 可以在 src 目录引入构建好的图标查看效果
+
+```sh
+npm run dev
 ```
+
+# 本地构建
+
+## 打包 packages/svg
+
+```sh
+npm run compile:svg
+```
+
+> 该脚本内部会做以下事情：
+
+1. 将 packages/icons-svg 里的 svg 文件进行解析并且生成 asn
+2. 生成 packages/icons-svg 的入口文件 index.js，这个入口文件引入了所有的 asn
+3. 使用 gulp-typescript 将 packages/icons-svg/asn 目录里的文件进行打包，生成 es 和 lib
+4. 使用 webpack 对 packages/icons-svg 的入口文件进行打包，生成 dist
+
+## 打包 packages/vue
+
+```sh
+npm run compile:vue
+```
+
+> 该脚本内部会做以下事情：
+
+1. 根据 packages/icons-svg/asn 里的文件，通过模板，统一生成 vue 组件到 packages/icons-vue/icons
+2. 生成 packages/icons-vue 的入口文件 index.js ，这个入口文件引入了所有生成的 vue 组件
+3. 使用 gulp-typescript 将 packages/icons-vue/icons 目录里的文件进行打包，生成 es 和 lib
+4. 使用 webpack 对 packages/icons-vue 的入口文件进行打包，生成 dist
+
+# 如何发版
+
+## 0.确保 git 工作区干净
+
+即确保本地的修改已全部提交（git status 的时候会显示：`nothing to commit, working tree clean` ），否则会导致执行 `release:local` 脚本失败
+
+## 1.执行本地发版脚本
+
+```sh
+npm run release:local
+```
+
+> 该脚本内部会做以下事情：
+
+1. 根据用户选择的版本，更新对应 packages 里的包的 package.json 的 version
+2. 开始构建 packages 里的包
+3. 对比当前版本与上个版本的差异，生成 changelog
+4. 提交暂存区到本地仓库：git commit -m 'chore(release): v 当前版本'
+5. 生成当前版本 tag：git tag v 当前版本
+
+## 2.执行线上发版脚本
+
+```sh
+npm run release:online
+```
+
+> 该脚本内部会做以下事情：
+
+1. 提交当前版本：git push
+2. 提交当前版本 tag：git push origin v 当前版本
+3. 根据 meta/packages.ts，发布 packages 里对应的包到 npm

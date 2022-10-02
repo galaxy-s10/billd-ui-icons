@@ -36,13 +36,13 @@
     }
   },
   "dependencies": {
-    "@huangshuisheng/icons-svg": "^1.1.1",
-    "@huangshuisheng/icons-vue": "^1.1.1",
-    "cross-env": "^7.0.3",
+    "@huangshuisheng/icons-svg": "^1.1.4",
+    "@huangshuisheng/icons-vue": "^1.1.4",
     "vue": "^2.6.14",
     "vue-fragment": "^1.5.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@babel/core": "^7.14.6",
     "@babel/plugin-transform-runtime": "^7.19.1",
     "@babel/preset-env": "^7.14.7",
