@@ -1580,4 +1580,4 @@ export { default as ZoomOutOutlined } from './asn/ZoomOutOutlined';
 
 export { default as ZoomOutTwoTone } from './asn/ZoomOutTwoTone';
 
-export const version = '1.1.3';
+export const version = '1.1.4';

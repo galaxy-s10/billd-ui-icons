@@ -10,13 +10,13 @@
     "moduleResolution": "node",
     "declaration": true,
     "outDir": "./outDir"
-  },
-  "include": [
-    "src/**/*",
-    "build-tools/**/*",
-    "packages/**/*.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.js",
-    "packages/**/*.jsx"
-  ]
+  }
+  // "include": [
+  //   "src/**/*",
+  //   "build-tools/**/*",
+  //   "packages/**/*.ts",
+  //   "packages/**/*.tsx",
+  //   "packages/**/*.js",
+  //   "packages/**/*.jsx"
+  // ]
 }
