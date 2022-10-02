@@ -15,6 +15,7 @@ const ts = require('gulp-typescript');
 const through = require('through2');
 const webpack = require('webpack');
 
+const pkg = require('../package.json');
 const tsProject = require('../tsconfig.json');
 const {
   iconsSvgDistDir,
@@ -22,7 +23,7 @@ const {
   iconsSvgEntryName,
   iconsVueDistDir,
   iconsSvgToAsnDir,
-  iconsVueIconsPath,
+  iconsVueIconsEntryPath,
   iconsVueEntryName,
   iconsVueEntryPath,
   porjectRootDir,
@@ -35,6 +36,7 @@ const {
   generateIconVueIcons,
   generateIconsVueEntry,
 } = require('./svgo/generate');
+const generateIconVueEntry = require('./svgo/generate/iconVueEntry');
 const { chalkSUCCESS } = require('./utils/chalkTip');
 const webpackConfig = require('./webpack/webpack.common');
 
@@ -216,14 +218,14 @@ const renderSvgEntry = series(() =>
     .pipe(
       through.obj(function (file, encoding, next) {
         let str = file.contents.toString(encoding);
-        str += "\nexport { version } from './package.json';\n";
+        str += `\nexport const version = '${pkg.version}';\n`;
         file.contents = Buffer.from(str);
         next(null, file);
       })
     )
     .pipe(
       header(
-        '// 这个文件是由build-tools/svgo/template/icon-svg/entry.ejs自动生成的，请勿手动修改！\n'
+        '// 这个文件是由build-tools/svgo/template/icon-svg/entry.ejs自动生成的，请勿手动修改！\n\n'
       )
     )
     .pipe(gulp.dest(iconsSvgEntryPath))
@@ -236,7 +238,7 @@ const generateIconsVue = series(
     gulp
       .src(`${iconsSvgToAsnDir}/*.js`)
       .pipe(generateIconVueIcons())
-      .pipe(gulp.dest(iconsVueIconsPath)),
+      .pipe(gulp.dest(iconsVueIconsEntryPath)),
   generateIconsVueEntry
 );
 generateIconsVue.displayName = 'generateIconsVueTask';
@@ -296,6 +298,7 @@ const iconsVueTask = series(
     done();
   },
   generateIconsVue,
+  generateIconVueEntry,
   gulp.parallel(
     function copy(done) {
       copyAssets('icons-vue', done);

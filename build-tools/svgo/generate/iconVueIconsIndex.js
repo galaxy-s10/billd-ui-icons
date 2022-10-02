@@ -3,8 +3,8 @@ const { resolve } = require('path');
 
 const {
   iconsSvgToAsnDir,
-  iconsVueEntryName,
-  iconsVueIconsPath,
+  iconsVueIconsEntryName,
+  iconsVueIconsEntryPath,
 } = require('../../constant');
 const { chalkSUCCESS } = require('../../utils/chalkTip');
 
@@ -24,13 +24,17 @@ function generateIconsVueEntry(done) {
       return `export { default as ${name} } from './${name}';\n`;
     });
     arr.unshift(
-      '// 这个文件是由build-tools/svgo/generate/iconVueIconsEntry.js自动生成的，请勿手动修改！\n'
+      '// 这个文件是由build-tools/svgo/generate/iconVueIconsIndex.js自动生成的，请勿手动修改！\n'
     );
     const indexText = arr.join('\n');
-    writeFile(`${iconsVueIconsPath}/${iconsVueEntryName}`, indexText, () => {
-      console.log(chalkSUCCESS('生成icons-vue/icons/index.js成功！'));
-      done();
-    });
+    writeFile(
+      `${iconsVueIconsEntryPath}/${iconsVueIconsEntryName}`,
+      indexText,
+      () => {
+        console.log(chalkSUCCESS('生成icons-vue/icons/index.js成功！'));
+        done();
+      }
+    );
   });
 }
 

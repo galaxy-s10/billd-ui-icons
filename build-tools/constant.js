@@ -10,7 +10,11 @@ module.exports = {
   iconsSvgEntryPath: path.resolve(__dirname, '../packages/icons-svg'),
   iconsSvgToAsnDir: path.resolve(__dirname, '../packages/icons-svg/asn'),
   iconsVueDistDir: path.resolve(__dirname, '../packages/icons-vue/dist'),
-  iconsVueIconsPath: path.resolve(__dirname, '../packages/icons-vue/icons'),
+  iconsVueIconsEntryPath: path.resolve(
+    __dirname,
+    '../packages/icons-vue/icons'
+  ),
+  iconsVueIconsEntryName: 'index.js',
   iconsVueEntryPath: path.resolve(__dirname, '../packages/icons-vue'),
   iconsVueEntryName: 'index.js',
 };

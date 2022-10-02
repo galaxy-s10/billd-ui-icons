@@ -1,4 +1,5 @@
 // 这个文件是由build-tools/svgo/template/icon-svg/entry.ejs自动生成的，请勿手动修改！
+
 export { default as AccountBookFilled } from './asn/AccountBookFilled';
 
 export { default as AccountBookOutlined } from './asn/AccountBookOutlined';
@@ -1579,4 +1580,4 @@ export { default as ZoomOutOutlined } from './asn/ZoomOutOutlined';
 
 export { default as ZoomOutTwoTone } from './asn/ZoomOutTwoTone';
 
-export { version } from './package.json';
+export const version = '1.1.3';

@@ -1,4 +1,4 @@
-// 这个文件是由build-tools/svgo/generate/iconVueIconsEntry.js自动生成的，请勿手动修改！
+// 这个文件是由build-tools/svgo/generate/iconVueIconsIndex.js自动生成的，请勿手动修改！
 
 export { default as AccountBookFilled } from './AccountBookFilled';
 

@@ -14,7 +14,7 @@
   "author": "shuisheng <https://github.com/galaxy-s10>",
   "sideEffects": true,
   "scripts": {
-    "build": "webpack --config ./build-tools/webpack/webpack.common.js --env BUILD_DEMO",
+    "build": "cross-env BUILD_DEMO=true webpack --config ./build-tools/webpack/webpack.common.js --env production",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
     "changelog:first": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0",
     "commit": "cz",
@@ -38,6 +38,7 @@
   "dependencies": {
     "@huangshuisheng/icons-svg": "^1.1.1",
     "@huangshuisheng/icons-vue": "^1.1.1",
+    "cross-env": "^7.0.3",
     "vue": "^2.6.14",
     "vue-fragment": "^1.5.2"
   },

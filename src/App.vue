@@ -11,6 +11,10 @@
 <script>
 import Vue from 'vue';
 
+// import {
+//   AccountBookFilled,
+//   AimOutlined,
+// } from '@huangshuisheng/icons-vue';
 import {
   AccountBookFilled,
   AimOutlined,
